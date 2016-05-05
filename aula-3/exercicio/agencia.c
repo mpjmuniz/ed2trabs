@@ -4,7 +4,7 @@
 #include <stdarg.h>
 
 // Imprime agencia
-void imprime(Agencia *ag) {
+void ag_imprime(Agencia *ag) {
     printf("**********************************************");
     printf("\nCódigo da Agencia:");
     printf("%d", ag->cod);
@@ -28,7 +28,7 @@ Agencia *agencia(int cod, char *nome, char *gerente){
 }
 
 // Salva agencia no arquivo out, na posicao atual do cursor
-void salva(Agencia *ag, FILE *out) {
+void ag_salva(Agencia *ag, FILE *out) {
     fwrite(&ag->cod, sizeof(int), 1, out);
     //ag->nome ao invés de &ag->nome, pois string já é ponteiro
     fwrite(ag->nome, sizeof(char), sizeof(ag->nome), out);
@@ -37,7 +37,7 @@ void salva(Agencia *ag, FILE *out) {
 
 // Le um agencia do arquivo in na posicao atual do cursor
 // Retorna um ponteiro para agencia lido do arquivo
-Agencia *le(FILE *in) {
+Agencia *ag_le(FILE *in) {
     Agencia *ag = (Agencia *) malloc(sizeof(Agencia));
     if (0 >= fread(&ag->cod, sizeof(int), 1, in)) {
 		free(ag);
@@ -49,7 +49,7 @@ Agencia *le(FILE *in) {
 }
 
 // Retorna tamanho do agencia em bytes
-int tamanho() {
+int ag_tamanho() {
     return sizeof(int)  //cod
             + sizeof(char) * 50 //nome
             + sizeof(char) * 50; //gerente

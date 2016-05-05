@@ -1,8 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "funcionario.h"
+#include "agencia.h"
+#include "contacorrente.h"
 
-void insere_5_funcionarios(FILE *out) {
+void cadastrar_conta(FILE *in){}
+
+void buscar_conta(FILE *in, int codConta){}
+
+void buscar_agencia(FILE *in, int codAgencia){}
+
+/*void insere_5_funcionarios(FILE *out) {
     printf("Inserindo 5 funcionários no arquivo...");
     
     Funcionario *f1 = funcionario(1, "Ana", "000.000.000-00", "01/01/1980", 3000);
@@ -82,32 +89,33 @@ void sobrescreve_quarto_funcionario(FILE *in) {
         imprime(f);
         free(f);
     }
-}
+}*/
 
 void main(int argc, char** argv) {
     //declara ponteiro para arquivo
-    FILE *out;
-    //abre arquivo
-    if ((out = fopen("funcionario.dat", "w+b")) == NULL) {
-        printf("Erro ao abrir arquivo\n");
+    FILE *outAgencia, *outConta;
+    //abre arquivos
+    if ((outAgencia = fopen("agencia.dat", "w+b")) == NULL || 
+    		(outConta = fopen("contacorrente.dat", "w+b")) == NULL){
+		if(!outAgencia){
+			printf("Erro ao abrir arquivo das Agencias\n");
+		} 
+		
+		if(!outConta){
+			printf("Erro ao abrir arquivo das Contas\n");
+		}
         exit(1);
-    }
-    else {
-        //insere funcionários
-        insere_5_funcionarios(out);
-        //volta ao início do arquivo e lê os funcionários inseridos
-        le_funcionarios(out);
-        //volta ao início do arquivo e lê o segundo funcionário
-        le_segundo_funcionario(out);
-        //grava mais um funcionário no final do arquivo
-        adiciona_funcionario(out);
-        //sobrescreve quarto funcionário
-        sobrescreve_quarto_funcionario(out);
-        //lendo o arquivo todo novamente
-        le_funcionarios(out);
-        
+    } else {
+        int resposta = 1, rc = 0;
+
+        while(resposta){
+        	printf("Escolha uma operação:\n\t1. Cadastrar uma Conta Corrente, ou uma Agencia\n\
+\t2. Ler uma Conta Corrente, ou uma Agencia\n\t0. Sair\n");
+        	rc = scanf("%d", &resposta);
+        }
+
         //fecha arquivo
-        fclose(out);    
+        fclose(outAgencia);    
+        fclose(outConta);
     }
 }
-

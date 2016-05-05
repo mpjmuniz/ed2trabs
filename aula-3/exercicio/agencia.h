@@ -11,19 +11,19 @@ typedef struct Agencia {
 } Agencia;
 
 // Imprime agencia
-void imprime(Agencia *ag);
+void ag_imprime(Agencia *ag);
 
 // Cria agencia. Lembrar de usar free(agencia)
 Agencia *agencia(int cod, char *nome, char *gerente);
 
 // Salva agencia no arquivo out, na posicao atual do cursor
-void salva(Agencia *ag, FILE *out);
+void ag_salva(Agencia *ag, FILE *out);
 
 // Le uma agencia do arquivo in na posicao atual do cursor
 // Retorna um ponteiro para agencia lido do arquivo
-Agencia *le(FILE *in);
+Agencia *ag_le(FILE *in);
 
 // Retorna tamanho do agencia em bytes
-int tamanho();
+int ag_tamanho();
 
 #endif

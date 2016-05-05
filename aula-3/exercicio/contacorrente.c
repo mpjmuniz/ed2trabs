@@ -4,7 +4,7 @@
 #include <stdarg.h>
 
 // Imprime agencia
-void imprime(ContaCorrente *cc) {
+void cc_imprime(ContaCorrente *cc) {
     printf("**********************************************");
     printf("\nCódigo da Conta Corrente:");
     printf("%d", cc->cod);
@@ -28,7 +28,7 @@ ContaCorrente *agencia(int cod, int codAg, double saldo){
 }
 
 // Salva agencia no arquivo out, na posicao atual do cursor
-void salva(ContaCorrente *cc, FILE *out) {
+void cc_salva(ContaCorrente *cc, FILE *out) {
     fwrite(&cc->cod, sizeof(int), 1, out);
     //cc->nome ao invés de &cc->nome, pois string já é ponteiro
     fwrite(&cc->codAgencia, sizeof(int), 1, out);
@@ -37,7 +37,7 @@ void salva(ContaCorrente *cc, FILE *out) {
 
 // Le um agencia do arquivo in na posicao atual do cursor
 // Retorna um ponteiro para agencia lido do arquivo
-ContaCorrente *le(FILE *in) {
+ContaCorrente *cc_le(FILE *in) {
     ContaCorrente *cc = (ContaCorrente *) malloc(sizeof(ContaCorrente));
     if (0 >= fread(&cc->cod, sizeof(int), 1, in)) {
 		free(cc);
@@ -49,7 +49,7 @@ ContaCorrente *le(FILE *in) {
 }
 
 // Retorna tamanho do agencia em bytes
-int tamanho() {
+int cc_tamanho() {
     return sizeof(int) * 2 //cods
             + sizeof(double); //saldo
 }
