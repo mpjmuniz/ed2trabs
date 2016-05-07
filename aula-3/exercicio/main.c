@@ -28,6 +28,11 @@ int cadastrar_agencia(FILE *in){
 }
 
 int buscar_conta(FILE *in, int codConta){
+    ContaCorrente *cc = NULL;
+    cc = cc_le(in);
+    if(cc == NULL) return 1;
+    cc_imprime(cc);
+    free(cc);
     return 0;
 }
 
@@ -139,45 +144,45 @@ void main(int argc, char** argv) {
     } else {
         int resposta = -1, rc = 0;
 
-        while(teste_resposta(resposta)){
+        while(resposta != 0){
         	printf("Escolha uma operacao:\n\t1. Cadastrar uma Conta Corrente, ou uma Agencia\n\
 \t2. Ler uma Conta Corrente, ou uma Agencia\n\t0. Sair\n");
-        	rc = scanf("%d", &resposta);           
-        }
-        
-        switch(resposta){
-            case 1:
-                resposta = -1; rc=0;
-                while(teste_resposta(resposta)){
-                    printf("Escolha uma operacao:\n\t1. Cadastrar uma Conta Corrente\n\
+        	rc = scanf("%d", &resposta);
+                
+                switch(resposta){
+                    case 1:
+                        resposta = -1; rc=0;
+                        while(teste_resposta(resposta)){
+                            printf("Escolha uma operacao:\n\t1. Cadastrar uma Conta Corrente\n\
 \t2. Cadastrar uma Agencia\n\t0. Sair\n");
-                    rc = scanf("%d", &resposta);           
-                }
-                if(resposta == 1) cadastrar_conta(outConta, outAgencia);
-                if(resposta == 2) cadastrar_agencia(outAgencia);
-                break;
-        
-            case 2:
-                resposta = -1; rc=0;
-                while(teste_resposta(resposta)){
-                    printf("Escolha uma operacao:\n\t1. Ler uma Conta Corrente\n\
-\t2. Ler uma Agencia\n\t0. Sair\n");
-                    rc = scanf("%d", &resposta);           
-                }
-                if(resposta == 1){
-                    int cod;
-                    printf("Digite o código da Conta Corrente requerida: ");
-                    scanf("%d", &cod);
-                    buscar_conta(outConta, cod);
-                } else if(resposta == 2){
-                    int cod;
-                    printf("Digite o código da Agencia requerida: ");
-                    scanf("%d", &cod);
-                    buscar_agencia(outAgencia, cod);
-                }
-                break;
-        }
+                            rc = scanf("%d", &resposta);           
+                        }
+                        if(resposta == 1) cadastrar_conta(outConta, outAgencia);
+                        if(resposta == 2) cadastrar_agencia(outAgencia);
+                        break;
 
+                    case 2:
+                        resposta = -1; rc=0;
+                        while(teste_resposta(resposta)){
+                            printf("Escolha uma operacao:\n\t1. Ler uma Conta Corrente\n\
+\t2. Ler uma Agencia\n\t0. Sair\n");
+                            rc = scanf("%d", &resposta);           
+                        }
+                        if(resposta == 1){
+                            int cod;
+                            printf("Digite o codigo da Conta Corrente requerida: ");
+                            scanf("%d", &cod);
+                            int r = buscar_conta(outConta, cod);
+                            if(r == 1) printf("Nao foi possivel encontrar uma conta com o codigo fornecido");
+                        } else if(resposta == 2){
+                            int cod;
+                            printf("Digite o codigo da Agencia requerida: ");
+                            scanf("%d", &cod);
+                            buscar_agencia(outAgencia, cod);
+                        }
+                        break;
+                }
+        }
         //fecha arquivo
         fclose(outAgencia);    
         fclose(outConta);
