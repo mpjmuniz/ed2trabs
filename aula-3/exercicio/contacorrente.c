@@ -7,9 +7,9 @@
 // Imprime agencia
 void cc_imprime(ContaCorrente *cc) {
     printf("**********************************************");
-    printf("\nCódigo da Conta Corrente:");
+    printf("\nCodigo da Conta Corrente:");
     printf("%d", cc->cod);
-    printf("\nCódigo da Agencia: ");
+    printf("\nCodigo da Agencia: ");
     printf("%d", cc->codAgencia);
     printf("\nSaldo: ");
     printf("%f", cc->saldo);
