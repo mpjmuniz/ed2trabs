@@ -3,11 +3,13 @@
 #include "agencia.h"
 #include "contacorrente.h"
 
-void cadastrar_conta(FILE *in){}
+int cadastrar_conta(FILE *in, FILE *ag){}
 
-void buscar_conta(FILE *in, int codConta){}
+int cadastrar_agencia(FILE *in){}
 
-void buscar_agencia(FILE *in, int codAgencia){}
+int buscar_conta(FILE *in, int codConta){}
+
+int buscar_agencia(FILE *in, int codAgencia){}
 
 /*void insere_5_funcionarios(FILE *out) {
     printf("Inserindo 5 funcionários no arquivo...");
@@ -91,10 +93,15 @@ void sobrescreve_quarto_funcionario(FILE *in) {
     }
 }*/
 
+int teste_resposta(int resposta){
+    return resposta < 0 || resposta > 2;
+}
+
 void main(int argc, char** argv) {
     //declara ponteiro para arquivo
     FILE *outAgencia, *outConta;
     //abre arquivos
+    
     if ((outAgencia = fopen("agencia.dat", "w+b")) == NULL || 
     		(outConta = fopen("contacorrente.dat", "w+b")) == NULL){
 		if(!outAgencia){
@@ -106,12 +113,45 @@ void main(int argc, char** argv) {
 		}
         exit(1);
     } else {
-        int resposta = 1, rc = 0;
+        int resposta = -1, rc = 0;
 
-        while(resposta){
-        	printf("Escolha uma operação:\n\t1. Cadastrar uma Conta Corrente, ou uma Agencia\n\
+        while(teste_resposta(resposta)){
+        	printf("Escolha uma operacao:\n\t1. Cadastrar uma Conta Corrente, ou uma Agencia\n\
 \t2. Ler uma Conta Corrente, ou uma Agencia\n\t0. Sair\n");
-        	rc = scanf("%d", &resposta);
+        	rc = scanf("%d", &resposta);           
+        }
+        
+        switch(resposta){
+            case 1:
+                resposta = -1; rc=0;
+                while(teste_resposta(resposta)){
+                    printf("Escolha uma operacao:\n\t1. Cadastrar uma Conta Corrente\n\
+\t2. Cadastrar uma Agencia\n\t0. Sair\n");
+                    rc = scanf("%d", &resposta);           
+                }
+                if(resposta == 1) cadastrar_conta(outConta, outAgencia);
+                if(resposta == 2) cadastrar_agencia(outAgencia);
+                break;
+        
+            case 2:
+                resposta = -1; rc=0;
+                while(teste_resposta(resposta)){
+                    printf("Escolha uma operacao:\n\t1. Ler uma Conta Corrente\n\
+\t2. Ler uma Agencia\n\t0. Sair\n");
+                    rc = scanf("%d", &resposta);           
+                }
+                if(resposta == 1){
+                    int cod;
+                    printf("Digite o código da Conta Corrente requerida: ");
+                    scanf("%d", &cod);
+                    buscar_conta(outConta, cod);
+                } else if(resposta == 2){
+                    int cod;
+                    printf("Digite o código da Agencia requerida: ");
+                    scanf("%d", &cod);
+                    buscar_agencia(outAgencia, cod);
+                }
+                break;
         }
 
         //fecha arquivo
