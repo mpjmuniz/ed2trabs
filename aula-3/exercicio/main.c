@@ -3,13 +3,37 @@
 #include "agencia.h"
 #include "contacorrente.h"
 
-int cadastrar_conta(FILE *in, FILE *ag){}
+// retorna -1 quando não é possível encontrar o código da agência referenciada
+int cadastrar_conta(FILE *in, FILE *ag){
+    int cod, codAg;
+    double saldo;
+    printf("Informe os seguintes dados da conta:\n");
+    printf("Codigo: ");
+    scanf("%d", &cod);
+    printf("Codigo da Agencia: ");
+    scanf("%d", &codAg);
+    if(buscar_agencia(ag, codAg) != 0){
+        return -1;
+    }
+    printf("Saldo em conta: ");
+    scanf("%lf", &saldo);
+    ContaCorrente *new_cc = contacorrente(cod, codAg, saldo);
+    cc_salva(new_cc, in);
+    free(new_cc);
+    return 0;
+}
 
-int cadastrar_agencia(FILE *in){}
+int cadastrar_agencia(FILE *in){
+    return 0;
+}
 
-int buscar_conta(FILE *in, int codConta){}
+int buscar_conta(FILE *in, int codConta){
+    return 0;
+}
 
-int buscar_agencia(FILE *in, int codAgencia){}
+int buscar_agencia(FILE *in, int codAgencia){
+    return 0;
+}
 
 /*void insere_5_funcionarios(FILE *out) {
     printf("Inserindo 5 funcionários no arquivo...");
