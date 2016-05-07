@@ -1,4 +1,5 @@
 #include "contacorrente.h"
+#include "agencia.h"
 #include <string.h>
 #include <stdlib.h>
 #include <stdarg.h>
@@ -16,7 +17,7 @@ void cc_imprime(ContaCorrente *cc) {
 }
 
 // Cria agencia. Lembrar de usar free(func)
-ContaCorrente *agencia(int cod, int codAg, double saldo){
+ContaCorrente *contacorrente(int cod, int codAg, double saldo){
     ContaCorrente *cc = (ContaCorrente *) malloc(sizeof(ContaCorrente));
     //inicializa espaço de memória com ZEROS
     if (cc) memset(cc, 0, sizeof(ContaCorrente));
