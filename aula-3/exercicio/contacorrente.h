@@ -11,19 +11,19 @@ typedef struct ContaCorrente {
 } ContaCorrente;
 
 // Imprime contacorrente
-void imprime(ContaCorrente *cc);
+void cc_imprime(ContaCorrente *cc);
 
 // Cria contacorrente. Lembrar de usar free(contacorrente)
 ContaCorrente *contacorrente(int cod, int codAgencia, double saldo);
 
 // Salva contacorrente no arquivo out, na posicao atual do cursor
-void salva(ContaCorrente *cc, FILE *out);
+void cc_salva(ContaCorrente *cc, FILE *out);
 
 // Le uma contacorrente do arquivo in na posicao atual do cursor
 // Retorna um ponteiro para contacorrente lido do arquivo
-ContaCorrente *le(FILE *in);
+ContaCorrente *cc_le(FILE *in);
 
 // Retorna tamanho do contacorrente em bytes
-int tamanho();
+int cc_tamanho();
 
 #endif
