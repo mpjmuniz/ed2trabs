@@ -14,25 +14,33 @@ ContaCorrente *buscar_conta(FILE *in,int codConta,int codAg){
     return cc;
 }
 
-int buscar_agencia(FILE *in, int codAgencia){
-    return 0;
+Agencia *buscar_agencia(FILE *in, int codAgencia){
+    FILE *aux = in;
+    rewind(aux);
+    Agencia *ag = NULL;
+    while((ag = ag_le(aux)) != NULL && ag->cod != codAgencia){
+        free(ag);
+    }
+    free(aux);
+    return ag;
 }
 
 // retorna -1 quando não é possível encontrar o código da agência referenciada
 // retorna -2 quando já existe uma conta corrente com a mesma chave
 int cadastrar_conta(FILE *in, FILE *agIn,int cod,int codAg,double saldo){
     ContaCorrente *cc;
-    Agencia ag;
+    Agencia *ag;
     if((cc = buscar_conta(in, cod, codAg)) != NULL){
         free(cc);
         return -2;
     }
-    if(buscar_agencia(agIn, codAg) != 0){
+    if((ag = buscar_agencia(agIn, codAg)) != NULL){
         return -1;
     }
     ContaCorrente *new_cc = contacorrente(cod, codAg, saldo);
     cc_salva(new_cc, in);
     free(new_cc);
+    free(ag);
     return 0;
 }
 
