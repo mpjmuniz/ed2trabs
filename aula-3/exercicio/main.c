@@ -28,8 +28,11 @@ int cadastrar_agencia(FILE *in){
 }
 
 int buscar_conta(FILE *in, int codConta){
+    rewind(in);
     ContaCorrente *cc = NULL;
     cc = cc_le(in);
+    if(cc == NULL) return 1;
+    while(cc != NULL && cc->cod != codConta) cc = cc_le(in);
     if(cc == NULL) return 1;
     cc_imprime(cc);
     free(cc);
@@ -131,8 +134,8 @@ void main(int argc, char** argv) {
     FILE *outAgencia, *outConta;
     //abre arquivos
     
-    if ((outAgencia = fopen("agencia.dat", "w+b")) == NULL || 
-    		(outConta = fopen("contacorrente.dat", "w+b")) == NULL){
+    if ((outAgencia = fopen("agencia.dat", "a+b")) == NULL || 
+    		(outConta = fopen("contacorrente.dat", "a+b")) == NULL){
 		if(!outAgencia){
 			printf("Erro ao abrir arquivo das Agencias\n");
 		} 
@@ -173,7 +176,7 @@ void main(int argc, char** argv) {
                             printf("Digite o codigo da Conta Corrente requerida: ");
                             scanf("%d", &cod);
                             int r = buscar_conta(outConta, cod);
-                            if(r == 1) printf("Nao foi possivel encontrar uma conta com o codigo fornecido");
+                            if(r == 1) printf("Nao foi possivel encontrar uma conta com o codigo fornecido\n");
                         } else if(resposta == 2){
                             int cod;
                             printf("Digite o codigo da Agencia requerida: ");
