@@ -14,6 +14,10 @@ ContaCorrente *buscar_conta(FILE *in,int codConta,int codAg){
     return cc;
 }
 
+int buscar_agencia(FILE *in, int codAgencia){
+    return 0;
+}
+
 // retorna -1 quando não é possível encontrar o código da agência referenciada
 // retorna -2 quando já existe uma conta corrente com a mesma chave
 int cadastrar_conta(FILE *in, FILE *agIn,int cod,int codAg,double saldo){
@@ -32,11 +36,10 @@ int cadastrar_conta(FILE *in, FILE *agIn,int cod,int codAg,double saldo){
     return 0;
 }
 
-int cadastrar_agencia(FILE *in){
-    return 0;
-}
-
-int buscar_agencia(FILE *in, int codAgencia){
+int cadastrar_agencia(FILE *in, int cod, char *nome, char *gerente){
+    Agencia *new_ag = agencia(cod, nome, gerente);
+    ag_salva(new_ag, in);
+    free(new_ag);
     return 0;
 }
 
@@ -90,8 +93,16 @@ void main(int argc, char** argv) {
                             else if(r == -2) printf("Ja existe uma conta com esse codigo nessa agencia\n");
                             else printf("Conta cadastrada com sucesso!\n");
                         }
-                        if(resposta == 2){ 
-                            cadastrar_agencia(outAgencia);
+                        if(resposta == 2){
+                            int cod;
+                            char gerente[50], nome[50];
+                            printf("Codigo: ");
+                            scanf("%d", &cod);
+                            printf("Nome da Agencia: ");
+                            scanf("%s", nome);
+                            printf("Nome do gerente da Agencia: ");
+                            scanf("%s", gerente);
+                            cadastrar_agencia(outAgencia, cod, gerente, nome);
                         }
                         break;
 
