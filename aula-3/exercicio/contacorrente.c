@@ -13,7 +13,7 @@ void cc_imprime(ContaCorrente *cc) {
     printf("%d", cc->codAgencia);
     printf("\nSaldo: ");
     printf("%f", cc->saldo);
-    printf("\n**********************************************");
+    printf("\n**********************************************\n");
 }
 
 // Cria agencia. Lembrar de usar free(func)
