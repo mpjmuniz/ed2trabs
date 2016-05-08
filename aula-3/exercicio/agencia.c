@@ -12,7 +12,7 @@ void ag_imprime(Agencia *ag) {
     printf("%s", ag->nome);
     printf("\nGerente: ");
     printf("%s", ag->gerente);
-    printf("\n**********************************************");
+    printf("\n**********************************************\n");
 }
 
 // Cria agencia. Lembrar de usar free(func)
