@@ -141,7 +141,9 @@ void main(int argc, char** argv) {
                             int cod;
                             printf("Digite o codigo da Agencia requerida: ");
                             scanf("%d", &cod);
-                            buscar_agencia(outAgencia, cod);
+                            Agencia *ag = buscar_agencia(outAgencia, cod);
+                            ag_imprime(ag);
+                            free(ag);
                         }
                         break;
                 }
