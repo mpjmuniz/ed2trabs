@@ -135,15 +135,23 @@ void main(int argc, char** argv) {
                             printf("Digite o codigo da Agencia referente a Conta Corrente requerida: ");
                             scanf("%d", &codAg);
                             ContaCorrente *cc = buscar_conta(outConta, codConta, codAg);
-                            cc_imprime(cc);
-                            free(cc);
+                            if(cc == NULL)
+                                printf("Nao foi possivel encontrar uma conta corrente.\n");
+                            else{
+                                cc_imprime(cc);
+                                free(cc);
+                            }
                         } else if(resposta == 2){
                             int cod;
                             printf("Digite o codigo da Agencia requerida: ");
                             scanf("%d", &cod);
                             Agencia *ag = buscar_agencia(outAgencia, cod);
-                            ag_imprime(ag);
-                            free(ag);
+                            if(ag == NULL)
+                                printf("Não foi possivel encontrar uma agencia.\n");
+                            else {
+                                ag_imprime(ag);
+                                free(ag);
+                            }
                         }
                         break;
                 }
