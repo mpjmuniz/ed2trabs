@@ -12,7 +12,7 @@ void cc_imprime(ContaCorrente *cc) {
     printf("\nCodigo da Agencia: ");
     printf("%d", cc->codAgencia);
     printf("\nSaldo: ");
-    printf("%f", cc->saldo);
+    printf("%.2f", cc->saldo);
     printf("\n**********************************************\n");
 }
 
