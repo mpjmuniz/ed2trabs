@@ -30,10 +30,9 @@ ContaCorrente *contacorrente(int cod, int codAg, double saldo){
 
 // Salva agencia no arquivo out, na posicao atual do cursor
 void cc_salva(ContaCorrente *cc, FILE *out) {
-    fwrite(&cc->cod, sizeof(int), 1, out);
-    //cc->nome ao invés de &cc->nome, pois string já é ponteiro
-    fwrite(&cc->codAgencia, sizeof(int), 1, out);
-    fwrite(&cc->saldo, sizeof(double), 1, out);
+    fwrite(&(cc->cod), sizeof(int), 1, out);
+    fwrite(&(cc->codAgencia), sizeof(int), 1, out);
+    fwrite(&(cc->saldo), sizeof(double), 1, out);
 }
 
 // Le um agencia do arquivo in na posicao atual do cursor
@@ -44,8 +43,8 @@ ContaCorrente *cc_le(FILE *in) {
 		free(cc);
 		return NULL;
     }
-    fread(&cc->codAgencia, sizeof(int), sizeof(cc->codAgencia), in);
-    fread(&cc->codAgencia, sizeof(double), sizeof(cc->saldo), in);
+    fread(&cc->codAgencia, sizeof(int), 1, in);
+    fread(&cc->saldo, sizeof(double), 1, in);
     return cc;
 }
 
