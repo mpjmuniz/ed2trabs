@@ -45,6 +45,11 @@ int cadastrar_conta(FILE *in, FILE *agIn,int cod,int codAg,double saldo){
 }
 
 int cadastrar_agencia(FILE *in, int cod, char *nome, char *gerente){
+    Agencia *ag;
+    if((ag = buscar_agencia(in, cod)) != NULL){
+        free(ag);
+        return -1;
+    }
     Agencia *new_ag = agencia(cod, nome, gerente);
     ag_salva(new_ag, in);
     free(new_ag);
@@ -110,7 +115,9 @@ void main(int argc, char** argv) {
                             scanf("%s", nome);
                             printf("Nome do gerente da Agencia: ");
                             scanf("%s", gerente);
-                            cadastrar_agencia(outAgencia, cod, gerente, nome);
+                            int r = cadastrar_agencia(outAgencia, cod, gerente, nome);
+                            if(r == -1) printf("Ja existe uma agencia com esse codigo, operacao abortada\n");
+                            else printf("Agencia cadastrada com sucesso!\n");
                         }
                         break;
 
