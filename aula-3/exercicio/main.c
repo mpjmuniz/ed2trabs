@@ -3,100 +3,70 @@
 #include "agencia.h"
 #include "contacorrente.h"
 
-void cadastrar_conta(FILE *in){}
-
-void buscar_conta(FILE *in, int codConta){}
-
-void buscar_agencia(FILE *in, int codAgencia){}
-
-/*void insere_5_funcionarios(FILE *out) {
-    printf("Inserindo 5 funcionários no arquivo...");
-    
-    Funcionario *f1 = funcionario(1, "Ana", "000.000.000-00", "01/01/1980", 3000);
-    salva(f1, out);
-    free(f1);
-    Funcionario *f2 = funcionario(2, "Carlos", "111.111.111-11", "01/01/1990", 500);
-    salva(f2, out);
-    free(f2);
-    Funcionario *f3 = funcionario(3, "Fátima", "222.222.222-22", "02/02/1980", 1000);
-    salva(f3, out);
-    free(f3);
-    Funcionario *f4 = funcionario(4, "Marcelo", "333.333.333-33", "03/03/1990", 1500);
-    salva(f4, out);
-    free(f4);
-    Funcionario *f5 = funcionario(5, "Silvia", "444.444.444-44", "04/04/1980", 900);
-    salva(f5, out);
-    free(f5);       
-}
-
-void le_funcionarios(FILE *in) {
-    printf("\n\nLendo funcionários do arquivo...\n\n");
-    rewind(in);
-    Funcionario *f;
-    while ((f = le(in)) != NULL) {
-        imprime(f);
-        free(f);
+ContaCorrente *buscar_conta(FILE *in,int codConta,int codAg){
+    FILE *aux = in;
+    rewind(aux);
+    ContaCorrente *cc = NULL;
+    while((cc = cc_le(aux)) != NULL && cc->cod != codConta && cc->codAgencia != codAg){
+        free(cc);
     }
+    free(aux);
+    return cc;
 }
 
-void le_segundo_funcionario(FILE *in) {
-    printf("\n\nLendo segundo funcionário do arquivo...\n\n");
-    //tamanho() indica quantos bytes vamos pular, o que aqui é igual ao tamanho de um registro 
-    //(vamos pular o primeiro e nos posicionar no início do segundo)
-    //** ATENÇÃO: não usar sizeof(Funcionario), pois ele pode retornar valor maior que o tamanho ocupado em disco, 
-    //            devido a alinhamento automático (ver https://en.wikipedia.org/wiki/Data_structure_alignment))
-    //SEEK_SET indica o início do arquivo
-    //ao final, o cursor estará posicionado em 0 + tamanho() +1
-    fseek(in, tamanho(), SEEK_SET);
-    Funcionario *f = le(in);
-    if (f != NULL) {
-        imprime(f);
-        free(f);
+Agencia *buscar_agencia(FILE *in, int codAgencia){
+    FILE *aux = in;
+    rewind(aux);
+    Agencia *ag = NULL;
+    while((ag = ag_le(aux)) != NULL && ag->cod != codAgencia){
+        free(ag);
     }
+    free(aux);
+    return ag;
 }
 
-void adiciona_funcionario(FILE *in) {
-    printf("\n\nAdicionando funcionário no final do arquivo...\n\n");
-    //pula 5 registros para posicionar no início do final do arquivo
-    fseek(in, tamanho() * 5, SEEK_SET);
-    Funcionario *f = funcionario(6, "Bruna", "666.666.666-66", "06/06/1980", 2500);
-    salva(f, in);
-    free(f);
-    
-    //lê funcionário que acabou de ser gravado
-    //posiciona novamente o cursor no início desse registro
-    fseek(in, tamanho() * 5, SEEK_SET);
-    Funcionario *f6 = le(in);
-    if (f6 != NULL) {
-        imprime(f6);
-        free(f6);
-    }    
-}
-
-void sobrescreve_quarto_funcionario(FILE *in) {
-    printf("\n\nSobrescrevendo quarto funcionário do arquivo...\n\n");
-    //pula primeiros 3 registros para posicionar no início do quarto registro
-    fseek(in, tamanho() * 3, SEEK_SET);
-    Funcionario *f4 = funcionario(7, "Catarina", "777.777.777-77", "07/07/1990", 5000);
-    salva(f4, in);
-    free(f4);
-    
-    //lê funcionário que acabou de ser gravado
-    //posiciona novamente o cursor no início desse registro
-    fseek(in, tamanho() * 3, SEEK_SET);
-    Funcionario *f = le(in);
-    if (f != NULL) {
-        imprime(f);
-        free(f);
+// retorna -1 quando não é possível encontrar o código da agência referenciada
+// retorna -2 quando já existe uma conta corrente com a mesma chave
+int cadastrar_conta(FILE *in, FILE *agIn,int cod,int codAg,double saldo){
+    ContaCorrente *cc;
+    Agencia *ag;
+    if((cc = buscar_conta(in, cod, codAg)) != NULL){
+        free(cc);
+        return -2;
     }
-}*/
+    if((ag = buscar_agencia(agIn, codAg)) != NULL){
+        return -1;
+    }
+    ContaCorrente *new_cc = contacorrente(cod, codAg, saldo);
+    cc_salva(new_cc, in);
+    free(new_cc);
+    free(ag);
+    return 0;
+}
+
+int cadastrar_agencia(FILE *in, int cod, char *nome, char *gerente){
+    Agencia *ag;
+    if((ag = buscar_agencia(in, cod)) != NULL){
+        free(ag);
+        return -1;
+    }
+    Agencia *new_ag = agencia(cod, nome, gerente);
+    ag_salva(new_ag, in);
+    free(new_ag);
+    return 0;
+}
+
+int teste_resposta(int resposta){
+    return resposta < 0 || resposta > 2;
+}
 
 void main(int argc, char** argv) {
     //declara ponteiro para arquivo
     FILE *outAgencia, *outConta;
     //abre arquivos
-    if ((outAgencia = fopen("agencia.dat", "w+b")) == NULL || 
-    		(outConta = fopen("contacorrente.dat", "w+b")) == NULL){
+    
+    if ((outAgencia = fopen("agencia.dat", "a+b")) == NULL || 
+    		(outConta = fopen("contacorrente.dat", "a+b")) == NULL){
 		if(!outAgencia){
 			printf("Erro ao abrir arquivo das Agencias\n");
 		} 
@@ -106,14 +76,86 @@ void main(int argc, char** argv) {
 		}
         exit(1);
     } else {
-        int resposta = 1, rc = 0;
+        int resposta = -1, rc = 0;
 
-        while(resposta){
-        	printf("Escolha uma operação:\n\t1. Cadastrar uma Conta Corrente, ou uma Agencia\n\
+        while(resposta != 0){
+        	printf("Escolha uma operacao:\n\t1. Cadastrar uma Conta Corrente, ou uma Agencia\n\
 \t2. Ler uma Conta Corrente, ou uma Agencia\n\t0. Sair\n");
         	rc = scanf("%d", &resposta);
-        }
+                
+                switch(resposta){
+                    case 1:
+                        resposta = -1; rc=0;
+                        while(teste_resposta(resposta)){
+                            printf("Escolha uma operacao:\n\t1. Cadastrar uma Conta Corrente\n\
+\t2. Cadastrar uma Agencia\n\t0. Sair\n");
+                            rc = scanf("%d", &resposta);           
+                        }
+                        if(resposta == 1) {
+                            int cod, codAg;
+                            double saldo;
+                            printf("Informe os seguintes dados da conta:\n");
+                            printf("Codigo: ");
+                            scanf("%d", &cod);
+                            printf("Codigo da Agencia: ");
+                            scanf("%d", &codAg);
+                            printf("Saldo em conta: ");
+                            scanf("%lf", &saldo);
+                            int r = cadastrar_conta(outConta, outAgencia, cod, codAg, saldo);
+                            if(r == -1) printf("Nao existe uma agencia com esse codigo, operacao abortada\n");
+                            else if(r == -2) printf("Ja existe uma conta com esse codigo nessa agencia\n");
+                            else printf("Conta cadastrada com sucesso!\n");
+                        }
+                        if(resposta == 2){
+                            int cod;
+                            char gerente[50], nome[50];
+                            printf("Codigo: ");
+                            scanf("%d", &cod);
+                            printf("Nome da Agencia: ");
+                            scanf("%s", nome);
+                            printf("Nome do gerente da Agencia: ");
+                            scanf("%s", gerente);
+                            int r = cadastrar_agencia(outAgencia, cod, gerente, nome);
+                            if(r == -1) printf("Ja existe uma agencia com esse codigo, operacao abortada\n");
+                            else printf("Agencia cadastrada com sucesso!\n");
+                        }
+                        break;
 
+                    case 2:
+                        resposta = -1; rc=0;
+                        while(teste_resposta(resposta)){
+                            printf("Escolha uma operacao:\n\t1. Ler uma Conta Corrente\n\
+\t2. Ler uma Agencia\n\t0. Sair\n");
+                            rc = scanf("%d", &resposta);           
+                        }
+                        if(resposta == 1){
+                            int codConta, codAg;
+                            printf("Digite o codigo da Conta Corrente requerida: ");
+                            scanf("%d", &codConta);
+                            printf("Digite o codigo da Agencia referente a Conta Corrente requerida: ");
+                            scanf("%d", &codAg);
+                            ContaCorrente *cc = buscar_conta(outConta, codConta, codAg);
+                            if(cc == NULL)
+                                printf("Nao foi possivel encontrar uma conta corrente.\n");
+                            else{
+                                cc_imprime(cc);
+                                free(cc);
+                            }
+                        } else if(resposta == 2){
+                            int cod;
+                            printf("Digite o codigo da Agencia requerida: ");
+                            scanf("%d", &cod);
+                            Agencia *ag = buscar_agencia(outAgencia, cod);
+                            if(ag == NULL)
+                                printf("Não foi possivel encontrar uma agencia.\n");
+                            else {
+                                ag_imprime(ag);
+                                free(ag);
+                            }
+                        }
+                        break;
+                }
+        }
         //fecha arquivo
         fclose(outAgencia);    
         fclose(outConta);
