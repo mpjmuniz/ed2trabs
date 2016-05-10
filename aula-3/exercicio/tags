@@ -1,0 +1,140 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AGENCIA_H	../exercicio/agencia.h	2;"	d
+ALLCONFS	../esqueleto/nbproject/Makefile-impl.mk	/^ALLCONFS=Debug Release $/;"	m
+AS	../esqueleto/nbproject/Makefile-Debug.mk	/^AS=as$/;"	m
+AS	../esqueleto/nbproject/Makefile-Release.mk	/^AS=as$/;"	m
+ASFLAGS	../esqueleto/nbproject/Makefile-Debug.mk	/^ASFLAGS=$/;"	m
+ASFLAGS	../esqueleto/nbproject/Makefile-Release.mk	/^ASFLAGS=$/;"	m
+Agencia	../exercicio/agencia.h	/^typedef struct Agencia {$/;"	s
+Agencia	../exercicio/agencia.h	/^} Agencia;$/;"	t	typeref:struct:Agencia
+BUILD_SUBPROJECTS	../esqueleto/nbproject/Makefile-impl.mk	/^BUILD_SUBPROJECTS=${BUILD_SUBPROJECTS_${SUBPROJECTS}}$/;"	m
+BUILD_SUBPROJECTS_	../esqueleto/nbproject/Makefile-impl.mk	/^BUILD_SUBPROJECTS_=.build-subprojects$/;"	m
+BUILD_SUBPROJECTS_NO	../esqueleto/nbproject/Makefile-impl.mk	/^BUILD_SUBPROJECTS_NO=$/;"	m
+CC	../esqueleto/nbproject/Makefile-Debug.mk	/^CC=gcc$/;"	m
+CC	../esqueleto/nbproject/Makefile-Release.mk	/^CC=gcc$/;"	m
+CCADMIN	../esqueleto/Makefile	/^CCADMIN=CCadmin$/;"	m
+CCADMIN	../esqueleto/nbproject/Makefile-Debug.mk	/^CCADMIN=CCadmin$/;"	m
+CCADMIN	../esqueleto/nbproject/Makefile-Release.mk	/^CCADMIN=CCadmin$/;"	m
+CCC	../esqueleto/nbproject/Makefile-Debug.mk	/^CCC=g++$/;"	m
+CCC	../esqueleto/nbproject/Makefile-Release.mk	/^CCC=g++$/;"	m
+CCFLAGS	../esqueleto/nbproject/Makefile-Debug.mk	/^CCFLAGS=$/;"	m
+CCFLAGS	../esqueleto/nbproject/Makefile-Release.mk	/^CCFLAGS=$/;"	m
+CFLAGS	../esqueleto/nbproject/Makefile-Debug.mk	/^CFLAGS=$/;"	m
+CFLAGS	../esqueleto/nbproject/Makefile-Release.mk	/^CFLAGS=$/;"	m
+CLEAN_SUBPROJECTS	../esqueleto/nbproject/Makefile-impl.mk	/^CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}$/;"	m
+CLEAN_SUBPROJECTS_	../esqueleto/nbproject/Makefile-impl.mk	/^CLEAN_SUBPROJECTS_=.clean-subprojects$/;"	m
+CLEAN_SUBPROJECTS_NO	../esqueleto/nbproject/Makefile-impl.mk	/^CLEAN_SUBPROJECTS_NO=$/;"	m
+CND_ARTIFACT_DIR_Debug	../esqueleto/nbproject/Makefile-variables.mk	/^CND_ARTIFACT_DIR_Debug=dist\/Debug\/Cygwin-Windows$/;"	m
+CND_ARTIFACT_DIR_Release	../esqueleto/nbproject/Makefile-variables.mk	/^CND_ARTIFACT_DIR_Release=dist\/Release\/GNU-MacOSX$/;"	m
+CND_ARTIFACT_NAME_Debug	../esqueleto/nbproject/Makefile-variables.mk	/^CND_ARTIFACT_NAME_Debug=arquivos$/;"	m
+CND_ARTIFACT_NAME_Release	../esqueleto/nbproject/Makefile-variables.mk	/^CND_ARTIFACT_NAME_Release=arquivos$/;"	m
+CND_ARTIFACT_PATH_Debug	../esqueleto/nbproject/Makefile-variables.mk	/^CND_ARTIFACT_PATH_Debug=dist\/Debug\/Cygwin-Windows\/arquivos$/;"	m
+CND_ARTIFACT_PATH_Release	../esqueleto/nbproject/Makefile-variables.mk	/^CND_ARTIFACT_PATH_Release=dist\/Release\/GNU-MacOSX\/arquivos$/;"	m
+CND_BASEDIR	../esqueleto/nbproject/Makefile-variables.mk	/^CND_BASEDIR=`pwd`$/;"	m
+CND_BUILDDIR	../esqueleto/nbproject/Makefile-Debug.mk	/^CND_BUILDDIR=build$/;"	m
+CND_BUILDDIR	../esqueleto/nbproject/Makefile-Release.mk	/^CND_BUILDDIR=build$/;"	m
+CND_BUILDDIR	../esqueleto/nbproject/Makefile-variables.mk	/^CND_BUILDDIR=build$/;"	m
+CND_CONF	../esqueleto/nbproject/Makefile-Debug.mk	/^CND_CONF=Debug$/;"	m
+CND_CONF	../esqueleto/nbproject/Makefile-Release.mk	/^CND_CONF=Release$/;"	m
+CND_DISTDIR	../esqueleto/nbproject/Makefile-Debug.mk	/^CND_DISTDIR=dist$/;"	m
+CND_DISTDIR	../esqueleto/nbproject/Makefile-Release.mk	/^CND_DISTDIR=dist$/;"	m
+CND_DISTDIR	../esqueleto/nbproject/Makefile-variables.mk	/^CND_DISTDIR=dist$/;"	m
+CND_DLIB_EXT	../esqueleto/nbproject/Makefile-Debug.mk	/^CND_DLIB_EXT=dll$/;"	m
+CND_DLIB_EXT	../esqueleto/nbproject/Makefile-Release.mk	/^CND_DLIB_EXT=dylib$/;"	m
+CND_PACKAGE_DIR_Debug	../esqueleto/nbproject/Makefile-variables.mk	/^CND_PACKAGE_DIR_Debug=dist\/Debug\/Cygwin-Windows\/package$/;"	m
+CND_PACKAGE_DIR_Release	../esqueleto/nbproject/Makefile-variables.mk	/^CND_PACKAGE_DIR_Release=dist\/Release\/GNU-MacOSX\/package$/;"	m
+CND_PACKAGE_NAME_Debug	../esqueleto/nbproject/Makefile-variables.mk	/^CND_PACKAGE_NAME_Debug=arquivos.tar$/;"	m
+CND_PACKAGE_NAME_Release	../esqueleto/nbproject/Makefile-variables.mk	/^CND_PACKAGE_NAME_Release=arquivos.tar$/;"	m
+CND_PACKAGE_PATH_Debug	../esqueleto/nbproject/Makefile-variables.mk	/^CND_PACKAGE_PATH_Debug=dist\/Debug\/Cygwin-Windows\/package\/arquivos.tar$/;"	m
+CND_PACKAGE_PATH_Release	../esqueleto/nbproject/Makefile-variables.mk	/^CND_PACKAGE_PATH_Release=dist\/Release\/GNU-MacOSX\/package\/arquivos.tar$/;"	m
+CND_PLATFORM	../esqueleto/nbproject/Makefile-Debug.mk	/^CND_PLATFORM=Cygwin-Windows$/;"	m
+CND_PLATFORM	../esqueleto/nbproject/Makefile-Release.mk	/^CND_PLATFORM=GNU-MacOSX$/;"	m
+CND_PLATFORM_Debug	../esqueleto/nbproject/Makefile-variables.mk	/^CND_PLATFORM_Debug=Cygwin-Windows$/;"	m
+CND_PLATFORM_Release	../esqueleto/nbproject/Makefile-variables.mk	/^CND_PLATFORM_Release=GNU-MacOSX$/;"	m
+CONF	../esqueleto/nbproject/Makefile-impl.mk	/^CONF=${DEFAULTCONF}$/;"	m
+CP	../esqueleto/Makefile	/^CP=cp$/;"	m
+CP	../esqueleto/nbproject/Makefile-Debug.mk	/^CP=cp$/;"	m
+CP	../esqueleto/nbproject/Makefile-Release.mk	/^CP=cp$/;"	m
+CXX	../esqueleto/nbproject/Makefile-Debug.mk	/^CXX=g++$/;"	m
+CXX	../esqueleto/nbproject/Makefile-Release.mk	/^CXX=g++$/;"	m
+CXXFLAGS	../esqueleto/nbproject/Makefile-Debug.mk	/^CXXFLAGS=$/;"	m
+CXXFLAGS	../esqueleto/nbproject/Makefile-Release.mk	/^CXXFLAGS=$/;"	m
+ContaCorrente	../exercicio/contacorrente.h	/^typedef struct ContaCorrente {$/;"	s
+ContaCorrente	../exercicio/contacorrente.h	/^} ContaCorrente;$/;"	t	typeref:struct:ContaCorrente
+DEFAULTCONF	../esqueleto/nbproject/Makefile-impl.mk	/^DEFAULTCONF=Debug$/;"	m
+FC	../esqueleto/nbproject/Makefile-Debug.mk	/^FC=gfortran$/;"	m
+FC	../esqueleto/nbproject/Makefile-Release.mk	/^FC=gfortran$/;"	m
+FFLAGS	../esqueleto/nbproject/Makefile-Debug.mk	/^FFLAGS=$/;"	m
+FFLAGS	../esqueleto/nbproject/Makefile-Release.mk	/^FFLAGS=$/;"	m
+FUNCIONARIO_H	../esqueleto/funcionario.h	2;"	d
+Funcionario	../esqueleto/funcionario.h	/^typedef struct Funcionario {$/;"	s
+Funcionario	../esqueleto/funcionario.h	/^} Funcionario;$/;"	t	typeref:struct:Funcionario
+GREP	../esqueleto/nbproject/Makefile-Debug.mk	/^GREP=grep$/;"	m
+GREP	../esqueleto/nbproject/Makefile-Release.mk	/^GREP=grep$/;"	m
+LDLIBSOPTIONS	../esqueleto/nbproject/Makefile-Debug.mk	/^LDLIBSOPTIONS=$/;"	m
+LDLIBSOPTIONS	../esqueleto/nbproject/Makefile-Release.mk	/^LDLIBSOPTIONS=$/;"	m
+MKDIR	../esqueleto/Makefile	/^MKDIR=mkdir$/;"	m
+MKDIR	../esqueleto/nbproject/Makefile-Debug.mk	/^MKDIR=mkdir$/;"	m
+MKDIR	../esqueleto/nbproject/Makefile-Release.mk	/^MKDIR=mkdir$/;"	m
+NM	../esqueleto/nbproject/Makefile-Debug.mk	/^NM=nm$/;"	m
+NM	../esqueleto/nbproject/Makefile-Release.mk	/^NM=nm$/;"	m
+OBJECTDIR	../esqueleto/nbproject/Makefile-Debug.mk	/^OBJECTDIR=${CND_BUILDDIR}\/${CND_CONF}\/${CND_PLATFORM}$/;"	m
+OBJECTDIR	../esqueleto/nbproject/Makefile-Release.mk	/^OBJECTDIR=${CND_BUILDDIR}\/${CND_CONF}\/${CND_PLATFORM}$/;"	m
+OBJECTFILES	../esqueleto/nbproject/Makefile-Debug.mk	/^OBJECTFILES= \\$/;"	m
+OBJECTFILES	../esqueleto/nbproject/Makefile-Release.mk	/^OBJECTFILES= \\$/;"	m
+PROJECTNAME	../esqueleto/nbproject/Makefile-impl.mk	/^PROJECTNAME=Arquivos$/;"	m
+RANLIB	../esqueleto/nbproject/Makefile-Debug.mk	/^RANLIB=ranlib$/;"	m
+RANLIB	../esqueleto/nbproject/Makefile-Release.mk	/^RANLIB=ranlib$/;"	m
+SUBPROJECTS	../esqueleto/nbproject/Makefile-impl.mk	/^SUBPROJECTS=${SUB_${SUB}}$/;"	m
+SUB_no	../esqueleto/nbproject/Makefile-impl.mk	/^SUB_no=NO$/;"	m
+_CONTACORRENTE_H	../exercicio/contacorrente.h	2;"	d
+adiciona_funcionario	../esqueleto/main.c	/^void adiciona_funcionario(FILE *in) {$/;"	f
+ag_imprime	../exercicio/agencia.c	/^void ag_imprime(Agencia *ag) {$/;"	f
+ag_le	../exercicio/agencia.c	/^Agencia *ag_le(FILE *in) {$/;"	f
+ag_salva	../exercicio/agencia.c	/^void ag_salva(Agencia *ag, FILE *out) {$/;"	f
+ag_tamanho	../exercicio/agencia.c	/^int ag_tamanho() {$/;"	f
+agencia	../exercicio/agencia.c	/^Agencia *agencia(int cod, char *nome, char *gerente){$/;"	f
+buscar_agencia	../exercicio/main.c	/^Agencia *buscar_agencia(FILE *in, int codAgencia){$/;"	f
+buscar_conta	../exercicio/main.c	/^ContaCorrente *buscar_conta(FILE *in,int codConta,int codAg){$/;"	f
+cadastrar_agencia	../exercicio/main.c	/^int cadastrar_agencia(FILE *in, int cod, char *nome, char *gerente){$/;"	f
+cadastrar_conta	../exercicio/main.c	/^int cadastrar_conta(FILE *in, FILE *agIn,int cod,int codAg,double saldo){$/;"	f
+cc_imprime	../exercicio/contacorrente.c	/^void cc_imprime(ContaCorrente *cc) {$/;"	f
+cc_le	../exercicio/contacorrente.c	/^ContaCorrente *cc_le(FILE *in) {$/;"	f
+cc_salva	../exercicio/contacorrente.c	/^void cc_salva(ContaCorrente *cc, FILE *out) {$/;"	f
+cc_tamanho	../exercicio/contacorrente.c	/^int cc_tamanho() {$/;"	f
+checkReturnCode	../esqueleto/nbproject/Package-Debug.bash	/^function checkReturnCode$/;"	f
+checkReturnCode	../esqueleto/nbproject/Package-Release.bash	/^function checkReturnCode$/;"	f
+cod	../esqueleto/funcionario.h	/^    int cod;$/;"	m	struct:Funcionario
+cod	../exercicio/agencia.h	/^    int cod;$/;"	m	struct:Agencia
+cod	../exercicio/contacorrente.h	/^    int cod;$/;"	m	struct:ContaCorrente
+codAgencia	../exercicio/contacorrente.h	/^    int codAgencia;$/;"	m	struct:ContaCorrente
+contacorrente	../exercicio/contacorrente.c	/^ContaCorrente *contacorrente(int cod, int codAg, double saldo){$/;"	f
+copyFileToTmpDir	../esqueleto/nbproject/Package-Debug.bash	/^function copyFileToTmpDir$/;"	f
+copyFileToTmpDir	../esqueleto/nbproject/Package-Release.bash	/^function copyFileToTmpDir$/;"	f
+cpf	../esqueleto/funcionario.h	/^    char cpf[15];$/;"	m	struct:Funcionario
+data_nascimento	../esqueleto/funcionario.h	/^    char data_nascimento[11];$/;"	m	struct:Funcionario
+funcionario	../esqueleto/funcionario.c	/^Funcionario *funcionario(int cod, char *nome, char *cpf, char *data_nascimento, double salario) {$/;"	f
+gerente	../exercicio/agencia.h	/^    char gerente[50];$/;"	m	struct:Agencia
+imprime	../esqueleto/funcionario.c	/^void imprime(Funcionario *func) {$/;"	f
+insere_5_funcionarios	../esqueleto/main.c	/^void insere_5_funcionarios(FILE *out) {$/;"	f
+le	../esqueleto/funcionario.c	/^Funcionario *le(FILE *in) {$/;"	f
+le_funcionarios	../esqueleto/main.c	/^void le_funcionarios(FILE *in) {$/;"	f
+le_segundo_funcionario	../esqueleto/main.c	/^void le_segundo_funcionario(FILE *in) {$/;"	f
+main	../esqueleto/main.c	/^void main(int argc, char** argv) {$/;"	f
+main	../exercicio/main.c	/^void main(int argc, char** argv) {$/;"	f
+makeDirectory	../esqueleto/nbproject/Package-Debug.bash	/^function makeDirectory$/;"	f
+makeDirectory	../esqueleto/nbproject/Package-Release.bash	/^function makeDirectory$/;"	f
+nome	../esqueleto/funcionario.h	/^    char nome[50];$/;"	m	struct:Funcionario
+nome	../exercicio/agencia.h	/^    char nome[50];$/;"	m	struct:Agencia
+salario	../esqueleto/funcionario.h	/^    double salario;$/;"	m	struct:Funcionario
+saldo	../exercicio/contacorrente.h	/^    double saldo;$/;"	m	struct:ContaCorrente
+salva	../esqueleto/funcionario.c	/^void salva(Funcionario *func, FILE *out) {$/;"	f
+sh	../esqueleto/nbproject/Makefile-variables.mk	/^ROOT:sh = test -f nbproject\/private\/Makefile-variables.mk || \\$/;"	m
+sobrescreve_quarto_funcionario	../esqueleto/main.c	/^void sobrescreve_quarto_funcionario(FILE *in) {$/;"	f
+tamanho	../esqueleto/funcionario.c	/^int tamanho() {$/;"	f
+teste_resposta	../exercicio/main.c	/^int teste_resposta(int resposta){$/;"	f
