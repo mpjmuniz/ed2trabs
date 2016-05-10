@@ -86,7 +86,7 @@ imprime_nomes	../DojoGeracaoParticoes/nomes.c	/^void imprime_nomes(Nomes *nomes)
 inverte_nomes	../DojoGeracaoParticoes/nomes.c	/^void inverte_nomes(Nomes *nomes)$/;"	f
 le_cliente	../DojoGeracaoParticoes/cliente.c	/^Cliente *le_cliente(FILE *in)$/;"	f
 le_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^ListaClientes * le_clientes(char *nome_arquivo)$/;"	f
-ler_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^void ler_clientes(FILE *in, ListaClientes **list, int qtd){$/;"	f
+ler_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^void ler_clientes(FILE *in, ListaClientes **list, int qtd, int *congelados){$/;"	f
 libera_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^void libera_clientes(ListaClientes *lc)$/;"	f
 libera_nomes	../DojoGeracaoParticoes/nomes.c	/^void libera_nomes(Nomes *nomes)$/;"	f
 lista	../DojoGeracaoParticoes/lista_clientes.h	/^	Cliente **lista;$/;"	m	struct:ListaClientes

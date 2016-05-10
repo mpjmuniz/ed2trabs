@@ -27,6 +27,6 @@ int cmp_clientes(ListaClientes *c1, ListaClientes *c2);
 
 // Desaloca lista de clientes
 void libera_clientes(ListaClientes *lc);
-void ler_clientes(FILE *in, ListaClientes **list, int qtd);
+void ler_clientes(FILE *in, ListaClientes **list, int qtd, int *congelados);
 
 #endif

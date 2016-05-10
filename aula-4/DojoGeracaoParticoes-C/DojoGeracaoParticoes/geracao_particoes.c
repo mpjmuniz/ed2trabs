@@ -31,18 +31,15 @@ void selecao_com_substituicao(char *nome_arquivo_entrada, Nomes *nome_arquivos_s
 	int congelados[M];
 	
 	//	1. Ler M registros do arquivo para a memória
-	ler_clientes(in, &list, M);
-	for(i = 0; i < M; i++){
-		congelados[i] = (list->lista[i] == NULL);
-	}
+	ler_clientes(in, &list, M, congelados);
 	
 	for(j = 0; j < conta_nomes(nome_arquivos_saida); j++){
 		out = fopen(nome_arquivos_saida->nome, "wb");
 		while(existe_nao_congelado(congelados)){
 			//	2. Selecionar, no array em memória, o registro r com menor chave
-			Cliente *menor = list->lista[i];
+			Cliente *menor = list->lista[0];
 			for(i = 1; i < M; i++){
-				if(congelados[i]) continue;
+				if(congelados[i] || list->lista[i] == NULL) continue;
 				if(menor == NULL || list->lista[i]->cod_cliente < menor->cod_cliente){
 					menor = list->lista[i];
 					m = i;

@@ -68,8 +68,12 @@ ListaClientes * le_clientes(char *nome_arquivo)
 }
 
 
-void ler_clientes(FILE *in, ListaClientes **list, int qtd){
-	if(qtd < 0) return;
+void ler_clientes(FILE *in, ListaClientes **list, int qtd, int *congelados){
+	if(qtd < 0){
+		(*list)->qtd = 0;
+		(*list)->lista = NULL;
+		return;
+	}
 	if(*list == NULL){
 		int i = 0;
 		*list = (ListaClientes *) malloc(sizeof(ListaClientes));
@@ -80,7 +84,10 @@ void ler_clientes(FILE *in, ListaClientes **list, int qtd){
 
 			for(i = 0; i < qtd && (cliente = le_cliente(in)) != NULL; i++){
 				(*list)->lista[i] = cliente;
+				congelados[i] = 0;
 			}
+
+			for(; i < qtd; i++) congelados[i] = 1;
 		} else {
 			(*list)->qtd = 0;
 			(*list)->lista = NULL;
