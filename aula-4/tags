@@ -78,7 +78,7 @@ conta_nomes	../DojoGeracaoParticoes/nomes.c	/^int conta_nomes(Nomes *nomes)$/;"	
 cria_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^ListaClientes *cria_clientes(int qtd, ...)$/;"	f
 cria_nomes	../DojoGeracaoParticoes/nomes.c	/^Nomes *cria_nomes(char *nome, Nomes *prox)$/;"	f
 cria_str	../DojoGeracaoParticoes/nomes.c	/^char *cria_str(char *str)$/;"	f
-existe_nao_congelado	../DojoGeracaoParticoes/geracao_particoes.c	/^int existe_nao_congelado(int congelados[]){$/;"	f
+existe_nao_congelado	../DojoGeracaoParticoes/geracao_particoes.c	/^int existe_nao_congelado(ListaClientes *lista, int congelados[]){$/;"	f
 file_exist	../DojoGeracaoParticoes/test_geracao_particoes.c	/^int file_exist(char *filename)$/;"	f
 imprime_cliente	../DojoGeracaoParticoes/cliente.c	/^void imprime_cliente(Cliente *cliente)$/;"	f
 imprime_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^void imprime_clientes(ListaClientes *lc)$/;"	f
@@ -90,6 +90,7 @@ ler_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^void ler_clientes(FILE *
 libera_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^void libera_clientes(ListaClientes *lc)$/;"	f
 libera_nomes	../DojoGeracaoParticoes/nomes.c	/^void libera_nomes(Nomes *nomes)$/;"	f
 lista	../DojoGeracaoParticoes/lista_clientes.h	/^	Cliente **lista;$/;"	m	struct:ListaClientes
+mostrar_congelados	../DojoGeracaoParticoes/geracao_particoes.c	/^void mostrar_congelados(int congs[]){$/;"	f
 nome	../DojoGeracaoParticoes/cliente.h	/^	char nome[TAM_NOME];$/;"	m	struct:Cliente
 nome	../DojoGeracaoParticoes/nomes.h	/^	char *nome;$/;"	m	struct:Nomes
 nomes	../DojoGeracaoParticoes/test_geracao_particoes.c	/^Nomes *nomes = NULL;$/;"	v
@@ -99,4 +100,5 @@ salva_cliente	../DojoGeracaoParticoes/cliente.c	/^void salva_cliente(Cliente *cl
 salva_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^void salva_clientes(char *nome_arquivo, ListaClientes *lc)$/;"	f
 selecao_com_substituicao	../DojoGeracaoParticoes/geracao_particoes.c	/^void selecao_com_substituicao(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M)$/;"	f
 selecao_natural	../DojoGeracaoParticoes/geracao_particoes.c	/^void selecao_natural(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M, int n)$/;"	f
+substituirRegistro	../DojoGeracaoParticoes/geracao_particoes.c	/^void substituirRegistro(Cliente *dest, Cliente *fnt){$/;"	f
 tamanho_cliente	../DojoGeracaoParticoes/cliente.c	/^int tamanho_cliente()$/;"	f
