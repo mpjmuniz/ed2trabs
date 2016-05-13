@@ -6,7 +6,7 @@
 ContaCorrente *buscar_conta(FILE *in,int codConta,int codAg){
     rewind(in);
     ContaCorrente *cc = NULL;
-    while((cc = cc_le(in)) != NULL && cc->cod != codConta && cc->codAgencia != codAg){
+    while((cc = cc_le(in)) != NULL && (cc->cod != codConta || cc->codAgencia != codAg)){
         free(cc);
     }
 
@@ -29,20 +29,23 @@ Agencia *buscar_agencia(FILE *in, int codAgencia){
 int cadastrar_conta(FILE *in, FILE *agIn,int cod,int codAg,double saldo){
     ContaCorrente *cc;
     Agencia *ag;
+
+    if((ag = buscar_agencia(agIn, codAg)) == NULL){
+    	//free(ag);
+        return -1;
+    }
+
     if((cc = buscar_conta(in, cod, codAg)) != NULL){
         free(cc);
         return -2;
+    } else {
+		ContaCorrente *new_cc = contacorrente(cod, codAg, saldo);
+		cc_salva(new_cc, in);
+		free(cc);
+		free(new_cc);
+		free(ag);
+		return 0;
     }
-    if((ag = buscar_agencia(agIn, codAg)) == NULL){
-    	free(ag);
-        return -1;
-    }
-    ContaCorrente *new_cc = contacorrente(cod, codAg, saldo);
-    cc_salva(new_cc, in);
-    free(cc);
-    free(new_cc);
-    free(ag);
-    return 0;
 }
 
 int cadastrar_agencia(FILE *in, int cod, char *nome, char *gerente){
@@ -61,7 +64,7 @@ int teste_resposta(int resposta){
     return (resposta < 0 || resposta > 2);
 }
 
-void main(int argc, char** argv) {
+int main(int argc, char** argv) {
     //declara ponteiro para arquivo
     FILE *outAgencia, *outConta;
     //abre arquivos
@@ -208,4 +211,5 @@ void main(int argc, char** argv) {
         fclose(outAgencia);    
         fclose(outConta);
     }
+    return 0;
 }

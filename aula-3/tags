@@ -126,7 +126,7 @@ le	../esqueleto/funcionario.c	/^Funcionario *le(FILE *in) {$/;"	f
 le_funcionarios	../esqueleto/main.c	/^void le_funcionarios(FILE *in) {$/;"	f
 le_segundo_funcionario	../esqueleto/main.c	/^void le_segundo_funcionario(FILE *in) {$/;"	f
 main	../esqueleto/main.c	/^void main(int argc, char** argv) {$/;"	f
-main	../exercicio/main.c	/^void main(int argc, char** argv) {$/;"	f
+main	../exercicio/main.c	/^int main(int argc, char** argv) {$/;"	f
 makeDirectory	../esqueleto/nbproject/Package-Debug.bash	/^function makeDirectory$/;"	f
 makeDirectory	../esqueleto/nbproject/Package-Release.bash	/^function makeDirectory$/;"	f
 nome	../esqueleto/funcionario.h	/^    char nome[50];$/;"	m	struct:Funcionario
