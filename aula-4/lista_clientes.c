@@ -67,8 +67,7 @@ ListaClientes * le_clientes(char *nome_arquivo)
 	return lc;
 }
 
-
-void ler_clientes(FILE *in, ListaClientes **list, int qtd, int *congelados){
+void ler_clientes(FILE *in, ListaClientes **list, int qtd){
 	if(qtd < 0 || in == NULL){
 		(*list)->qtd = 0;
 		(*list)->lista = NULL;
@@ -85,20 +84,8 @@ void ler_clientes(FILE *in, ListaClientes **list, int qtd, int *congelados){
 
 		for(i = 0; i < qtd && (cliente = le_cliente(in)) != NULL; i++){
 			(*list)->lista[i] = cliente;
-			congelados[i] = 0;
-		}
-	} else {
-		Cliente *cliente = NULL;
-		int qtdAntiga = (*list)->qtd;
-		(*list)->qtd += qtd;
-		(*list)->lista = (Cliente **) realloc((*list)->lista, (*list)->qtd * sizeof(Cliente));
-
-		for(i = qtdAntiga; i < (*list)->qtd && (cliente = le_cliente(in)) != NULL; i++){
-			(*list)->lista[i] = cliente;
-			congelados[i] = 0;
 		}
 	}
-	for(; i < qtd; i++) congelados[i] = 1;
 }
 
 int cmp_clientes(ListaClientes *c1, ListaClientes *c2)

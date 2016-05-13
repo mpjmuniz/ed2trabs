@@ -29,15 +29,17 @@ int existe_nao_congelado(int congelados[]){
 	return 0;
 }
 
+int inicializar_congelados(ListaClientes *cls, int congs[]){
+	unsigned int i = 0;
+	for(i = 0; i < cls->qtd; i++){
+		congs[i] = (cls->lista[i] != NULL);
+	}
+}
+
 /*int substituirCliente(ListaClientes *cls, int pos, FILE *fnt){
 	Cliente *cl = le_cliente(fnt);
 
 }*/
-
-void substituirRegistro(Cliente *dest, Cliente *fnt){
-	strcpy(dest->nome, fnt->nome);
-	dest->cod_cliente = fnt->cod_cliente;
-}
 
 void selecao_com_substituicao(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M)
 {
@@ -49,7 +51,7 @@ void selecao_com_substituicao(char *nome_arquivo_entrada, Nomes *nome_arquivos_s
 	Cliente *menor, *lido;
 	
 	//	1. Ler M registros do arquivo para a memória
-	ler_clientes(in, &list, M, congelados);
+	ler_clientes(in, &list, M);
 	
 	mostrar_congelados(congelados);
 
