@@ -76,15 +76,13 @@ void ler_clientes(FILE *in, ListaClientes **list, int qtd){
 	
 	int i = 0;
 
-	if(*list == NULL){
-		*list = (ListaClientes *) malloc(sizeof(ListaClientes));
-		Cliente *cliente = NULL;
-		(*list)->qtd = qtd;
-		(*list)->lista = (Cliente **) calloc(qtd, sizeof(Cliente));
+	*list = (ListaClientes *) malloc(sizeof(ListaClientes));
+	Cliente *cliente = NULL;
+	(*list)->qtd = qtd;
+	(*list)->lista = (Cliente **) calloc(qtd, sizeof(Cliente));
 
-		for(i = 0; i < qtd && (cliente = le_cliente(in)) != NULL; i++){
-			(*list)->lista[i] = cliente;
-		}
+	for(i = 0; i < qtd && (cliente = le_cliente(in)) != NULL; i++){
+		(*list)->lista[i] = cliente;
 	}
 }
 

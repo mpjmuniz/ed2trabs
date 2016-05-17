@@ -4,101 +4,135 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-ABS	../DojoGeracaoParticoes/ufftest.h	16;"	d
-ACCESS	../DojoGeracaoParticoes/test_geracao_particoes.c	5;"	d	file:
-ACCESS	../DojoGeracaoParticoes/test_geracao_particoes.c	8;"	d	file:
-AFTER_TEST	../DojoGeracaoParticoes/test_geracao_particoes.c	11;"	d	file:
-AFTER_TEST	../DojoGeracaoParticoes/ufftest.h	131;"	d
-ASSERT_EQUAL	../DojoGeracaoParticoes/ufftest.h	95;"	d
-ASSERT_EQUAL_CMP	../DojoGeracaoParticoes/ufftest.h	111;"	d
-ASSERT_FALSE	../DojoGeracaoParticoes/ufftest.h	107;"	d
-ASSERT_FLOAT_EQUAL	../DojoGeracaoParticoes/ufftest.h	119;"	d
-ASSERT_FLOAT_NOT_EQUAL	../DojoGeracaoParticoes/ufftest.h	122;"	d
-ASSERT_NOT_EQUAL	../DojoGeracaoParticoes/ufftest.h	99;"	d
-ASSERT_NOT_EQUAL_CMP	../DojoGeracaoParticoes/ufftest.h	115;"	d
-ASSERT_TRUE	../DojoGeracaoParticoes/ufftest.h	103;"	d
-BEFORE_TEST	../DojoGeracaoParticoes/ufftest.h	126;"	d
-BEGIN_TESTS	../DojoGeracaoParticoes/ufftest.h	21;"	d
-CC	../DojoGeracaoParticoes/Makefile	/^CC = gcc$/;"	m
-CFLAGS	../DojoGeracaoParticoes/Makefile	/^CFLAGS=-g -Wall -I$(IDIR)$/;"	m
-CHECK_TEST	../DojoGeracaoParticoes/ufftest.h	37;"	d
-CLIENTE_H	../DojoGeracaoParticoes/cliente.h	2;"	d
-CREATE	../DojoGeracaoParticoes/Makefile	/^  CREATE = $/;"	m
-CREATE	../DojoGeracaoParticoes/Makefile	/^  CREATE = @(echo ^@echo off & echo ^IF EXIST %%1 GOTO END & echo ^MKDIR %%1 & echo ^:END)> mkdirp.bat$/;"	m
-Cliente	../DojoGeracaoParticoes/cliente.h	/^typedef struct Cliente {$/;"	s
-Cliente	../DojoGeracaoParticoes/cliente.h	/^} Cliente;$/;"	t	typeref:struct:Cliente
-DEPS	../DojoGeracaoParticoes/Makefile	/^DEPS = $(patsubst %,$(IDIR)$(SEP)%,$(_DEPS))$/;"	m
-END_TESTS	../DojoGeracaoParticoes/ufftest.h	47;"	d
-EPSILON	../DojoGeracaoParticoes/ufftest.h	5;"	d
-F_OK	../DojoGeracaoParticoes/test_geracao_particoes.c	4;"	d	file:
-GERACAO_PARTICOES_H	../DojoGeracaoParticoes/geracao_particoes.h	2;"	d
-IDIR	../DojoGeracaoParticoes/Makefile	/^IDIR = .$/;"	m
-LISTA_CLIENTES_H	../DojoGeracaoParticoes/lista_clientes.h	2;"	d
-ListaClientes	../DojoGeracaoParticoes/lista_clientes.h	/^typedef struct ListaClientes {$/;"	s
-ListaClientes	../DojoGeracaoParticoes/lista_clientes.h	/^} ListaClientes;$/;"	t	typeref:struct:ListaClientes
-MAX_FAILS	../DojoGeracaoParticoes/ufftest.h	3;"	d
-MD	../DojoGeracaoParticoes/Makefile	/^  MD = mkdir -p$/;"	m
-MD	../DojoGeracaoParticoes/Makefile	/^  MD = mkdirp.bat$/;"	m
-MSG_SIZE	../DojoGeracaoParticoes/ufftest.h	4;"	d
-NOMES_H	../DojoGeracaoParticoes/nomes.h	2;"	d
-NOME_ARQUIVO_ENTRADA	../DojoGeracaoParticoes/test_geracao_particoes.c	12;"	d	file:
-Nomes	../DojoGeracaoParticoes/nomes.h	/^typedef struct Nomes {$/;"	s
-Nomes	../DojoGeracaoParticoes/nomes.h	/^} Nomes;$/;"	t	typeref:struct:Nomes
-OBJ	../DojoGeracaoParticoes/Makefile	/^OBJ = $(patsubst %,$(ODIR)$(SEP)%,$(_OBJ))$/;"	m
-ODIR	../DojoGeracaoParticoes/Makefile	/^ODIR = .$(SEP)build$/;"	m
-RD	../DojoGeracaoParticoes/Makefile	/^  RD = rd \/S \/Q$/;"	m
-RD	../DojoGeracaoParticoes/Makefile	/^  RD = rm -rf$/;"	m
-RM	../DojoGeracaoParticoes/Makefile	/^  RM = del \/F \/Q$/;"	m
-RM	../DojoGeracaoParticoes/Makefile	/^  RM = rm -rf$/;"	m
-SEP	../DojoGeracaoParticoes/Makefile	/^SEP=$(strip $(SEP2))$/;"	m
-SEP2	../DojoGeracaoParticoes/Makefile	/^  SEP2=\/$/;"	m
-SEP2	../DojoGeracaoParticoes/Makefile	/^  SEP2=\\\\$/;"	m
-TAM_NOME	../DojoGeracaoParticoes/cliente.h	6;"	d
-TEST	../DojoGeracaoParticoes/ufftest.h	69;"	d
-TOKENPASTE	../DojoGeracaoParticoes/ufftest.h	12;"	d
-TOKENPASTE2	../DojoGeracaoParticoes/ufftest.h	13;"	d
-UFFASSERT	../DojoGeracaoParticoes/ufftest.h	82;"	d
-UFF_TEST_H	../DojoGeracaoParticoes/ufftest.h	2;"	d
-_CRT_SECURE_NO_WARNINGS	../DojoGeracaoParticoes/cliente.c	2;"	d	file:
-_CRT_SECURE_NO_WARNINGS	../DojoGeracaoParticoes/geracao_particoes.c	2;"	d	file:
-_CRT_SECURE_NO_WARNINGS	../DojoGeracaoParticoes/lista_clientes.c	2;"	d	file:
-_CRT_SECURE_NO_WARNINGS	../DojoGeracaoParticoes/nomes.c	2;"	d	file:
-_CRT_SECURE_NO_WARNINGS	../DojoGeracaoParticoes/test_geracao_particoes.c	2;"	d	file:
-_DEPS	../DojoGeracaoParticoes/Makefile	/^_DEPS = cliente.h lista_clientes.h nomes.h geracao_particoes.h ufftest.h$/;"	m
-_OBJ	../DojoGeracaoParticoes/Makefile	/^_OBJ = geracao_particoes.o cliente.o lista_clientes.o nomes.o test_geracao_particoes.o$/;"	m
-_TEST	../DojoGeracaoParticoes/ufftest.h	80;"	d
-after	../DojoGeracaoParticoes/test_geracao_particoes.c	/^void after()$/;"	f
-classificacao_interna	../DojoGeracaoParticoes/geracao_particoes.c	/^void classificacao_interna(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M)$/;"	f
-cliente	../DojoGeracaoParticoes/cliente.c	/^Cliente *cliente(int cod, char *nome)$/;"	f
-cmp_cliente	../DojoGeracaoParticoes/cliente.c	/^int cmp_cliente(Cliente *c1, Cliente *c2)$/;"	f
-cmp_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^int cmp_clientes(ListaClientes *c1, ListaClientes *c2)$/;"	f
-cod_cliente	../DojoGeracaoParticoes/cliente.h	/^	int cod_cliente;$/;"	m	struct:Cliente
-compare_double	../DojoGeracaoParticoes/ufftest.h	/^int compare_double(double a, double b) {$/;"	f
-conta_nomes	../DojoGeracaoParticoes/nomes.c	/^int conta_nomes(Nomes *nomes)$/;"	f
-cria_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^ListaClientes *cria_clientes(int qtd, ...)$/;"	f
-cria_nomes	../DojoGeracaoParticoes/nomes.c	/^Nomes *cria_nomes(char *nome, Nomes *prox)$/;"	f
-cria_str	../DojoGeracaoParticoes/nomes.c	/^char *cria_str(char *str)$/;"	f
-existe_nao_congelado	../DojoGeracaoParticoes/geracao_particoes.c	/^int existe_nao_congelado(ListaClientes *lista, int congelados[]){$/;"	f
-file_exist	../DojoGeracaoParticoes/test_geracao_particoes.c	/^int file_exist(char *filename)$/;"	f
-imprime_cliente	../DojoGeracaoParticoes/cliente.c	/^void imprime_cliente(Cliente *cliente)$/;"	f
-imprime_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^void imprime_clientes(ListaClientes *lc)$/;"	f
-imprime_nomes	../DojoGeracaoParticoes/nomes.c	/^void imprime_nomes(Nomes *nomes)$/;"	f
-inverte_nomes	../DojoGeracaoParticoes/nomes.c	/^void inverte_nomes(Nomes *nomes)$/;"	f
-le_cliente	../DojoGeracaoParticoes/cliente.c	/^Cliente *le_cliente(FILE *in)$/;"	f
-le_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^ListaClientes * le_clientes(char *nome_arquivo)$/;"	f
-ler_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^void ler_clientes(FILE *in, ListaClientes **list, int qtd, int *congelados){$/;"	f
-libera_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^void libera_clientes(ListaClientes *lc)$/;"	f
-libera_nomes	../DojoGeracaoParticoes/nomes.c	/^void libera_nomes(Nomes *nomes)$/;"	f
-lista	../DojoGeracaoParticoes/lista_clientes.h	/^	Cliente **lista;$/;"	m	struct:ListaClientes
-mostrar_congelados	../DojoGeracaoParticoes/geracao_particoes.c	/^void mostrar_congelados(int congs[]){$/;"	f
-nome	../DojoGeracaoParticoes/cliente.h	/^	char nome[TAM_NOME];$/;"	m	struct:Cliente
-nome	../DojoGeracaoParticoes/nomes.h	/^	char *nome;$/;"	m	struct:Nomes
-nomes	../DojoGeracaoParticoes/test_geracao_particoes.c	/^Nomes *nomes = NULL;$/;"	v
-prox	../DojoGeracaoParticoes/nomes.h	/^	struct Nomes *prox;$/;"	m	struct:Nomes	typeref:struct:Nomes::Nomes
-qtd	../DojoGeracaoParticoes/lista_clientes.h	/^	int qtd;$/;"	m	struct:ListaClientes
-salva_cliente	../DojoGeracaoParticoes/cliente.c	/^void salva_cliente(Cliente *cliente, FILE *out)$/;"	f
-salva_clientes	../DojoGeracaoParticoes/lista_clientes.c	/^void salva_clientes(char *nome_arquivo, ListaClientes *lc)$/;"	f
-selecao_com_substituicao	../DojoGeracaoParticoes/geracao_particoes.c	/^void selecao_com_substituicao(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M)$/;"	f
-selecao_natural	../DojoGeracaoParticoes/geracao_particoes.c	/^void selecao_natural(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M, int n)$/;"	f
-substituirRegistro	../DojoGeracaoParticoes/geracao_particoes.c	/^void substituirRegistro(Cliente *dest, Cliente *fnt){$/;"	f
-tamanho_cliente	../DojoGeracaoParticoes/cliente.c	/^int tamanho_cliente()$/;"	f
+ABS	../aula-4/ufftest.h	16;"	d
+ACCESS	../aula-4/test_geracao_particoes.c	5;"	d	file:
+ACCESS	../aula-4/test_geracao_particoes.c	8;"	d	file:
+AFTER_TEST	../aula-4/test_geracao_particoes.c	11;"	d	file:
+AFTER_TEST	../aula-4/ufftest.h	131;"	d
+AGENCIA_H	../aula-3/agencia.h	2;"	d
+ASSERT_EQUAL	../aula-4/ufftest.h	95;"	d
+ASSERT_EQUAL_CMP	../aula-4/ufftest.h	111;"	d
+ASSERT_FALSE	../aula-4/ufftest.h	107;"	d
+ASSERT_FLOAT_EQUAL	../aula-4/ufftest.h	119;"	d
+ASSERT_FLOAT_NOT_EQUAL	../aula-4/ufftest.h	122;"	d
+ASSERT_NOT_EQUAL	../aula-4/ufftest.h	99;"	d
+ASSERT_NOT_EQUAL_CMP	../aula-4/ufftest.h	115;"	d
+ASSERT_TRUE	../aula-4/ufftest.h	103;"	d
+Agencia	../aula-3/agencia.h	/^typedef struct Agencia {$/;"	s
+Agencia	../aula-3/agencia.h	/^} Agencia;$/;"	t	typeref:struct:Agencia
+BEFORE_TEST	../aula-4/ufftest.h	126;"	d
+BEGIN_TESTS	../aula-4/ufftest.h	21;"	d
+CC	../aula-4/Makefile	/^CC = gcc$/;"	m
+CFLAGS	../aula-4/Makefile	/^CFLAGS=-g -Wall -I$(IDIR)$/;"	m
+CHECK_TEST	../aula-4/ufftest.h	37;"	d
+CLIENTE_H	../aula-4/cliente.h	2;"	d
+CREATE	../aula-4/Makefile	/^  CREATE = $/;"	m
+CREATE	../aula-4/Makefile	/^  CREATE = @(echo ^@echo off & echo ^IF EXIST %%1 GOTO END & echo ^MKDIR %%1 & echo ^:END)> mkdirp.bat$/;"	m
+Cliente	../aula-4/cliente.h	/^typedef struct Cliente {$/;"	s
+Cliente	../aula-4/cliente.h	/^} Cliente;$/;"	t	typeref:struct:Cliente
+ContaCorrente	../aula-3/contacorrente.h	/^typedef struct ContaCorrente {$/;"	s
+ContaCorrente	../aula-3/contacorrente.h	/^} ContaCorrente;$/;"	t	typeref:struct:ContaCorrente
+DEPS	../aula-4/Makefile	/^DEPS = $(patsubst %,$(IDIR)$(SEP)%,$(_DEPS))$/;"	m
+END_TESTS	../aula-4/ufftest.h	47;"	d
+EPSILON	../aula-4/ufftest.h	5;"	d
+F_OK	../aula-4/test_geracao_particoes.c	4;"	d	file:
+GERACAO_PARTICOES_H	../aula-4/geracao_particoes.h	2;"	d
+IDIR	../aula-4/Makefile	/^IDIR = .$/;"	m
+LISTA_CLIENTES_H	../aula-4/lista_clientes.h	2;"	d
+ListaClientes	../aula-4/lista_clientes.h	/^typedef struct ListaClientes {$/;"	s
+ListaClientes	../aula-4/lista_clientes.h	/^} ListaClientes;$/;"	t	typeref:struct:ListaClientes
+MAX_FAILS	../aula-4/ufftest.h	3;"	d
+MD	../aula-4/Makefile	/^  MD = mkdir -p$/;"	m
+MD	../aula-4/Makefile	/^  MD = mkdirp.bat$/;"	m
+MSG_SIZE	../aula-4/ufftest.h	4;"	d
+NOMES_H	../aula-4/nomes.h	2;"	d
+NOME_ARQUIVO_ENTRADA	../aula-4/test_geracao_particoes.c	12;"	d	file:
+Nomes	../aula-4/nomes.h	/^typedef struct Nomes {$/;"	s
+Nomes	../aula-4/nomes.h	/^} Nomes;$/;"	t	typeref:struct:Nomes
+OBJ	../aula-4/Makefile	/^OBJ = $(patsubst %,$(ODIR)$(SEP)%,$(_OBJ))$/;"	m
+ODIR	../aula-4/Makefile	/^ODIR = .$(SEP)build$/;"	m
+RD	../aula-4/Makefile	/^  RD = rd \/S \/Q$/;"	m
+RD	../aula-4/Makefile	/^  RD = rm -rf$/;"	m
+RM	../aula-4/Makefile	/^  RM = del \/F \/Q$/;"	m
+RM	../aula-4/Makefile	/^  RM = rm -rf$/;"	m
+SEP	../aula-4/Makefile	/^SEP=$(strip $(SEP2))$/;"	m
+SEP2	../aula-4/Makefile	/^  SEP2=\/$/;"	m
+SEP2	../aula-4/Makefile	/^  SEP2=\\\\$/;"	m
+TAM_NOME	../aula-4/cliente.h	6;"	d
+TEST	../aula-4/ufftest.h	69;"	d
+TOKENPASTE	../aula-4/ufftest.h	12;"	d
+TOKENPASTE2	../aula-4/ufftest.h	13;"	d
+UFFASSERT	../aula-4/ufftest.h	82;"	d
+UFF_TEST_H	../aula-4/ufftest.h	2;"	d
+_CONTACORRENTE_H	../aula-3/contacorrente.h	2;"	d
+_CRT_SECURE_NO_WARNINGS	../aula-4/cliente.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-4/geracao_particoes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-4/lista_clientes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-4/nomes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-4/test_geracao_particoes.c	2;"	d	file:
+_DEPS	../aula-4/Makefile	/^_DEPS = cliente.h lista_clientes.h nomes.h geracao_particoes.h ufftest.h$/;"	m
+_OBJ	../aula-4/Makefile	/^_OBJ = geracao_particoes.o cliente.o lista_clientes.o nomes.o test_geracao_particoes.o$/;"	m
+_TEST	../aula-4/ufftest.h	80;"	d
+after	../aula-4/test_geracao_particoes.c	/^void after()$/;"	f
+ag_imprime	../aula-3/agencia.c	/^void ag_imprime(Agencia *ag) {$/;"	f
+ag_le	../aula-3/agencia.c	/^Agencia *ag_le(FILE *in) {$/;"	f
+ag_salva	../aula-3/agencia.c	/^void ag_salva(Agencia *ag, FILE *out) {$/;"	f
+ag_tamanho	../aula-3/agencia.c	/^int ag_tamanho() {$/;"	f
+agencia	../aula-3/agencia.c	/^Agencia *agencia(int cod, char *nome, char *gerente){$/;"	f
+buscar_agencia	../aula-3/exercicio/main.c	/^Agencia *buscar_agencia(FILE *in, int codAgencia){$/;"	f
+buscar_agencia	../aula-3/main.c	/^Agencia *buscar_agencia(FILE *in, int codAgencia){$/;"	f
+buscar_conta	../aula-3/exercicio/main.c	/^ContaCorrente *buscar_conta(FILE *in,int codConta,int codAg){$/;"	f
+buscar_conta	../aula-3/main.c	/^ContaCorrente *buscar_conta(FILE *in,int codConta,int codAg){$/;"	f
+cadastrar_agencia	../aula-3/exercicio/main.c	/^int cadastrar_agencia(FILE *in, int cod, char *nome, char *gerente){$/;"	f
+cadastrar_agencia	../aula-3/main.c	/^int cadastrar_agencia(FILE *in, int cod, char *nome, char *gerente){$/;"	f
+cadastrar_conta	../aula-3/exercicio/main.c	/^int cadastrar_conta(FILE *in, FILE *agIn,int cod,int codAg,double saldo){$/;"	f
+cadastrar_conta	../aula-3/main.c	/^int cadastrar_conta(FILE *in, FILE *agIn,int cod,int codAg,double saldo){$/;"	f
+cc_imprime	../aula-3/contacorrente.c	/^void cc_imprime(ContaCorrente *cc) {$/;"	f
+cc_le	../aula-3/contacorrente.c	/^ContaCorrente *cc_le(FILE *in) {$/;"	f
+cc_salva	../aula-3/contacorrente.c	/^void cc_salva(ContaCorrente *cc, FILE *out) {$/;"	f
+cc_tamanho	../aula-3/contacorrente.c	/^int cc_tamanho() {$/;"	f
+classificacao_interna	../aula-4/geracao_particoes.c	/^void classificacao_interna(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M)$/;"	f
+cliente	../aula-4/cliente.c	/^Cliente *cliente(int cod, char *nome)$/;"	f
+cmp_cliente	../aula-4/cliente.c	/^int cmp_cliente(Cliente *c1, Cliente *c2)$/;"	f
+cmp_clientes	../aula-4/lista_clientes.c	/^int cmp_clientes(ListaClientes *c1, ListaClientes *c2)$/;"	f
+cod	../aula-3/agencia.h	/^    int cod;$/;"	m	struct:Agencia
+cod	../aula-3/contacorrente.h	/^    int cod;$/;"	m	struct:ContaCorrente
+codAgencia	../aula-3/contacorrente.h	/^    int codAgencia;$/;"	m	struct:ContaCorrente
+cod_cliente	../aula-4/cliente.h	/^	int cod_cliente;$/;"	m	struct:Cliente
+compare_double	../aula-4/ufftest.h	/^int compare_double(double a, double b) {$/;"	f
+conta_nomes	../aula-4/nomes.c	/^int conta_nomes(Nomes *nomes)$/;"	f
+contacorrente	../aula-3/contacorrente.c	/^ContaCorrente *contacorrente(int cod, int codAg, double saldo){$/;"	f
+cria_clientes	../aula-4/lista_clientes.c	/^ListaClientes *cria_clientes(int qtd, ...)$/;"	f
+cria_nomes	../aula-4/nomes.c	/^Nomes *cria_nomes(char *nome, Nomes *prox)$/;"	f
+cria_str	../aula-4/nomes.c	/^char *cria_str(char *str)$/;"	f
+existe_nao_congelado	../aula-4/geracao_particoes.c	/^int existe_nao_congelado(int congelados[], int M){$/;"	f
+file_exist	../aula-4/test_geracao_particoes.c	/^int file_exist(char *filename)$/;"	f
+gerente	../aula-3/agencia.h	/^    char gerente[50];$/;"	m	struct:Agencia
+imprime_cliente	../aula-4/cliente.c	/^void imprime_cliente(Cliente *cliente)$/;"	f
+imprime_clientes	../aula-4/lista_clientes.c	/^void imprime_clientes(ListaClientes *lc)$/;"	f
+imprime_nomes	../aula-4/nomes.c	/^void imprime_nomes(Nomes *nomes)$/;"	f
+inicializar_congelados	../aula-4/geracao_particoes.c	/^int inicializar_congelados(ListaClientes *cls, int congs[]){$/;"	f
+inverte_nomes	../aula-4/nomes.c	/^void inverte_nomes(Nomes *nomes)$/;"	f
+le_cliente	../aula-4/cliente.c	/^Cliente *le_cliente(FILE *in)$/;"	f
+le_clientes	../aula-4/lista_clientes.c	/^ListaClientes * le_clientes(char *nome_arquivo)$/;"	f
+ler_clientes	../aula-4/lista_clientes.c	/^void ler_clientes(FILE *in, ListaClientes **list, int qtd){$/;"	f
+libera_clientes	../aula-4/lista_clientes.c	/^void libera_clientes(ListaClientes *lc)$/;"	f
+libera_nomes	../aula-4/nomes.c	/^void libera_nomes(Nomes *nomes)$/;"	f
+lista	../aula-4/lista_clientes.h	/^	Cliente **lista;$/;"	m	struct:ListaClientes
+main	../aula-3/exercicio/main.c	/^void main(int argc, char** argv) {$/;"	f
+main	../aula-3/main.c	/^int main(int argc, char** argv) {$/;"	f
+mostrar_congelados	../aula-4/geracao_particoes.c	/^void mostrar_congelados(int congs[]){$/;"	f
+nome	../aula-3/agencia.h	/^    char nome[50];$/;"	m	struct:Agencia
+nome	../aula-4/cliente.h	/^	char nome[TAM_NOME];$/;"	m	struct:Cliente
+nome	../aula-4/nomes.h	/^	char *nome;$/;"	m	struct:Nomes
+nomes	../aula-4/test_geracao_particoes.c	/^Nomes *nomes = NULL;$/;"	v
+prox	../aula-4/nomes.h	/^	struct Nomes *prox;$/;"	m	struct:Nomes	typeref:struct:Nomes::Nomes
+qtd	../aula-4/lista_clientes.h	/^	int qtd;$/;"	m	struct:ListaClientes
+saldo	../aula-3/contacorrente.h	/^    double saldo;$/;"	m	struct:ContaCorrente
+salva_cliente	../aula-4/cliente.c	/^void salva_cliente(Cliente *cliente, FILE *out)$/;"	f
+salva_clientes	../aula-4/lista_clientes.c	/^void salva_clientes(char *nome_arquivo, ListaClientes *lc)$/;"	f
+selecao_com_substituicao	../aula-4/geracao_particoes.c	/^void selecao_com_substituicao(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M)$/;"	f
+selecao_natural	../aula-4/geracao_particoes.c	/^void selecao_natural(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M, int n)$/;"	f
+tamanho_cliente	../aula-4/cliente.c	/^int tamanho_cliente()$/;"	f
+teste_resposta	../aula-3/exercicio/main.c	/^int teste_resposta(int resposta){$/;"	f
+teste_resposta	../aula-3/main.c	/^int teste_resposta(int resposta){$/;"	f
