@@ -1,0 +1,9 @@
+mkdir -p ./build
+gcc -c -o build/intercalacao.o intercalacao.c -I.
+mkdir -p ./build
+gcc -c -o build/cliente.o cliente.c -I.
+mkdir -p ./build
+gcc -c -o build/lista_clientes.o lista_clientes.c -I.
+mkdir -p ./build
+gcc -c -o build/test_intercalacao.o test_intercalacao.c -I.
+gcc -o ./build/main build/intercalacao.o build/cliente.o build/lista_clientes.o build/test_intercalacao.o -I.
