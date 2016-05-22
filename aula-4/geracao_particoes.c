@@ -30,16 +30,14 @@ int existe_nao_congelado(int congelados[], int M){
 	return 0;
 }
 
-int inicializar_congelados(ListaClientes *cls, int congs[]){
-	unsigned int i = 0;
-	for(i = 0; i < cls->qtd; i++){
-		congs[i] = (cls->lista[i] != NULL);
-	}
-}
+/*int substituirCliente(ListaClientes *cls, int pos, FILE *fnt){
+	Cliente *cl = le_cliente(fnt);
 
-int substituirCliente(ListaClientes *cls, int pos, FILE *fnt){
-	Cliente *cl = le_cliente(fnt)
+}*/
 
+void substituirRegistro(Cliente *dest, Cliente *fnt){
+	strcpy(dest->nome, fnt->nome);
+	dest->cod_cliente = fnt->cod_cliente;
 }
 
 void selecao_com_substituicao(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M)
@@ -53,34 +51,33 @@ void selecao_com_substituicao(char *nome_arquivo_entrada, Nomes *nome_arquivos_s
         memset(congelados, 0, sizeof(congelados));
 	
 	//	1. Ler M registros do arquivo para a memória
-	ler_clientes(in, &list, M);
-	// Inicializar congelados
-	
-	int tam = conta_nomes(nome_arquivos_saida);
-
+	ler_clientes(in, &list, M, congelados);
+        int tam = conta_nomes(nome_arquivos_saida);
 	for(j = 0; j < tam; j++){
-		out = fopen(nome_arquivos_saida->nome, "wb");
-		while(existe_nao_congelado(congelados, M)){
-			//	2. Selecionar, no array em memória, o registro r com menor chave
-			int menor_val = INT_MAX;
-			for(i = 0; i < M; i++){
-				if(congelados[i]) continue;
-				if(list->lista[i]->cod_cliente <= menor_val){
-					menor_val = list->lista[i]->cod_cliente;
-					menor = list->lista[i];
-					m = i;
-				}
-			}
-			//	3. Gravar o registro r na partição de saída
-			salva_cliente(menor, out);
-			//	4. Substituir, no array em memória, o registro r pelo próximo registro do arquivo de entrada
-			//if(list->lista[m] != NULL){
-			gravado = menor->cod_cliente;
-			lido = le_cliente(in);
-			if(lido != NULL){
-
-				substituirCliente(list->lista[m], lido, m, in);
-			}
+            if(existe_nao_congelado(congelados, M)) out = fopen(nome_arquivos_saida->nome, "wb");
+			else continue;
+            while(existe_nao_congelado(congelados, M)){
+                    //	2. Selecionar, no array em memória, o registro r com menor chave
+                    int menor_val = INT_MAX;
+                    for(i = 0; i < M; i++){
+                        if(congelados[i]) continue;
+                        if(list->lista[i]->cod_cliente <= menor_val){
+                            menor_val = list->lista[i]->cod_cliente;
+                            menor = list->lista[i];
+                            m = i;
+                        }
+                    }
+                    //	3. Gravar o registro r na partição de saída
+                    salva_cliente(menor, out);
+                    //	4. Substituir, no array em memória, o registro r pelo próximo registro do arquivo de entrada
+                    //if(list->lista[m] != NULL){
+                    gravado = menor->cod_cliente;
+                    lido = le_cliente(in);
+                    if(lido != NULL){
+                        substituirRegistro(list->lista[m], lido);
+                    } else {
+                    	list->lista[m] = NULL;
+                    }
 
                     if(lido == NULL || lido->cod_cliente < gravado){
                         //	5. Caso a chave deste último seja menor do que a chave recém gravada, 
@@ -94,7 +91,7 @@ void selecao_com_substituicao(char *nome_arquivo_entrada, Nomes *nome_arquivos_s
 		}
 		/*	7. Caso contrário:
 			- fechar a partição de saída*/
-                if(j+1<tam){
+                if(/*j+1<tam*/gravado != INT_MAX){
                     salva_cliente(cliente(INT_MAX, ""), out);
                 }
 		fclose(out);

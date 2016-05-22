@@ -1,0 +1,49 @@
+Intercalar n arquivos utilizando árvore de vencedores
+Entrada:
+	- Lista de arquivos à serem ordenados : arqs
+	- tamanho da lista de arquivos à serem ordenados : n
+Saída:
+	- Arquivo com registros ordenados : saida.dat
+Variáveis:
+	- Fila de nomes : nomes
+	- vetor de arquivos abertos: abertos
+	- registro de menor chave : menor
+	- árvore de vencedores : arvore
+
+Para i = 0, 1, ..., n - 1
+	enfileirar(nomes, arqs[i])
+
+enquanto tamanho(nomes) > 1
+	para i = 0, 1, ..., n - 1
+		abertos[i] = abrir_arquivo(desenfileirar(nms), somente leitura)
+	
+	arvore = constuir_árvore(abertos, n)
+	
+	faça
+		mnr = obterMenor(arv)
+		gravar_registro(saida.dat, mnr)
+		atualizar_arvore(arv)
+	enquanto mnr.chave != INT_MAX
+
+	retornar saida.dat
+
+enfileirar(fila, elemento)
+	elemento.prox = fila.ultimo
+	fila.ultimo.anterior = elemento
+	fila.ultimo = elemento
+
+desenfileirar(fila)
+	removido = fila.ultimo
+	fila.ultimo = removido.anterior
+	fila.ultimo.prox = nulo
+	removido.anterior = nulo
+	retornar removido
+
+construir_árvore(vetor, tamanho)
+	vetor com chaves de registros : chaves
+	registro sendo lido : registro
+	para i = 0, 1, ..., tamanho - 1
+		registro = ler_registro(vetor[i])
+		chaves[i] = registro.chave
+	
+	
