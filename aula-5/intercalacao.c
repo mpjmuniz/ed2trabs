@@ -67,12 +67,14 @@ void intercalacao(char **nome_particoes, int qtd, char *nome_arquivo_saida)
             }
             ArvoreVencedores *venc = av[0];
             // intercala partições
-            while(venc->cliente->cod_cliente != INT_MAX){
-                FILE *saida = fopen(nome_arquivo_saida, "wb");
+            FILE *saida = fopen(nome_arquivo_saida, "wb");
+            while(venc->cliente->cod_cliente != INT_MAX){                
                 salva_cliente(venc->cliente, saida);
                 Cliente *c = le_cliente(files[venc->num_arq]);
                 substituir(venc->cliente, c, venc);
             }
+            salva_cliente(venc->cliente, saida);
+            fclose(saida);
             restantes = Fila_qtd(arquivos);
 	}
 
