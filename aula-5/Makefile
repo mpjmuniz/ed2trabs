@@ -22,10 +22,10 @@ IDIR = .
 CFLAGS=-I$(IDIR)
 
 
-_DEPS = cliente.h lista_clientes.h intercalacao.h ufftest.h fila.h
+_DEPS = cliente.h lista_clientes.h intercalacao.h ufftest.h fila.h arvore_vencedores.h
 DEPS = $(patsubst %,$(IDIR)$(SEP)%,$(_DEPS))
 
-_OBJ = intercalacao.o cliente.o lista_clientes.o test_intercalacao.o fila.o
+_OBJ = intercalacao.o cliente.o lista_clientes.o test_intercalacao.o fila.o arvore_vencedores.o
 OBJ = $(patsubst %,$(ODIR)$(SEP)%,$(_OBJ))
 
 $(ODIR)$(SEP)%.o: $(IDIR)$(SEP)%.c $(DEPS)

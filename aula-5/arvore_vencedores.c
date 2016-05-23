@@ -5,11 +5,11 @@
  */
 
 #include "arvore_vencedores.h"
-#include "cliente.h";
-#include <stdlib.h>;
+#include "cliente.h"
+#include <stdlib.h>
 
 ArvoreVencedores *cria_no(Cliente *c, int num_arq){
-    ArvoreVencedores *a = malloc(sizeof(arvore_vencedores));
+    ArvoreVencedores *a =(ArvoreVencedores*) malloc(sizeof(ArvoreVencedores));
     a->cliente = c;
     a->num_arq = num_arq;
     a->left = NULL;
@@ -19,7 +19,7 @@ ArvoreVencedores *cria_no(Cliente *c, int num_arq){
 
 ArvoreVencedores *cria_arvore(ArvoreVencedores *r, ArvoreVencedores *l){
     if(r == NULL || l == NULL) return NULL;
-    ArvoreVencedores *res = malloc(sizeof(arvore_vencedores));
+    ArvoreVencedores *res =(ArvoreVencedores*) malloc(sizeof(ArvoreVencedores));
     ArvoreVencedores *aux = (r->cliente->cod_cliente < l->cliente->cod_cliente)? r:l;
     res->cliente = aux->cliente;
     res->num_arq = aux->num_arq;

@@ -7,11 +7,13 @@
 #ifndef ARVORE_VENCEDORES_H
 #define ARVORE_VENCEDORES_H
 
+#include "cliente.h"
+
 typedef struct arvore_vencedores{
     Cliente *cliente;
     int num_arq;
-    ArvoreVencedores *right;
-    ArvoreVencedores *left;
+    struct arvore_vencedores *right;
+    struct arvore_vencedores *left;
 } ArvoreVencedores;
 
 ArvoreVencedores *cria_no(Cliente *c, int num_arq);
