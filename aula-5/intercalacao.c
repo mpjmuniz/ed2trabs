@@ -3,6 +3,7 @@
 #endif
 
 #include "intercalacao.h"
+#include "fila.h"
 
 void intercalacao(char **nome_particoes, int qtd, char *nome_arquivo_saida)
 {
@@ -21,12 +22,16 @@ void intercalacao(char **nome_particoes, int qtd, char *nome_arquivo_saida)
 	
 	/* 	restantes: Número de partições restantes, que pode variar ao passo que as 
 	 *  	partições geradas entram novamente no algoritmo 
-	 *  freq: Número de partições abertas por vez
+	 *      freq: Número de partições abertas por vez
 	 */
 
 	int restantes = qtd,
 		i = 0,
 		freq = 3;
+        Fila arquivos = Fila_criar();
+        for(i=0; i<qtd; i++){
+            Fila_enflr(arquivos, nome_particoes[i]);
+        }
 
 	for(i = restantes; i > 0; i -= freq){
 		/*	abro freq partições, da fila de partições
