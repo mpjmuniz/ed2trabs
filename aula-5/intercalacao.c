@@ -30,52 +30,39 @@ void intercalacao(char **nome_particoes, int qtd, char *nome_arquivo_saida)
 	 *      freq: Número de partições abertas por vez
 	 */
 
-	int restantes = qtd,
-		i = 0,
-		freq = 3;
-        Fila *arquivos = Fila_criar();
-        for(i=0; i<qtd; i++){
-            Fila_enflr(arquivos, nome_particoes[i]);
+	/*	abro freq partições, da fila de partições
+        *	intercalo estas partições, usando a árvore de vencedores
+        *	coloco denovo esta partição gerada na fila	
+        */
+        // Abre os arquivos do ciclo
+        int j, k, space;
+        FILE *files[qtd];
+        for(j = 0; j<qtd; j++){
+            files[j] = fopen(nome_particoes[j], "rb");
         }
-
-	for(i = restantes; i > 0; i -= freq){
-		/*	abro freq partições, da fila de partições
-		 *	intercalo estas partições, usando a árvore de vencedores
-		 *	coloco denovo esta partição gerada na fila	
-		 */
-            // Abre os arquivos do ciclo
-            int j, k, space, real_freq;
-            real_freq = (Fila_qtd(arquivos)<freq)? Fila_qtd(arquivos):freq;
-            FILE *files[real_freq];
-            for(j = 0; j<real_freq; j++){
-                files[j] = Fila_desnflr(arquivos);                
+        // cria arvore de vencedores
+        ArvoreVencedores *av[qtd];
+        for(j=0; j<qtd; j++){
+            Cliente *c = le_cliente(files[j]);
+            av[j] = cria_no(c, j);
+        }
+        k=2;
+        space=1;
+        while(space<qtd){
+            for(j=0; j+space<qtd; j+=k){
+                av[j] = cria_arvore(av[j] , av[j+space]);
             }
-            // cria arvore de vencedores
-            ArvoreVencedores *av[real_freq];
-            for(j=0; j<real_freq; j++){
-                Cliente *c = le_cliente(files[j]);
-                av[j] = cria_no(c, j);
-            }
-            k=2;
-            space=1;
-            while(space<real_freq){
-                for(j=0; j+space<real_freq; j+=k){
-                    av[j] = cria_arvore(av[j] , av[j+space]);
-                }
-                k*=2;
-                space=k>>1;
-            }
-            ArvoreVencedores *venc = av[0];
-            // intercala partições
-            FILE *saida = fopen(nome_arquivo_saida, "wb");
-            while(venc->cliente->cod_cliente != INT_MAX){                
-                salva_cliente(venc->cliente, saida);
-                Cliente *c = le_cliente(files[venc->num_arq]);
-                substituir(venc->cliente, c, venc);
-            }
+            k*=2;
+            space=k>>1;
+        }
+        ArvoreVencedores *venc = av[0];
+        // intercala partições
+        FILE *saida = fopen(nome_arquivo_saida, "wb");
+        while(venc->cliente->cod_cliente != INT_MAX){                
             salva_cliente(venc->cliente, saida);
-            fclose(saida);
-            restantes = Fila_qtd(arquivos);
-	}
-
+            Cliente *c = le_cliente(files[venc->num_arq]);
+            substituir(venc->cliente, c, venc);
+        }
+        salva_cliente(venc->cliente, saida);
+        fclose(saida);
 }
