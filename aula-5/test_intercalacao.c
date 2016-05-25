@@ -11,6 +11,7 @@
 #include "lista_clientes.h"
 #include "cliente.h"
 #include "intercalacao.h"
+#include "arvore_vencedores.h"
 
 //Implementação
 #include "fila.h"
@@ -68,7 +69,7 @@ if(!skip){
 	Fila_limpar_destruir(fila1);
 }
 
-/*
+
 TEST("Testa arquivo vazio");
 if (!skip) {
 	ListaClientes *particao, *oraculo, *saida;
@@ -456,5 +457,5 @@ if (!skip) {
 		free(nome_particoes[i - 1]);
 	}
 }
-*/
+
 END_TESTS();

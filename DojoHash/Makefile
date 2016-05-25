@@ -22,10 +22,10 @@ IDIR = .
 CFLAGS=-I$(IDIR)
 
 
-_DEPS = cliente.h lista_clientes.h intercalacao.h ufftest.h fila.h arvore_vencedores.h
+_DEPS = encadeamento_exterior.h cliente.h lista_clientes.h compartimento_hash.h lista_compartimentos.h ufftest.h
 DEPS = $(patsubst %,$(IDIR)$(SEP)%,$(_DEPS))
 
-_OBJ = intercalacao.o cliente.o lista_clientes.o test_intercalacao.o fila.o arvore_vencedores.o
+_OBJ = encadeamento_exterior.o cliente.o lista_clientes.o compartimento_hash.o lista_compartimentos.o test_encadeamento_exterior.o
 OBJ = $(patsubst %,$(ODIR)$(SEP)%,$(_OBJ))
 
 $(ODIR)$(SEP)%.o: $(IDIR)$(SEP)%.c $(DEPS)
@@ -39,5 +39,5 @@ main: $(OBJ)
 .PHONY: clean
 
 clean:
-	${RM} .$(SEP)*~ mkdirp.bat
+	${RM} *~ mkdirp.bat
 	${RD} $(ODIR)$(SEP)
