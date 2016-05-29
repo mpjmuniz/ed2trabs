@@ -17,6 +17,8 @@ enquanto tamanho(nomes) > 1
 	para i = 0, 1, ..., n - 1
 		abertos[i] = abrir_arquivo(desenfileirar(nms), somente leitura)
 	
+	abrir_arquivo(saida.dat, leitura e escrita)
+
 	arvore = constuir_árvore(abertos, n)
 	
 	faça
@@ -24,8 +26,14 @@ enquanto tamanho(nomes) > 1
 		gravar_registro(saida.dat, mnr)
 		atualizar_arvore(arv)
 	enquanto mnr.chave != INT_MAX
+	
+	fechar_arquivo(saida.dat)
+	enfileirar(nomes, saida.dat)
+	
+	para i = 0, 1, ..., n - 1
+		fechar_arquivo(abertos[i])
 
-	retornar saida.dat
+retornar saida.dat
 
 enfileirar(fila, elemento)
 	elemento.prox = fila.ultimo
