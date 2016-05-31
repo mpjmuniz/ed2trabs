@@ -79,7 +79,7 @@ int busca(int cod_cli, char *nome_arquivo_hash, char *nome_arquivo_dados) {
 }
 
 int insere(int cod_cli, char *nome_cli, char *nome_arquivo_hash, char *nome_arquivo_dados, int num_registros) {
-	
+
 	Cliente *cl = NULL, *atual = NULL;
 
 	//	1. Calcular o endereço aplicando a função h(x)
@@ -194,6 +194,28 @@ int insere(int cod_cli, char *nome_cli, char *nome_arquivo_hash, char *nome_arqu
 
 int exclui(int cod_cli, char *nome_arquivo_hash, char *nome_arquivo_dados)
 {
-	//TODO: Inserir aqui o codigo do algoritmo de remocao
-    return INT_MAX;
+    int end = busca(cod_cli, nome_arquivo_hash, nome_arquivo_dados),
+    	rc = -1;
+    FILE *arq_clientes;
+	Cliente *cl;
+		
+    if(end != -1){
+		arq_clientes = fopen(nome_arquivo_dados, "r+b");
+
+    	rc = fseek(arq_clientes, end * tamanho_cliente(), SEEK_SET);
+    	assert(rc == 0 && "Falha no seek\n");
+		
+		cl = le_cliente(arq_clientes);
+		cl->flag = LIBERADO;
+
+    	rc = fseek(arq_clientes, end * tamanho_cliente(), SEEK_SET);
+    	assert(rc == 0 && "Falha no seek\n");
+
+    	salva_cliente(cl, arq_clientes);
+
+		fclose(arq_clientes);
+    	free(cl);
+	}
+
+	return end;
 }
