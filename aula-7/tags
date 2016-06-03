@@ -1,0 +1,89 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABS	ufftest.h	16;"	d
+AFTER_TEST	ufftest.h	131;"	d
+ASSERT_EQUAL	ufftest.h	95;"	d
+ASSERT_EQUAL_CMP	ufftest.h	111;"	d
+ASSERT_FALSE	ufftest.h	107;"	d
+ASSERT_FLOAT_EQUAL	ufftest.h	119;"	d
+ASSERT_FLOAT_NOT_EQUAL	ufftest.h	122;"	d
+ASSERT_NOT_EQUAL	ufftest.h	99;"	d
+ASSERT_NOT_EQUAL_CMP	ufftest.h	115;"	d
+ASSERT_TRUE	ufftest.h	103;"	d
+BEFORE_TEST	test_encadeamento_interior.c	4;"	d	file:
+BEFORE_TEST	ufftest.h	126;"	d
+BEGIN_TESTS	ufftest.h	21;"	d
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-I$(IDIR)$/;"	m
+CHECK_TEST	ufftest.h	37;"	d
+CLIENTE_H	cliente.h	2;"	d
+CREATE	Makefile	/^  CREATE = $/;"	m
+CREATE	Makefile	/^  CREATE = @(echo ^@echo off & echo ^IF EXIST %%1 GOTO END & echo ^MKDIR %%1 & echo ^:END)> mkdirp.bat$/;"	m
+Cliente	cliente.h	/^typedef struct Cliente {$/;"	s
+Cliente	cliente.h	/^} Cliente;$/;"	t	typeref:struct:Cliente
+DEPS	Makefile	/^DEPS = $(patsubst %,$(IDIR)$(SEP)%,$(_DEPS))$/;"	m
+ENCADEAMENTO_EXTERIOR_H	encadeamento_interior.h	2;"	d
+END_TESTS	ufftest.h	47;"	d
+EPSILON	ufftest.h	5;"	d
+IDIR	Makefile	/^IDIR = .$/;"	m
+LIBERADO	cliente.h	4;"	d
+LISTA_CLIENTES_H	lista_clientes.h	2;"	d
+ListaClientes	lista_clientes.h	/^typedef struct ListaClientes {$/;"	s
+ListaClientes	lista_clientes.h	/^} ListaClientes;$/;"	t	typeref:struct:ListaClientes
+MAX_FAILS	ufftest.h	3;"	d
+MD	Makefile	/^  MD = mkdir -p$/;"	m
+MD	Makefile	/^  MD = mkdirp.bat$/;"	m
+MSG_SIZE	ufftest.h	4;"	d
+NOME_ARQUIVO_HASH	test_encadeamento_interior.c	6;"	d	file:
+OBJ	Makefile	/^OBJ = $(patsubst %,$(ODIR)$(SEP)%,$(_OBJ))$/;"	m
+OCUPADO	cliente.h	5;"	d
+ODIR	Makefile	/^ODIR = .$(SEP)build$/;"	m
+RD	Makefile	/^  RD = rd \/S \/Q$/;"	m
+RD	Makefile	/^  RD = rm -rf$/;"	m
+RM	Makefile	/^  RM = del \/F \/Q$/;"	m
+RM	Makefile	/^  RM = rm -rf$/;"	m
+SEP	Makefile	/^SEP=$(strip $(SEP2))$/;"	m
+SEP2	Makefile	/^  SEP2=\/$/;"	m
+SEP2	Makefile	/^  SEP2=\\\\$/;"	m
+TAM_NOME	cliente.h	7;"	d
+TEST	ufftest.h	69;"	d
+TOKENPASTE	ufftest.h	12;"	d
+TOKENPASTE2	ufftest.h	13;"	d
+UFFASSERT	ufftest.h	82;"	d
+UFF_TEST_H	ufftest.h	2;"	d
+_CRT_SECURE_NO_WARNINGS	cliente.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	encadeamento_interior.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	lista_clientes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	test_encadeamento_interior.c	2;"	d	file:
+_DEPS	Makefile	/^_DEPS = encadeamento_interior.h cliente.h lista_clientes.h ufftest.h$/;"	m
+_OBJ	Makefile	/^_OBJ = encadeamento_interior.o cliente.o lista_clientes.o test_encadeamento_interior.o$/;"	m
+_TEST	ufftest.h	80;"	d
+adcn_cliente	lista_clientes.c	/^void adcn_cliente(ListaClientes *lc, int cod, char *nome, int prox, int flag){$/;"	f
+before	test_encadeamento_interior.c	/^void before() {$/;"	f
+busca	encadeamento_interior.c	/^int busca(int cod_cli, char *nome_arquivo_hash, int tam, int *encontrou)$/;"	f
+cliente	cliente.c	/^Cliente *cliente(int cod, char *nome, int prox, int flag)$/;"	f
+cmp_cliente	cliente.c	/^int cmp_cliente(Cliente *c1, Cliente *c2)$/;"	f
+cmp_clientes	lista_clientes.c	/^int cmp_clientes(ListaClientes *c1, ListaClientes *c2)$/;"	f
+cod_cliente	cliente.h	/^	int cod_cliente;$/;"	m	struct:Cliente
+compare_double	ufftest.h	/^int compare_double(double a, double b) {$/;"	f
+cria_clientes	lista_clientes.c	/^ListaClientes *cria_clientes(int qtd, ...)$/;"	f
+cria_hash	encadeamento_interior.c	/^void cria_hash(char *nome_arquivo_hash, int tam)$/;"	f
+exclui	encadeamento_interior.c	/^int exclui(int cod_cli, char *nome_arquivo_hash, int tam)$/;"	f
+flag	cliente.h	/^	int flag;$/;"	m	struct:Cliente
+imprime_cliente	cliente.c	/^void imprime_cliente(Cliente *cliente)$/;"	f
+imprime_clientes	lista_clientes.c	/^void imprime_clientes(ListaClientes *lc)$/;"	f
+insere	encadeamento_interior.c	/^int insere(int cod_cli, char *nome_cli, char *nome_arquivo_hash, int tam)$/;"	f
+le_cliente	cliente.c	/^Cliente *le_cliente(FILE *in)$/;"	f
+le_clientes	lista_clientes.c	/^ListaClientes * le_clientes(char *nome_arquivo)$/;"	f
+libera_clientes	lista_clientes.c	/^void libera_clientes(ListaClientes *lc)$/;"	f
+lista	lista_clientes.h	/^	Cliente **lista;$/;"	m	struct:ListaClientes
+nome	cliente.h	/^	char nome[TAM_NOME];$/;"	m	struct:Cliente
+prox	cliente.h	/^	int prox;$/;"	m	struct:Cliente
+qtd	lista_clientes.h	/^	int qtd;$/;"	m	struct:ListaClientes
+salva_cliente	cliente.c	/^void salva_cliente(Cliente *cliente, FILE *out)$/;"	f
+salva_clientes	lista_clientes.c	/^void salva_clientes(char *nome_arquivo, ListaClientes *lc)$/;"	f
+tamanho_cliente	cliente.c	/^int tamanho_cliente()$/;"	f
