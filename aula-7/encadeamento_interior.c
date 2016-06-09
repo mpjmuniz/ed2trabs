@@ -3,6 +3,7 @@
 #endif
 
 #include <limits.h>
+#include <stdlib.h>
 
 #include "encadeamento_interior.h"
 #include "lista_clientes.h"
@@ -83,6 +84,14 @@ int insere(int cod_cli, char *nome_cli, char *nome_arquivo_hash, int tam)
 
 int exclui(int cod_cli, char *nome_arquivo_hash, int tam)
 {
-	//TODO: Inserir aqui o codigo do algoritmo de remocao
-    return INT_MAX;
+	int encontrou, a, saida = 0;
+	a = busca(cod_cli, nome_arquivo_hash, tam, &encontrou);
+
+	if(encontrou == 1){
+		//T[end].estado = liberado
+	} else {
+		return -1;
+	}
+
+    return saida;
 }
