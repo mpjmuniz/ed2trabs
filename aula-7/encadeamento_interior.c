@@ -68,18 +68,43 @@ int busca(int cod_cli, char *nome_arquivo_hash, int tam, int *encontrou)
 int insere(int cod_cli, char *nome_cli, char *nome_arquivo_hash, int tam)
 {
     // Verifica se o registro existe
-    int encontrou;
+    int encontrou, j;
     int indice = busca(cod_cli, nome_arquivo_hash, tam, &encontrou);
     if(encontrou != 0) return -1;
     // Inicializa variáveis extras
-    FILE *arq = fopen(nome_arquivo_hash, "a+b");
-    Cliente *c = cliente(cod_cli, nome_cli, indice, OCUPADO);
-    // Salva cliente
+    FILE *arq = fopen(nome_arquivo_hash, "r+b");    
+    // Verifica se o espaço do índice está disponível
     fseek(arq, tamanho_cliente()*indice, SEEK_SET);
+    Cliente *aux = le_cliente(arq);
+    j = indice;
+    // Encontra indice disponível
+    while(aux->flag == OCUPADO){
+        free(aux);
+        aux = le_cliente(arq);
+        j = (j+1)%tam;
+    }
+    // Salva cliente
+    Cliente *c;
+    if(indice == j)
+        c = cliente(cod_cli, nome_cli, aux->prox, OCUPADO);
+    else
+        c = cliente(cod_cli, nome_cli, j, OCUPADO);
+    fseek(arq, tamanho_cliente()*j, SEEK_SET);
     salva_cliente(c, arq);
+    // Corrige encadeamento
+    free(aux);
+    if(j != indice){
+        fseek(arq, tamanho_cliente()*indice, SEEK_SET);
+        aux = le_cliente(arq);
+        fseek(arq, tamanho_cliente()*indice, SEEK_SET);
+        aux->prox = j;
+        salva_cliente(aux, arq);
+    }
+    
+    free(aux);
     free(c);
     fclose(arq);    
-    return indice;
+    return j;
 }
 
 int exclui(int cod_cli, char *nome_arquivo_hash, int tam)
