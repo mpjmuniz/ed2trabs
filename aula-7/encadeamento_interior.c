@@ -4,6 +4,7 @@
 
 #include <limits.h>
 #include <stdlib.h>
+#include <assert.h>
 
 #include "encadeamento_interior.h"
 #include "lista_clientes.h"
@@ -67,7 +68,7 @@ int busca(int cod_cli, char *nome_arquivo_hash, int tam, int *encontrou)
 
 int insere(int cod_cli, char *nome_cli, char *nome_arquivo_hash, int tam)
 {
-    // Verifica se o registro existe
+/*    // Verifica se o registro existe
     int encontrou, j;
     int indice = busca(cod_cli, nome_arquivo_hash, tam, &encontrou);
     if(encontrou != 0) return -1;
@@ -104,19 +105,30 @@ int insere(int cod_cli, char *nome_cli, char *nome_arquivo_hash, int tam)
     free(aux);
     free(c);
     fclose(arq);    
-    return j;
+    return j;*/
 }
 
 int exclui(int cod_cli, char *nome_arquivo_hash, int tam)
 {
-	int encontrou, a, saida = 0;
+	int encontrou, a, saida = 0, rc = -1;
+	FILE *arq = fopen(nome_arquivo_hash, "r+b");
+	Cliente *cl = NULL;
 	a = busca(cod_cli, nome_arquivo_hash, tam, &encontrou);
 
 	if(encontrou == 1){
-		//T[end].estado = liberado
+		rc = fseek(arq, tamanho_cliente() * a, SEEK_SET);
+		assert(rc == 0 && "Falha no seek.\n");
+		cl = le_cliente(arq);
+		cl->flag = LIBERADO;
+		rc = fseek(arq, tamanho_cliente() * a, SEEK_SET);
+		assert(rc == 0 && "Falha no seek.\n");
+		salva_cliente(cl, arq);
+		saida = a;
 	} else {
-		return -1;
+		saida = -1;
 	}
 
+	if(cl != NULL) free(cl);
+	if(arq != NULL) fclose(arq);
     return saida;
 }
