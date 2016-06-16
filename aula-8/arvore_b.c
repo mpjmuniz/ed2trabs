@@ -13,7 +13,7 @@
 
 int busca(int x, char *nome_arquivo_metadados, char *nome_arquivo_dados, int *pt, int *encontrou)
 {
-	int *p = malloc(sizeof(int)),
+	int     p,
 		rc = -1,
 		i,
 		pos,
@@ -30,18 +30,17 @@ int busca(int x, char *nome_arquivo_metadados, char *nome_arquivo_dados, int *pt
 	/*p:= ptraiz; pt:= λ; encontrou := 0;*/
 	*pt = INT_MAX;
 	*encontrou = 0;
-	*p = meta->pont_raiz;
-
-	rc = fseek(fnos, *p, SEEK_SET);
-	assert(rc == 0 && "Falha no seek.\n");
+	p = meta->pont_raiz;
 
 	//enquanto p ≠ λ faça
-	while(*p != INT_MAX && *p != -1){
+	while(p != INT_MAX && p != -1){
 		//i:= 1; pos:= 1; pt:= p
-		i = 1;
-		pos = 1;
-		*pt = *p;
-		
+		i = 0;
+		pos = 0;
+		*pt = p;
+                
+		rc = fseek(fnos, p, SEEK_SET);
+                assert(rc == 0 && "Falha no seek.\n");
 		no = le_no(fnos);
 		if(no == NULL) break;
 
@@ -51,38 +50,35 @@ int busca(int x, char *nome_arquivo_metadados, char *nome_arquivo_dados, int *pt
 		while(i < m){
 			//se x > p↑.s[i] então i: = i+1; pos: = i + 1
 			if(x > no->clientes[i]->cod_cliente){
-				pos = ++i + 1;
+                                pos = ++i;
 			} else {
 				//se x = p↑.s[i] então
 				if(x == no->clientes[i]->cod_cliente){
 					//p:= λ; encontrou := 1 % chave encontrada
-					*p = INT_MAX;
+					p = INT_MAX;
 					*encontrou = 1;
 				} else {
 					//senão p := p↑.pont[i-1]
-					*p = no->p[i];
+					p = no->p[i];
 				}
 				//i:= m + 2
-				i = m + 2;
+				i = m + 1;
 			}
 		}
 
 		//se i = m + 1 então p:= p↑.pont[m]
-		if(i == m + 1){
-			*p = no->p[m];
+		if(i == m){
+			p = no->p[m];
 		}
+                free(no);
 	}
 
 	if(*encontrou == 0){
 		pos = 0;
-		if(x == 6){
-			*pt = 0;
-		}
 	}
 
 	//Libera variáveis
 	fclose(fnos);
-	if(p != NULL) free(p);
 	if(meta != NULL) free(meta);
 	if(no != NULL) libera_no(no);
 
