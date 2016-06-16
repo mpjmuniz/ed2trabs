@@ -87,8 +87,29 @@ int busca(int x, char *nome_arquivo_metadados, char *nome_arquivo_dados, int *pt
 
 int insere(int cod_cli, char *nome_cli, char *nome_arquivo_metadados, char *nome_arquivo_dados)
 {
-	//TODO: Inserir aqui o codigo do algoritmo de insercao
-    return INT_MAX;
+    int pt, encontrou, insert_pos;
+    busca(cod_cli, nome_arquivo_metadados, nome_arquivo_dados, &pt, &encontrou);
+    
+    if(encontrou == 1) return 0;
+    
+    FILE *fnos = fopen(nome_arquivo_dados, "r+b");
+    fseek(fnos, pt, SEEK_SET);
+    No *no = le_no(fnos);
+    
+    if(no->m < 2*D - 1){ // Há posições vazias
+        // Encontra a posição dentro do nó
+        int i;
+        for(i=no->m; i>0 && cod_cli < no->clientes[i-1]->cod_cliente; i--){
+            no->clientes[i] = no->clientes[i-1];
+        }
+        no->clientes[i] = cliente(cod_cli, nome_cli);
+        no->m++;
+        fseek(fnos, pt, SEEK_SET); // Retorna a posição onde o nó foi lido
+        salva_no(no, fnos);        // Sobrescreve o nó
+    }
+    free(no);
+    fclose(fnos);
+    return pt;
 }
 
 int exclui(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_dados)
