@@ -35,9 +35,11 @@ $(ODIR)$(SEP)%.o: $(IDIR)$(SEP)%.c $(DEPS)
 
 main: $(OBJ)
 	${CC} -o $(ODIR)$(SEP)$@ $^ $(CFLAGS)
+	@./build/main
 
 .PHONY: clean
 
 clean:
 	${RM} *~ mkdirp.bat
 	${RD} $(ODIR)$(SEP)
+	${RM} .*.swp*

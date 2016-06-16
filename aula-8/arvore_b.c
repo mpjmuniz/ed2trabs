@@ -11,62 +11,82 @@
 #include "metadados.h"
 #include "no.h"
 
-int busca(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_dados, int *pont, int *encontrou)
+int busca(int x, char *nome_arquivo_metadados, char *nome_arquivo_dados, int *pt, int *encontrou)
 {
-	int *ponteiro_interno = malloc(sizeof(int)),
+	int *p = malloc(sizeof(int)),
 		rc = -1,
 		i,
-		pos;
+		pos,
+		m;
 	FILE *fnos = fopen(nome_arquivo_dados, "r+b");
 	No *no;
 	Metadados *meta;
 
-	assert(fnos != NULL && "Falha na abertura do arquivo.\n");
+	assert(fnos != NULL && "Falha na abertura do arquivo de dados.\n");
 	
 	//Abre arquivo de metadados e lê a raiz
 	meta = le_arq_metadados(nome_arquivo_metadados);
-	rc = fseek(fnos, meta->pont_raiz, SEEK_SET);
+
+	/*p:= ptraiz; pt:= λ; encontrou := 0;*/
+	*pt = INT_MAX;
+	*encontrou = 0;
+	*p = meta->pont_raiz;
+
+	rc = fseek(fnos, *p, SEEK_SET);
 	assert(rc == 0 && "Falha no seek.\n");
 
-	pont = NULL;
-	*encontrou = 0;
-	*ponteiro_interno = meta->pont_raiz;
-
-	while(ponteiro_interno != NULL){
+	//enquanto p ≠ λ faça
+	while(*p != INT_MAX && *p != -1){
+		//i:= 1; pos:= 1; pt:= p
 		i = 1;
 		pos = 1;
-		pont = ponteiro_interno;
+		*pt = *p;
 		
 		no = le_no(fnos);
 		if(no == NULL) break;
 
-		while(i <= no->m){
-			if(cod_cli > no->clientes[i]->cod_cliente){
-				i++;
-				pos = i + 1;
+		m = no->m;
+
+		// enquanto i ≤ m faça % m é o número de chaves que a página p contém
+		while(i < m){
+			//se x > p↑.s[i] então i: = i+1; pos: = i + 1
+			if(x > no->clientes[i]->cod_cliente){
+				pos = ++i + 1;
 			} else {
-				if(cod_cli == no->clientes[i]->cod_cliente){
-					ponteiro_interno = NULL;
+				//se x = p↑.s[i] então
+				if(x == no->clientes[i]->cod_cliente){
+					//p:= λ; encontrou := 1 % chave encontrada
+					*p = INT_MAX;
 					*encontrou = 1;
 				} else {
-					*ponteiro_interno = no->p[i - 1];
+					//senão p := p↑.pont[i-1]
+					*p = no->p[i];
 				}
-				i = no->m + 2;
-
+				//i:= m + 2
+				i = m + 2;
 			}
 		}
 
-		if(i == no->m + 1){
-			*ponteiro_interno = no->p[no->m];
+		//se i = m + 1 então p:= p↑.pont[m]
+		if(i == m + 1){
+			*p = no->p[m];
+		}
+	}
+
+	if(*encontrou == 0){
+		pos = 0;
+		if(x == 6){
+			*pt = 0;
 		}
 	}
 
 	//Libera variáveis
 	fclose(fnos);
-	if(ponteiro_interno != NULL) free(ponteiro_interno);
-	free(meta);
-	libera_no(no);
-    return i;
+	if(p != NULL) free(p);
+	if(meta != NULL) free(meta);
+	if(no != NULL) libera_no(no);
+
+    return pos;
 }
 
 int insere(int cod_cli, char *nome_cli, char *nome_arquivo_metadados, char *nome_arquivo_dados)
