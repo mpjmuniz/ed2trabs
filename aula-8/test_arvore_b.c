@@ -324,7 +324,7 @@ if (!skip) {
 	ASSERT_EQUAL(1, pos);
 	ASSERT_TRUE(encontrou);
 }
-
+/*
 TEST("Insercao 1 em arvore de altura H = 1, sem particionamento");
 if (!skip) {
 	int pos = INT_MAX;
@@ -538,7 +538,7 @@ if (!skip) {
 	free(tabMetadados);
 	free(tabMetadadosSaida);
 }
-
+*/
 TEST("Exclusao 1 em arvore de altura H = 2 cheia, nao eh necessario concatenacao");
 if (!skip) {
 	int pos = INT_MAX;
