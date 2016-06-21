@@ -1,0 +1,69 @@
+procedimento buscaB(x, pt, encontrou, pos)
+	p:= ptraiz; pt:= λ; encontrou := 0;
+	enquanto p ≠ λ faça
+	inicio
+		i:= 1; pos:= 1; pt:= p
+		enquanto i ≤ m faça % m é o número de chaves que a página p contém
+		inicio
+			se x > p↑.s[i] então i: = i+1; pos: = i + 1
+			senão
+			inicio
+				se x = p↑.s[i] então
+					p:= λ; encontrou := 1 % chave encontrada
+				senão p := p↑.pont[i-1]
+					% mudança de página
+				i:= m + 2
+			fim
+		fim {enquanto}
+		se i = m + 1 então p:= p↑.pont[m]
+	fim {enquanto}
+
+procedimento remocaoB(cod_cli)
+	
+	% estado: árvore intacta; cod_cli indica cliente a ser removido
+
+	pt := λ
+	encontrou := λ
+	pos := λ
+	no := λ
+	removido := λ
+	buscaB(cod_cli, pt, encontrou, pos)
+
+	% estado: árvore intacta, pt indica posicao no arquivo do no que contem o cliente a ser removido
+
+	enquanto i ≤ m faça
+	inicio
+		se cod_cli = no.chave[i]
+			remover(no, i)
+		senao
+			i++
+	fim
+
+	se no.ponteiro[i + 1] ≠ λ então
+		% buscar menor chave e registro do descendente à direita
+		no.registro[i] := menor
+	senão
+		% transladar registros para a esquerda
+		
+	% estado : árvore com nó removido, e nós adjacentes transladados para a esquerda e devidamente alocados, e possivelmente o nó está com menos de d chaves
+
+	se no.m < d
+		nosAdjacentes := obterNosAdjacentes(no)
+		se nosAdjacentes.m + no.m < 2d
+			%concatenação
+			juntar(no, nosAdjacentes)
+			ordenar(no)
+			% em W, pegar chave entre no e Q, e passá-la para o no
+			% em W, eliminar ponteiro que acompanhava chave removida
+
+			se no.pai.m < d
+				% repetir operação com W = W.pai, P = W, Q = irmãos adjacentes de W
+
+			% se W.m == 0 e W é raiz, 
+				% remove W e faz P a raiz
+		senão (nosAdjacentes.m + no.m >= 2d)
+			$ Redistribuição
+
+
+
+

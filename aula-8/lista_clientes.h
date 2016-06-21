@@ -28,4 +28,11 @@ int cmp_clientes(ListaClientes *c1, ListaClientes *c2);
 // Desaloca lista de clientes
 void libera_clientes(ListaClientes *lc);
 
+//Remove o @i-ésimo Cliente da Lista @lc
+void remover_cliente(Cliente **lc, int i);
+
+void transladar_clientes(Cliente **lc, int tam, int i);
+
+void ordenar_clientes(Cliente **lc);
+
 #endif

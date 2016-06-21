@@ -4,6 +4,7 @@
 
 #include <stdlib.h>
 #include <stdarg.h>
+#include <assert.h>
 
 #include "lista_clientes.h"
 
@@ -89,4 +90,21 @@ void libera_clientes(ListaClientes *lc)
 	}
 	free(lc->lista);
 	free(lc);
+}
+
+void remover_cliente(Cliente **lc, int i){
+	assert(lc != NULL && "Lista inválida.\n");
+	assert(lc[i] != NULL && "Cliente inválido.\n");
+	
+	free(lc[i]);
+}
+
+void transladar_clientes(Cliente **lc, int tam, int i){
+	while(i < tam){
+		lc[i] = lc[++i];
+	}
+}
+
+void ordenar_clientes(Cliente **lc){
+	//Implementar Ordenação
 }

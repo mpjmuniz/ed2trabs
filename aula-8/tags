@@ -362,7 +362,7 @@ before	../aula-7/test_encadeamento_interior.c	/^void before() {$/;"	f
 before	../aula-8/test_arvore_b.c	/^void before()$/;"	f
 busca	../aula-6/encadeamento_exterior.c	/^int busca(int cod_cli, char *nome_arquivo_hash, char *nome_arquivo_dados) {$/;"	f
 busca	../aula-7/encadeamento_interior.c	/^int busca(int cod_cli, char *nome_arquivo_hash, int tam, int *encontrou)$/;"	f
-busca	../aula-8/arvore_b.c	/^int busca(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_dados, int *pont, int *encontrou)$/;"	f
+busca	../aula-8/arvore_b.c	/^int busca(int x, char *nome_arquivo_metadados, char *nome_arquivo_dados, int *pt, int *encontrou)$/;"	f
 buscar_agencia	../aula-3/exercicio/main.c	/^Agencia *buscar_agencia(FILE *in, int codAgencia){$/;"	f
 buscar_agencia	../aula-3/main.c	/^Agencia *buscar_agencia(FILE *in, int codAgencia){$/;"	f
 buscar_conta	../aula-3/exercicio/main.c	/^ContaCorrente *buscar_conta(FILE *in,int codConta,int codAg){$/;"	f
@@ -513,6 +513,7 @@ nome	../aula-7/cliente.h	/^	char nome[TAM_NOME];$/;"	m	struct:Cliente
 nome	../aula-8/cliente.h	/^	char nome[TAM_NOME];$/;"	m	struct:Cliente
 nomes	../aula-4/test_geracao_particoes.c	/^Nomes *nomes = NULL;$/;"	v
 num_arq	../aula-5/arvore_vencedores.h	/^    int num_arq;$/;"	m	struct:arvore_vencedores
+ordenar_clientes	../aula-8/lista_clientes.c	/^void ordenar_clientes(Cliente **lc){$/;"	f
 p	../aula-8/no.h	/^	int *p;$/;"	m	struct:No
 pont_pai	../aula-8/no.h	/^	int pont_pai;$/;"	m	struct:No
 pont_prox_no_livre	../aula-8/metadados.h	/^	int pont_prox_no_livre;$/;"	m	struct:Metadados
@@ -531,6 +532,7 @@ qtd	../aula-6/lista_compartimentos.h	/^	int qtd;$/;"	m	struct:ListaCompartimento
 qtd	../aula-7/lista_clientes.h	/^	int qtd;$/;"	m	struct:ListaClientes
 qtd	../aula-8/lista_clientes.h	/^	int qtd;$/;"	m	struct:ListaClientes
 qtd	../aula-8/lista_nos.h	/^	int qtd;$/;"	m	struct:ListaNos
+remover_cliente	../aula-8/lista_clientes.c	/^void remover_cliente(Cliente **lc, int i){$/;"	f
 right	../aula-5/arvore_vencedores.h	/^    struct arvore_vencedores *right;$/;"	m	struct:arvore_vencedores	typeref:struct:arvore_vencedores::arvore_vencedores
 saldo	../aula-3/contacorrente.h	/^    double saldo;$/;"	m	struct:ContaCorrente
 salva_arq_metadados	../aula-8/metadados.c	/^void salva_arq_metadados(char *nome_arquivo, Metadados *metadados)$/;"	f
@@ -563,4 +565,5 @@ tamanho_metadados	../aula-8/metadados.c	/^int tamanho_metadados()$/;"	f
 tamanho_no	../aula-8/no.c	/^int tamanho_no()$/;"	f
 teste_resposta	../aula-3/exercicio/main.c	/^int teste_resposta(int resposta){$/;"	f
 teste_resposta	../aula-3/main.c	/^int teste_resposta(int resposta){$/;"	f
+transladar_clientes	../aula-8/lista_clientes.c	/^void transladar_clientes(Cliente **lc, int tam, int i){$/;"	f
 ult	../aula-5/fila.h	/^	NoArquivo *ult;$/;"	m	struct:Fila
