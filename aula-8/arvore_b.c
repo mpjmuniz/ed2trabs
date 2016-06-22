@@ -41,7 +41,7 @@ int busca(int x, char *nome_arquivo_metadados, char *nome_arquivo_dados, int *pt
 		*pt = p;
                 
 		rc = fseek(fnos, p, SEEK_SET);
-                assert(rc == 0 && "Falha no seek.\n");
+		assert(rc == 0 && "Falha no seek.\n");
 		no = le_no(fnos);
 		if(no == NULL) break;
 
@@ -71,12 +71,8 @@ int busca(int x, char *nome_arquivo_metadados, char *nome_arquivo_dados, int *pt
 		if(i == m){
 			p = no->p[m];
 		}
-                free(no);
+		//if(no != NULL) libera_no(no);
 	}
-
-	/*if(*encontrou == 0){
-		pos = 0;
-	}*/
 
 	//Libera variáveis
 	fclose(fnos);
@@ -171,22 +167,45 @@ void particionar(FILE *arq, Cliente *insert_cli,int pt, FILE *meta){
     salva_no(n, arq);         // Sobrescreve o nó
 }
 
+static int *_obterNosAdjacentes(FILE *fnos, No *ref, int i){
+	/*assert(ref != NULL && "Referência inválida.\n");
+	No *pai;
+	int rc = -1,
+		j = 0,
+		*adjacentes = calloc(2, sizeof(No));
+
+	rc = fseek(fnos, ref->pont_pai, SEEK_SET);
+	assert(rc == 0 && "Falha no seek.\n");
+
+	pai = le_no(fnos);
+	if(pai == NULL) return NULL;
+
+	adjacentes[0] = (i - 1 > 0 && pai->p[i - 1] != -1) ? pai->p[i - 1] : -1;
+	adjacentes[1] = (i + 1 < pai->m && pai->p[i + 1] != -1) ? pai->p[i + 1] : -1;
+
+	//libera_no(pai);
+	return adjacentes;*/
+}
+
 int exclui(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_dados)
-{
+{ 
     int pont,
     	encontrou,    	
     	posicao = busca(cod_cli, nome_arquivo_metadados, nome_arquivo_dados, &pont, &encontrou),
     	rc = -1,
     	i = 0, 
     	j = 0,
-    	d = 2;
+    	d = 2,
+    	k = 0,
+    	*adjacentes;
 	FILE *dados;
 	No *no,
-	   *filho;
+	   *filho,
+	   *escolhido;
 	Cliente *menor;
 
     if(!encontrou) return -1;
-
+	/*
 	dados = fopen(nome_arquivo_dados, "r+b");
 	assert(dados != NULL && "Arquivo inexistente.\n");
 
@@ -219,12 +238,27 @@ int exclui(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_dados)
 	}
 
 	if(no->m < d){
-	
-	} else {
+		adjacentes = _obterNosAdjacentes(dados, no, i);
 		
-	}
+		for(k = 0; k < 2; k++){
+			if(adjacentes[k] == -1) continue;
 
-	libera_no(no);
+			rc = fseek(dados, adjacentes[k], SEEK_SET);
+			assert(rc == 0 && "Falha no seek.\n");
+
+			escolhido = le_no(dados);
+			assert(escolhido != NULL && "unico escolhido é nulo.\n");	
+		}
+
+		if(escolhido->m + no->m < 2 * d){
+			//juntar no, escolhido
+			ordenar_clientes(no->clientes);
+		}
+
+	} 
+
+	//libera_no(no);
 	fclose(dados);
+	*/
     return pont;
 }
