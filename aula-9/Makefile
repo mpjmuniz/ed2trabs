@@ -1,4 +1,4 @@
-CC = gcc
+CC = gcc -g -Wall -Wextra
 ifdef ComSpec
   SEP2=\\
   MD = mkdirp.bat
@@ -35,6 +35,7 @@ $(ODIR)$(SEP)%.o: $(IDIR)$(SEP)%.c $(DEPS)
 
 main: $(OBJ)
 	${CC} -o $(ODIR)$(SEP)$@ $^ $(CFLAGS)
+	@ ./build/main
 
 .PHONY: clean
 

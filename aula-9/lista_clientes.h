@@ -28,4 +28,7 @@ int cmp_clientes(ListaClientes *c1, ListaClientes *c2);
 // Desaloca lista de clientes
 void libera_clientes(ListaClientes *lc);
 
+// Busca um cliente numa folha
+int buscar_cliente(Cliente **lc, int tam, int chave, int *posicao);
+
 #endif

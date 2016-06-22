@@ -1,0 +1,736 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABS	../aula-4/ufftest.h	16;"	d
+ABS	../aula-5/ufftest.h	16;"	d
+ABS	../aula-6/ufftest.h	16;"	d
+ABS	../aula-7/ufftest.h	16;"	d
+ABS	../aula-8/ufftest.h	16;"	d
+ABS	../aula-9/ufftest.h	16;"	d
+ACCESS	../aula-4/test_geracao_particoes.c	5;"	d	file:
+ACCESS	../aula-4/test_geracao_particoes.c	8;"	d	file:
+AFTER_TEST	../aula-4/test_geracao_particoes.c	11;"	d	file:
+AFTER_TEST	../aula-4/ufftest.h	131;"	d
+AFTER_TEST	../aula-5/ufftest.h	131;"	d
+AFTER_TEST	../aula-6/ufftest.h	131;"	d
+AFTER_TEST	../aula-7/ufftest.h	131;"	d
+AFTER_TEST	../aula-8/ufftest.h	131;"	d
+AFTER_TEST	../aula-9/ufftest.h	131;"	d
+AGENCIA_H	../aula-3/agencia.h	2;"	d
+ARVORE_B_H	../aula-8/arvore_b.h	2;"	d
+ARVORE_B_MAIS_H	../aula-9/arvore_b_mais.h	2;"	d
+ARVORE_VENCEDORES_H	../aula-5/arvore_vencedores.h	8;"	d
+ASSERT_EQUAL	../aula-4/ufftest.h	95;"	d
+ASSERT_EQUAL	../aula-5/ufftest.h	95;"	d
+ASSERT_EQUAL	../aula-6/ufftest.h	95;"	d
+ASSERT_EQUAL	../aula-7/ufftest.h	95;"	d
+ASSERT_EQUAL	../aula-8/ufftest.h	95;"	d
+ASSERT_EQUAL	../aula-9/ufftest.h	95;"	d
+ASSERT_EQUAL_CMP	../aula-4/ufftest.h	111;"	d
+ASSERT_EQUAL_CMP	../aula-5/ufftest.h	111;"	d
+ASSERT_EQUAL_CMP	../aula-6/ufftest.h	111;"	d
+ASSERT_EQUAL_CMP	../aula-7/ufftest.h	111;"	d
+ASSERT_EQUAL_CMP	../aula-8/ufftest.h	111;"	d
+ASSERT_EQUAL_CMP	../aula-9/ufftest.h	111;"	d
+ASSERT_FALSE	../aula-4/ufftest.h	107;"	d
+ASSERT_FALSE	../aula-5/ufftest.h	107;"	d
+ASSERT_FALSE	../aula-6/ufftest.h	107;"	d
+ASSERT_FALSE	../aula-7/ufftest.h	107;"	d
+ASSERT_FALSE	../aula-8/ufftest.h	107;"	d
+ASSERT_FALSE	../aula-9/ufftest.h	107;"	d
+ASSERT_FLOAT_EQUAL	../aula-4/ufftest.h	119;"	d
+ASSERT_FLOAT_EQUAL	../aula-5/ufftest.h	119;"	d
+ASSERT_FLOAT_EQUAL	../aula-6/ufftest.h	119;"	d
+ASSERT_FLOAT_EQUAL	../aula-7/ufftest.h	119;"	d
+ASSERT_FLOAT_EQUAL	../aula-8/ufftest.h	119;"	d
+ASSERT_FLOAT_EQUAL	../aula-9/ufftest.h	119;"	d
+ASSERT_FLOAT_NOT_EQUAL	../aula-4/ufftest.h	122;"	d
+ASSERT_FLOAT_NOT_EQUAL	../aula-5/ufftest.h	122;"	d
+ASSERT_FLOAT_NOT_EQUAL	../aula-6/ufftest.h	122;"	d
+ASSERT_FLOAT_NOT_EQUAL	../aula-7/ufftest.h	122;"	d
+ASSERT_FLOAT_NOT_EQUAL	../aula-8/ufftest.h	122;"	d
+ASSERT_FLOAT_NOT_EQUAL	../aula-9/ufftest.h	122;"	d
+ASSERT_NOT_EQUAL	../aula-4/ufftest.h	99;"	d
+ASSERT_NOT_EQUAL	../aula-5/ufftest.h	99;"	d
+ASSERT_NOT_EQUAL	../aula-6/ufftest.h	99;"	d
+ASSERT_NOT_EQUAL	../aula-7/ufftest.h	99;"	d
+ASSERT_NOT_EQUAL	../aula-8/ufftest.h	99;"	d
+ASSERT_NOT_EQUAL	../aula-9/ufftest.h	99;"	d
+ASSERT_NOT_EQUAL_CMP	../aula-4/ufftest.h	115;"	d
+ASSERT_NOT_EQUAL_CMP	../aula-5/ufftest.h	115;"	d
+ASSERT_NOT_EQUAL_CMP	../aula-6/ufftest.h	115;"	d
+ASSERT_NOT_EQUAL_CMP	../aula-7/ufftest.h	115;"	d
+ASSERT_NOT_EQUAL_CMP	../aula-8/ufftest.h	115;"	d
+ASSERT_NOT_EQUAL_CMP	../aula-9/ufftest.h	115;"	d
+ASSERT_TRUE	../aula-4/ufftest.h	103;"	d
+ASSERT_TRUE	../aula-5/ufftest.h	103;"	d
+ASSERT_TRUE	../aula-6/ufftest.h	103;"	d
+ASSERT_TRUE	../aula-7/ufftest.h	103;"	d
+ASSERT_TRUE	../aula-8/ufftest.h	103;"	d
+ASSERT_TRUE	../aula-9/ufftest.h	103;"	d
+Agencia	../aula-3/agencia.h	/^typedef struct Agencia {$/;"	s
+Agencia	../aula-3/agencia.h	/^} Agencia;$/;"	t	typeref:struct:Agencia
+ArvoreVencedores	../aula-5/arvore_vencedores.h	/^} ArvoreVencedores;$/;"	t	typeref:struct:arvore_vencedores
+BEFORE_TEST	../aula-4/ufftest.h	126;"	d
+BEFORE_TEST	../aula-5/test_intercalacao.c	4;"	d	file:
+BEFORE_TEST	../aula-5/ufftest.h	126;"	d
+BEFORE_TEST	../aula-6/test_encadeamento_exterior.c	4;"	d	file:
+BEFORE_TEST	../aula-6/ufftest.h	126;"	d
+BEFORE_TEST	../aula-7/test_encadeamento_interior.c	4;"	d	file:
+BEFORE_TEST	../aula-7/ufftest.h	126;"	d
+BEFORE_TEST	../aula-8/test_arvore_b.c	4;"	d	file:
+BEFORE_TEST	../aula-8/ufftest.h	126;"	d
+BEFORE_TEST	../aula-9/test_arvore_b_mais.c	4;"	d	file:
+BEFORE_TEST	../aula-9/ufftest.h	126;"	d
+BEGIN_TESTS	../aula-4/ufftest.h	21;"	d
+BEGIN_TESTS	../aula-5/ufftest.h	21;"	d
+BEGIN_TESTS	../aula-6/ufftest.h	21;"	d
+BEGIN_TESTS	../aula-7/ufftest.h	21;"	d
+BEGIN_TESTS	../aula-8/ufftest.h	21;"	d
+BEGIN_TESTS	../aula-9/ufftest.h	21;"	d
+CC	../aula-4/Makefile	/^CC = gcc$/;"	m
+CC	../aula-5/Makefile	/^CC = gcc$/;"	m
+CC	../aula-6/Makefile	/^CC = gcc -g -Wall$/;"	m
+CC	../aula-7/Makefile	/^CC = gcc$/;"	m
+CC	../aula-8/Makefile	/^CC = gcc$/;"	m
+CC	../aula-9/Makefile	/^CC = gcc$/;"	m
+CFLAGS	../aula-4/Makefile	/^CFLAGS=-g -Wall -I$(IDIR)$/;"	m
+CFLAGS	../aula-5/Makefile	/^CFLAGS=-I$(IDIR)$/;"	m
+CFLAGS	../aula-6/Makefile	/^CFLAGS=-I$(IDIR)$/;"	m
+CFLAGS	../aula-7/Makefile	/^CFLAGS=-I$(IDIR)$/;"	m
+CFLAGS	../aula-8/Makefile	/^CFLAGS= -Wall -Wextra -g -I$(IDIR)$/;"	m
+CFLAGS	../aula-9/Makefile	/^CFLAGS=-I$(IDIR)$/;"	m
+CHECK_TEST	../aula-4/ufftest.h	37;"	d
+CHECK_TEST	../aula-5/ufftest.h	37;"	d
+CHECK_TEST	../aula-6/ufftest.h	37;"	d
+CHECK_TEST	../aula-7/ufftest.h	37;"	d
+CHECK_TEST	../aula-8/ufftest.h	37;"	d
+CHECK_TEST	../aula-9/ufftest.h	37;"	d
+CLIENTE_H	../aula-4/cliente.h	2;"	d
+CLIENTE_H	../aula-5/cliente.h	2;"	d
+CLIENTE_H	../aula-6/cliente.h	2;"	d
+CLIENTE_H	../aula-7/cliente.h	2;"	d
+CLIENTE_H	../aula-8/cliente.h	2;"	d
+CLIENTE_H	../aula-9/cliente.h	2;"	d
+COMPARTIMENTO_HASH_H	../aula-6/compartimento_hash.h	2;"	d
+CREATE	../aula-4/Makefile	/^  CREATE = $/;"	m
+CREATE	../aula-4/Makefile	/^  CREATE = @(echo ^@echo off & echo ^IF EXIST %%1 GOTO END & echo ^MKDIR %%1 & echo ^:END)> mkdirp.bat$/;"	m
+CREATE	../aula-5/Makefile	/^  CREATE = $/;"	m
+CREATE	../aula-5/Makefile	/^  CREATE = @(echo ^@echo off & echo ^IF EXIST %%1 GOTO END & echo ^MKDIR %%1 & echo ^:END)> mkdirp.bat$/;"	m
+CREATE	../aula-6/Makefile	/^  CREATE = $/;"	m
+CREATE	../aula-6/Makefile	/^  CREATE = @(echo ^@echo off & echo ^IF EXIST %%1 GOTO END & echo ^MKDIR %%1 & echo ^:END)> mkdirp.bat$/;"	m
+CREATE	../aula-7/Makefile	/^  CREATE = $/;"	m
+CREATE	../aula-7/Makefile	/^  CREATE = @(echo ^@echo off & echo ^IF EXIST %%1 GOTO END & echo ^MKDIR %%1 & echo ^:END)> mkdirp.bat$/;"	m
+CREATE	../aula-8/Makefile	/^  CREATE = $/;"	m
+CREATE	../aula-8/Makefile	/^  CREATE = @(echo ^@echo off & echo ^IF EXIST %%1 GOTO END & echo ^MKDIR %%1 & echo ^:END)> mkdirp.bat$/;"	m
+CREATE	../aula-9/Makefile	/^  CREATE = $/;"	m
+CREATE	../aula-9/Makefile	/^  CREATE = @(echo ^@echo off & echo ^IF EXIST %%1 GOTO END & echo ^MKDIR %%1 & echo ^:END)> mkdirp.bat$/;"	m
+Cliente	../aula-4/cliente.h	/^typedef struct Cliente {$/;"	s
+Cliente	../aula-4/cliente.h	/^} Cliente;$/;"	t	typeref:struct:Cliente
+Cliente	../aula-5/cliente.h	/^typedef struct Cliente {$/;"	s
+Cliente	../aula-5/cliente.h	/^} Cliente;$/;"	t	typeref:struct:Cliente
+Cliente	../aula-6/cliente.h	/^typedef struct Cliente {$/;"	s
+Cliente	../aula-6/cliente.h	/^} Cliente;$/;"	t	typeref:struct:Cliente
+Cliente	../aula-7/cliente.h	/^typedef struct Cliente {$/;"	s
+Cliente	../aula-7/cliente.h	/^} Cliente;$/;"	t	typeref:struct:Cliente
+Cliente	../aula-8/cliente.h	/^typedef struct Cliente {$/;"	s
+Cliente	../aula-8/cliente.h	/^} Cliente;$/;"	t	typeref:struct:Cliente
+Cliente	../aula-9/cliente.h	/^typedef struct Cliente {$/;"	s
+Cliente	../aula-9/cliente.h	/^} Cliente;$/;"	t	typeref:struct:Cliente
+CompartimentoHash	../aula-6/compartimento_hash.h	/^typedef struct CompartimentoHash {$/;"	s
+CompartimentoHash	../aula-6/compartimento_hash.h	/^} CompartimentoHash;$/;"	t	typeref:struct:CompartimentoHash
+ContaCorrente	../aula-3/contacorrente.h	/^typedef struct ContaCorrente {$/;"	s
+ContaCorrente	../aula-3/contacorrente.h	/^} ContaCorrente;$/;"	t	typeref:struct:ContaCorrente
+D	../aula-8/no.h	7;"	d
+D	../aula-9/no_folha.h	4;"	d
+D	../aula-9/no_interno.h	4;"	d
+DEPS	../aula-4/Makefile	/^DEPS = $(patsubst %,$(IDIR)$(SEP)%,$(_DEPS))$/;"	m
+DEPS	../aula-5/Makefile	/^DEPS = $(patsubst %,$(IDIR)$(SEP)%,$(_DEPS))$/;"	m
+DEPS	../aula-6/Makefile	/^DEPS = $(patsubst %,$(IDIR)$(SEP)%,$(_DEPS))$/;"	m
+DEPS	../aula-7/Makefile	/^DEPS = $(patsubst %,$(IDIR)$(SEP)%,$(_DEPS))$/;"	m
+DEPS	../aula-8/Makefile	/^DEPS = $(patsubst %,$(IDIR)$(SEP)%,$(_DEPS))$/;"	m
+DEPS	../aula-9/Makefile	/^DEPS = $(patsubst %,$(IDIR)$(SEP)%,$(_DEPS))$/;"	m
+ENCADEAMENTO_EXTERIOR_H	../aula-6/encadeamento_exterior.h	2;"	d
+ENCADEAMENTO_EXTERIOR_H	../aula-7/encadeamento_interior.h	2;"	d
+END_TESTS	../aula-4/ufftest.h	47;"	d
+END_TESTS	../aula-5/ufftest.h	47;"	d
+END_TESTS	../aula-6/ufftest.h	47;"	d
+END_TESTS	../aula-7/ufftest.h	47;"	d
+END_TESTS	../aula-8/ufftest.h	47;"	d
+END_TESTS	../aula-9/ufftest.h	47;"	d
+EPSILON	../aula-4/ufftest.h	5;"	d
+EPSILON	../aula-5/ufftest.h	5;"	d
+EPSILON	../aula-6/ufftest.h	5;"	d
+EPSILON	../aula-7/ufftest.h	5;"	d
+EPSILON	../aula-8/ufftest.h	5;"	d
+EPSILON	../aula-9/ufftest.h	5;"	d
+FILA_ITERAR	../aula-5/fila.h	66;"	d
+F_OK	../aula-4/test_geracao_particoes.c	4;"	d	file:
+Fila	../aula-5/fila.h	/^typedef struct Fila {$/;"	s
+Fila	../aula-5/fila.h	/^} Fila;$/;"	t	typeref:struct:Fila
+Fila_criar	../aula-5/fila.c	/^Fila *Fila_criar(){$/;"	f
+Fila_desnflr	../aula-5/fila.c	/^FILE *Fila_desnflr(Fila * fila){$/;"	f
+Fila_destruir	../aula-5/fila.c	/^void Fila_destruir(Fila * fila){$/;"	f
+Fila_enflr	../aula-5/fila.c	/^void Fila_enflr(Fila *fila, char *nome_arq){$/;"	f
+Fila_limpar	../aula-5/fila.c	/^void Fila_limpar(Fila * fila){$/;"	f
+Fila_limpar_destruir	../aula-5/fila.c	/^void Fila_limpar_destruir(Fila * fila){$/;"	f
+Fila_primeiro	../aula-5/fila.h	51;"	d
+Fila_qtd	../aula-5/fila.h	48;"	d
+Fila_remover	../aula-5/fila.c	/^FILE *Fila_remover(Fila * fila, NoArquivo * no){$/;"	f
+Fila_ultimo	../aula-5/fila.h	54;"	d
+GERACAO_PARTICOES_H	../aula-4/geracao_particoes.h	2;"	d
+IDIR	../aula-4/Makefile	/^IDIR = .$/;"	m
+IDIR	../aula-5/Makefile	/^IDIR = .$/;"	m
+IDIR	../aula-6/Makefile	/^IDIR = .$/;"	m
+IDIR	../aula-7/Makefile	/^IDIR = .$/;"	m
+IDIR	../aula-8/Makefile	/^IDIR = .$/;"	m
+IDIR	../aula-9/Makefile	/^IDIR = .$/;"	m
+INTERCALACAO_H	../aula-5/intercalacao.h	2;"	d
+LIBERADO	../aula-6/cliente.h	4;"	d
+LIBERADO	../aula-7/cliente.h	4;"	d
+LIBERADO	../aula-8/no.h	4;"	d
+LISTA_CLIENTES_H	../aula-4/lista_clientes.h	2;"	d
+LISTA_CLIENTES_H	../aula-5/lista_clientes.h	2;"	d
+LISTA_CLIENTES_H	../aula-6/lista_clientes.h	2;"	d
+LISTA_CLIENTES_H	../aula-7/lista_clientes.h	2;"	d
+LISTA_CLIENTES_H	../aula-8/lista_clientes.h	2;"	d
+LISTA_CLIENTES_H	../aula-9/lista_clientes.h	2;"	d
+LISTA_COMPARTIMENTOS_H	../aula-6/lista_compartimentos.h	2;"	d
+LISTA_NOS_FOLHAS_H	../aula-9/lista_nos_folhas.h	2;"	d
+LISTA_NOS_H	../aula-8/lista_nos.h	2;"	d
+LISTA_NOS_INTERNOS_H	../aula-9/lista_nos_internos.h	2;"	d
+ListaClientes	../aula-4/lista_clientes.h	/^typedef struct ListaClientes {$/;"	s
+ListaClientes	../aula-4/lista_clientes.h	/^} ListaClientes;$/;"	t	typeref:struct:ListaClientes
+ListaClientes	../aula-5/lista_clientes.h	/^typedef struct ListaClientes {$/;"	s
+ListaClientes	../aula-5/lista_clientes.h	/^} ListaClientes;$/;"	t	typeref:struct:ListaClientes
+ListaClientes	../aula-6/lista_clientes.h	/^typedef struct ListaClientes {$/;"	s
+ListaClientes	../aula-6/lista_clientes.h	/^} ListaClientes;$/;"	t	typeref:struct:ListaClientes
+ListaClientes	../aula-7/lista_clientes.h	/^typedef struct ListaClientes {$/;"	s
+ListaClientes	../aula-7/lista_clientes.h	/^} ListaClientes;$/;"	t	typeref:struct:ListaClientes
+ListaClientes	../aula-8/lista_clientes.h	/^typedef struct ListaClientes {$/;"	s
+ListaClientes	../aula-8/lista_clientes.h	/^} ListaClientes;$/;"	t	typeref:struct:ListaClientes
+ListaClientes	../aula-9/lista_clientes.h	/^typedef struct ListaClientes {$/;"	s
+ListaClientes	../aula-9/lista_clientes.h	/^} ListaClientes;$/;"	t	typeref:struct:ListaClientes
+ListaCompartimentos	../aula-6/lista_compartimentos.h	/^typedef struct ListaCompartimentos {$/;"	s
+ListaCompartimentos	../aula-6/lista_compartimentos.h	/^} ListaCompartimentos;$/;"	t	typeref:struct:ListaCompartimentos
+ListaNos	../aula-8/lista_nos.h	/^typedef struct ListaNos {$/;"	s
+ListaNos	../aula-8/lista_nos.h	/^} ListaNos;$/;"	t	typeref:struct:ListaNos
+ListaNosFolhas	../aula-9/lista_nos_folhas.h	/^typedef struct ListaNosFolhas {$/;"	s
+ListaNosFolhas	../aula-9/lista_nos_folhas.h	/^} ListaNosFolhas;$/;"	t	typeref:struct:ListaNosFolhas
+ListaNosInternos	../aula-9/lista_nos_internos.h	/^typedef struct ListaNosInternos {$/;"	s
+ListaNosInternos	../aula-9/lista_nos_internos.h	/^} ListaNosInternos;$/;"	t	typeref:struct:ListaNosInternos
+MAX_FAILS	../aula-4/ufftest.h	3;"	d
+MAX_FAILS	../aula-5/ufftest.h	3;"	d
+MAX_FAILS	../aula-6/ufftest.h	3;"	d
+MAX_FAILS	../aula-7/ufftest.h	3;"	d
+MAX_FAILS	../aula-8/ufftest.h	3;"	d
+MAX_FAILS	../aula-9/ufftest.h	3;"	d
+MD	../aula-4/Makefile	/^  MD = mkdir -p$/;"	m
+MD	../aula-4/Makefile	/^  MD = mkdirp.bat$/;"	m
+MD	../aula-5/Makefile	/^  MD = mkdir -p$/;"	m
+MD	../aula-5/Makefile	/^  MD = mkdirp.bat$/;"	m
+MD	../aula-6/Makefile	/^  MD = mkdir -p$/;"	m
+MD	../aula-6/Makefile	/^  MD = mkdirp.bat$/;"	m
+MD	../aula-7/Makefile	/^  MD = mkdir -p$/;"	m
+MD	../aula-7/Makefile	/^  MD = mkdirp.bat$/;"	m
+MD	../aula-8/Makefile	/^  MD = mkdir -p$/;"	m
+MD	../aula-8/Makefile	/^  MD = mkdirp.bat$/;"	m
+MD	../aula-9/Makefile	/^  MD = mkdir -p$/;"	m
+MD	../aula-9/Makefile	/^  MD = mkdirp.bat$/;"	m
+METADADOS_H	../aula-8/metadados.h	2;"	d
+METADADOS_H	../aula-9/metadados.h	2;"	d
+MSG_SIZE	../aula-4/ufftest.h	4;"	d
+MSG_SIZE	../aula-5/ufftest.h	4;"	d
+MSG_SIZE	../aula-6/ufftest.h	4;"	d
+MSG_SIZE	../aula-7/ufftest.h	4;"	d
+MSG_SIZE	../aula-8/ufftest.h	4;"	d
+MSG_SIZE	../aula-9/ufftest.h	4;"	d
+Metadados	../aula-8/metadados.h	/^typedef struct Metadados {$/;"	s
+Metadados	../aula-8/metadados.h	/^} Metadados;$/;"	t	typeref:struct:Metadados
+Metadados	../aula-9/metadados.h	/^typedef struct Metadados {$/;"	s
+Metadados	../aula-9/metadados.h	/^} Metadados;$/;"	t	typeref:struct:Metadados
+NOMES_H	../aula-4/nomes.h	2;"	d
+NOME_ARQUIVO_DADOS	../aula-6/test_encadeamento_exterior.c	7;"	d	file:
+NOME_ARQUIVO_DADOS	../aula-8/test_arvore_b.c	6;"	d	file:
+NOME_ARQUIVO_DADOS	../aula-9/test_arvore_b_mais.c	8;"	d	file:
+NOME_ARQUIVO_ENTRADA	../aula-4/test_geracao_particoes.c	12;"	d	file:
+NOME_ARQUIVO_HASH	../aula-6/test_encadeamento_exterior.c	6;"	d	file:
+NOME_ARQUIVO_HASH	../aula-7/test_encadeamento_interior.c	6;"	d	file:
+NOME_ARQUIVO_INDICE	../aula-9/test_arvore_b_mais.c	7;"	d	file:
+NOME_ARQUIVO_METADADOS	../aula-8/test_arvore_b.c	7;"	d	file:
+NOME_ARQUIVO_METADADOS	../aula-9/test_arvore_b_mais.c	6;"	d	file:
+NOME_ARQUIVO_SAIDA	../aula-5/test_intercalacao.c	5;"	d	file:
+NO_FOLHA_H	../aula-9/no_folha.h	2;"	d
+NO_H	../aula-8/no.h	2;"	d
+NO_INTERNO_H	../aula-9/no_interno.h	2;"	d
+No	../aula-8/no.h	/^typedef struct No {$/;"	s
+No	../aula-8/no.h	/^} No;$/;"	t	typeref:struct:No
+NoArquivo	../aula-5/fila.h	/^typedef struct NoArquivo {$/;"	s
+NoArquivo	../aula-5/fila.h	/^} NoArquivo;$/;"	t	typeref:struct:NoArquivo
+NoFolha	../aula-9/no_folha.h	/^typedef struct NoFolha {$/;"	s
+NoFolha	../aula-9/no_folha.h	/^} NoFolha;$/;"	t	typeref:struct:NoFolha
+NoInterno	../aula-9/no_interno.h	/^typedef struct NoInterno {$/;"	s
+NoInterno	../aula-9/no_interno.h	/^} NoInterno;$/;"	t	typeref:struct:NoInterno
+Nomes	../aula-4/nomes.h	/^typedef struct Nomes {$/;"	s
+Nomes	../aula-4/nomes.h	/^} Nomes;$/;"	t	typeref:struct:Nomes
+OBJ	../aula-4/Makefile	/^OBJ = $(patsubst %,$(ODIR)$(SEP)%,$(_OBJ))$/;"	m
+OBJ	../aula-5/Makefile	/^OBJ = $(patsubst %,$(ODIR)$(SEP)%,$(_OBJ))$/;"	m
+OBJ	../aula-6/Makefile	/^OBJ = $(patsubst %,$(ODIR)$(SEP)%,$(_OBJ))$/;"	m
+OBJ	../aula-7/Makefile	/^OBJ = $(patsubst %,$(ODIR)$(SEP)%,$(_OBJ))$/;"	m
+OBJ	../aula-8/Makefile	/^OBJ = $(patsubst %,$(ODIR)$(SEP)%,$(_OBJ))$/;"	m
+OBJ	../aula-9/Makefile	/^OBJ = $(patsubst %,$(ODIR)$(SEP)%,$(_OBJ))$/;"	m
+OCUPADO	../aula-6/cliente.h	5;"	d
+OCUPADO	../aula-7/cliente.h	5;"	d
+OCUPADO	../aula-8/no.h	5;"	d
+ODIR	../aula-4/Makefile	/^ODIR = .$(SEP)build$/;"	m
+ODIR	../aula-5/Makefile	/^ODIR = .$(SEP)build$/;"	m
+ODIR	../aula-6/Makefile	/^ODIR = .$(SEP)build$/;"	m
+ODIR	../aula-7/Makefile	/^ODIR = .$(SEP)build$/;"	m
+ODIR	../aula-8/Makefile	/^ODIR = .$(SEP)build$/;"	m
+ODIR	../aula-9/Makefile	/^ODIR = .$(SEP)build$/;"	m
+RD	../aula-4/Makefile	/^  RD = rd \/S \/Q$/;"	m
+RD	../aula-4/Makefile	/^  RD = rm -rf$/;"	m
+RD	../aula-5/Makefile	/^  RD = rd \/S \/Q$/;"	m
+RD	../aula-5/Makefile	/^  RD = rm -rf$/;"	m
+RD	../aula-6/Makefile	/^  RD = rd \/S \/Q$/;"	m
+RD	../aula-6/Makefile	/^  RD = rm -rf$/;"	m
+RD	../aula-7/Makefile	/^  RD = rd \/S \/Q$/;"	m
+RD	../aula-7/Makefile	/^  RD = rm -rf$/;"	m
+RD	../aula-8/Makefile	/^  RD = rd \/S \/Q$/;"	m
+RD	../aula-8/Makefile	/^  RD = rm -rf$/;"	m
+RD	../aula-9/Makefile	/^  RD = rd \/S \/Q$/;"	m
+RD	../aula-9/Makefile	/^  RD = rm -rf$/;"	m
+RM	../aula-4/Makefile	/^  RM = del \/F \/Q$/;"	m
+RM	../aula-4/Makefile	/^  RM = rm -rf$/;"	m
+RM	../aula-5/Makefile	/^  RM = del \/F \/Q$/;"	m
+RM	../aula-5/Makefile	/^  RM = rm -rf$/;"	m
+RM	../aula-6/Makefile	/^  RM = del \/F \/Q$/;"	m
+RM	../aula-6/Makefile	/^  RM = rm -rf$/;"	m
+RM	../aula-7/Makefile	/^  RM = del \/F \/Q$/;"	m
+RM	../aula-7/Makefile	/^  RM = rm -rf$/;"	m
+RM	../aula-8/Makefile	/^  RM = del \/F \/Q$/;"	m
+RM	../aula-8/Makefile	/^  RM = rm -rf$/;"	m
+RM	../aula-9/Makefile	/^  RM = del \/F \/Q$/;"	m
+RM	../aula-9/Makefile	/^  RM = rm -rf$/;"	m
+SEP	../aula-4/Makefile	/^SEP=$(strip $(SEP2))$/;"	m
+SEP	../aula-5/Makefile	/^SEP=$(strip $(SEP2))$/;"	m
+SEP	../aula-6/Makefile	/^SEP=$(strip $(SEP2))$/;"	m
+SEP	../aula-7/Makefile	/^SEP=$(strip $(SEP2))$/;"	m
+SEP	../aula-8/Makefile	/^SEP=$(strip $(SEP2))$/;"	m
+SEP	../aula-9/Makefile	/^SEP=$(strip $(SEP2))$/;"	m
+SEP2	../aula-4/Makefile	/^  SEP2=\/$/;"	m
+SEP2	../aula-4/Makefile	/^  SEP2=\\\\$/;"	m
+SEP2	../aula-5/Makefile	/^  SEP2=\/$/;"	m
+SEP2	../aula-5/Makefile	/^  SEP2=\\\\$/;"	m
+SEP2	../aula-6/Makefile	/^  SEP2=\/$/;"	m
+SEP2	../aula-6/Makefile	/^  SEP2=\\\\$/;"	m
+SEP2	../aula-7/Makefile	/^  SEP2=\/$/;"	m
+SEP2	../aula-7/Makefile	/^  SEP2=\\\\$/;"	m
+SEP2	../aula-8/Makefile	/^  SEP2=\/$/;"	m
+SEP2	../aula-8/Makefile	/^  SEP2=\\\\$/;"	m
+SEP2	../aula-9/Makefile	/^  SEP2=\/$/;"	m
+SEP2	../aula-9/Makefile	/^  SEP2=\\\\$/;"	m
+TAM_DATA_NASCIMENTO	../aula-5/cliente.h	7;"	d
+TAM_NOME	../aula-4/cliente.h	6;"	d
+TAM_NOME	../aula-5/cliente.h	6;"	d
+TAM_NOME	../aula-6/cliente.h	7;"	d
+TAM_NOME	../aula-7/cliente.h	7;"	d
+TAM_NOME	../aula-8/cliente.h	4;"	d
+TAM_NOME	../aula-9/cliente.h	4;"	d
+TEST	../aula-4/ufftest.h	69;"	d
+TEST	../aula-5/ufftest.h	69;"	d
+TEST	../aula-6/ufftest.h	69;"	d
+TEST	../aula-7/ufftest.h	69;"	d
+TEST	../aula-8/ufftest.h	69;"	d
+TEST	../aula-9/ufftest.h	69;"	d
+TOKENPASTE	../aula-4/ufftest.h	12;"	d
+TOKENPASTE	../aula-5/ufftest.h	12;"	d
+TOKENPASTE	../aula-6/ufftest.h	12;"	d
+TOKENPASTE	../aula-7/ufftest.h	12;"	d
+TOKENPASTE	../aula-8/ufftest.h	12;"	d
+TOKENPASTE	../aula-9/ufftest.h	12;"	d
+TOKENPASTE2	../aula-4/ufftest.h	13;"	d
+TOKENPASTE2	../aula-5/ufftest.h	13;"	d
+TOKENPASTE2	../aula-6/ufftest.h	13;"	d
+TOKENPASTE2	../aula-7/ufftest.h	13;"	d
+TOKENPASTE2	../aula-8/ufftest.h	13;"	d
+TOKENPASTE2	../aula-9/ufftest.h	13;"	d
+UFFASSERT	../aula-4/ufftest.h	82;"	d
+UFFASSERT	../aula-5/ufftest.h	82;"	d
+UFFASSERT	../aula-6/ufftest.h	82;"	d
+UFFASSERT	../aula-7/ufftest.h	82;"	d
+UFFASSERT	../aula-8/ufftest.h	82;"	d
+UFFASSERT	../aula-9/ufftest.h	82;"	d
+UFF_TEST_H	../aula-4/ufftest.h	2;"	d
+UFF_TEST_H	../aula-5/ufftest.h	2;"	d
+UFF_TEST_H	../aula-6/ufftest.h	2;"	d
+UFF_TEST_H	../aula-7/ufftest.h	2;"	d
+UFF_TEST_H	../aula-8/ufftest.h	2;"	d
+UFF_TEST_H	../aula-9/ufftest.h	2;"	d
+_CONTACORRENTE_H	../aula-3/contacorrente.h	2;"	d
+_CRT_SECURE_NO_WARNINGS	../aula-4/cliente.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-4/geracao_particoes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-4/lista_clientes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-4/nomes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-4/test_geracao_particoes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-5/cliente.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-5/intercalacao.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-5/lista_clientes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-5/test_intercalacao.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-6/cliente.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-6/compartimento_hash.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-6/encadeamento_exterior.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-6/lista_clientes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-6/lista_compartimentos.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-6/test_encadeamento_exterior.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-7/cliente.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-7/encadeamento_interior.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-7/lista_clientes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-7/test_encadeamento_interior.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-8/arvore_b.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-8/cliente.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-8/lista_clientes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-8/lista_nos.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-8/metadados.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-8/no.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-8/test_arvore_b.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-9/arvore_b_mais.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-9/cliente.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-9/lista_clientes.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-9/lista_nos_folhas.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-9/lista_nos_internos.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-9/metadados.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-9/no_folha.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-9/no_interno.c	2;"	d	file:
+_CRT_SECURE_NO_WARNINGS	../aula-9/test_arvore_b_mais.c	2;"	d	file:
+_DEPS	../aula-4/Makefile	/^_DEPS = cliente.h lista_clientes.h nomes.h geracao_particoes.h ufftest.h$/;"	m
+_DEPS	../aula-5/Makefile	/^_DEPS = cliente.h lista_clientes.h intercalacao.h ufftest.h fila.h arvore_vencedores.h$/;"	m
+_DEPS	../aula-6/Makefile	/^_DEPS = encadeamento_exterior.h cliente.h lista_clientes.h compartimento_hash.h lista_compartimentos.h ufftest.h$/;"	m
+_DEPS	../aula-7/Makefile	/^_DEPS = encadeamento_interior.h cliente.h lista_clientes.h ufftest.h$/;"	m
+_DEPS	../aula-8/Makefile	/^_DEPS = arvore_b.h cliente.h lista_clientes.h metadados.h no.h lista_nos.h ufftest.h$/;"	m
+_DEPS	../aula-9/Makefile	/^_DEPS = arvore_b_mais.h cliente.h lista_clientes.h metadados.h no_folha.h no_interno.h lista_nos_folhas.h lista_nos_internos.h ufftest.h$/;"	m
+_OBJ	../aula-4/Makefile	/^_OBJ = geracao_particoes.o cliente.o lista_clientes.o nomes.o test_geracao_particoes.o$/;"	m
+_OBJ	../aula-5/Makefile	/^_OBJ = intercalacao.o cliente.o lista_clientes.o test_intercalacao.o fila.o arvore_vencedores.o$/;"	m
+_OBJ	../aula-6/Makefile	/^_OBJ = encadeamento_exterior.o cliente.o lista_clientes.o compartimento_hash.o lista_compartimentos.o test_encadeamento_exterior.o$/;"	m
+_OBJ	../aula-7/Makefile	/^_OBJ = encadeamento_interior.o cliente.o lista_clientes.o test_encadeamento_interior.o$/;"	m
+_OBJ	../aula-8/Makefile	/^_OBJ = arvore_b.o cliente.o lista_clientes.o metadados.o no.o lista_nos.o test_arvore_b.o$/;"	m
+_OBJ	../aula-9/Makefile	/^_OBJ = arvore_b_mais.o cliente.o lista_clientes.o metadados.o no_folha.o no_interno.o lista_nos_folhas.o lista_nos_internos.o test_arvore_b_mais.o$/;"	m
+_TEST	../aula-4/ufftest.h	80;"	d
+_TEST	../aula-5/ufftest.h	80;"	d
+_TEST	../aula-6/ufftest.h	80;"	d
+_TEST	../aula-7/ufftest.h	80;"	d
+_TEST	../aula-8/ufftest.h	80;"	d
+_TEST	../aula-9/ufftest.h	80;"	d
+__fila_h__	../aula-5/fila.h	2;"	d
+_insert	../aula-8/arvore_b.c	/^int _insert(FILE *arq, Cliente *insert_cli,int pt, int cli_pointer, FILE *meta){$/;"	f
+_obterNosAdjacentes	../aula-8/arvore_b.c	/^static int *_obterNosAdjacentes(FILE *fnos, No *ref, int i){$/;"	f	file:
+adcn_cliente	../aula-7/lista_clientes.c	/^void adcn_cliente(ListaClientes *lc, int cod, char *nome, int prox, int flag){$/;"	f
+adcn_compartimento	../aula-6/lista_compartimentos.c	/^void adcn_compartimento(ListaCompartimentos *lc, int prox){$/;"	f
+after	../aula-4/test_geracao_particoes.c	/^void after()$/;"	f
+ag_imprime	../aula-3/agencia.c	/^void ag_imprime(Agencia *ag) {$/;"	f
+ag_le	../aula-3/agencia.c	/^Agencia *ag_le(FILE *in) {$/;"	f
+ag_salva	../aula-3/agencia.c	/^void ag_salva(Agencia *ag, FILE *out) {$/;"	f
+ag_tamanho	../aula-3/agencia.c	/^int ag_tamanho() {$/;"	f
+agencia	../aula-3/agencia.c	/^Agencia *agencia(int cod, char *nome, char *gerente){$/;"	f
+ant	../aula-5/fila.h	/^	struct NoArquivo *ant;$/;"	m	struct:NoArquivo	typeref:struct:NoArquivo::NoArquivo
+aponta_folha	../aula-9/no_interno.h	/^	int aponta_folha;$/;"	m	struct:NoInterno
+arq	../aula-5/fila.h	/^	char *arq;$/;"	m	struct:NoArquivo
+arvore_vencedores	../aula-5/arvore_vencedores.h	/^typedef struct arvore_vencedores{$/;"	s
+before	../aula-5/test_intercalacao.c	/^void before() {$/;"	f
+before	../aula-6/test_encadeamento_exterior.c	/^void before() {$/;"	f
+before	../aula-7/test_encadeamento_interior.c	/^void before() {$/;"	f
+before	../aula-8/test_arvore_b.c	/^void before()$/;"	f
+before	../aula-9/test_arvore_b_mais.c	/^void before()$/;"	f
+busca	../aula-6/encadeamento_exterior.c	/^int busca(int cod_cli, char *nome_arquivo_hash, char *nome_arquivo_dados) {$/;"	f
+busca	../aula-7/encadeamento_interior.c	/^int busca(int cod_cli, char *nome_arquivo_hash, int tam, int *encontrou)$/;"	f
+busca	../aula-8/arvore_b.c	/^int busca(int x, char *nome_arquivo_metadados, char *nome_arquivo_dados, int *pt, int *encontrou)$/;"	f
+busca	../aula-9/arvore_b_mais.c	/^int busca(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_indice, char *nome_arquivo_dados, int *pont_folha, int *encontrou)$/;"	f
+buscar_agencia	../aula-3/exercicio/main.c	/^Agencia *buscar_agencia(FILE *in, int codAgencia){$/;"	f
+buscar_agencia	../aula-3/main.c	/^Agencia *buscar_agencia(FILE *in, int codAgencia){$/;"	f
+buscar_cliente	../aula-9/lista_clientes.c	/^int buscar_cliente(Cliente **lc, int tam, int chave, int *posicao){$/;"	f
+buscar_conta	../aula-3/exercicio/main.c	/^ContaCorrente *buscar_conta(FILE *in,int codConta,int codAg){$/;"	f
+buscar_conta	../aula-3/main.c	/^ContaCorrente *buscar_conta(FILE *in,int codConta,int codAg){$/;"	f
+cadastrar_agencia	../aula-3/exercicio/main.c	/^int cadastrar_agencia(FILE *in, int cod, char *nome, char *gerente){$/;"	f
+cadastrar_agencia	../aula-3/main.c	/^int cadastrar_agencia(FILE *in, int cod, char *nome, char *gerente){$/;"	f
+cadastrar_conta	../aula-3/exercicio/main.c	/^int cadastrar_conta(FILE *in, FILE *agIn,int cod,int codAg,double saldo){$/;"	f
+cadastrar_conta	../aula-3/main.c	/^int cadastrar_conta(FILE *in, FILE *agIn,int cod,int codAg,double saldo){$/;"	f
+cc_imprime	../aula-3/contacorrente.c	/^void cc_imprime(ContaCorrente *cc) {$/;"	f
+cc_le	../aula-3/contacorrente.c	/^ContaCorrente *cc_le(FILE *in) {$/;"	f
+cc_salva	../aula-3/contacorrente.c	/^void cc_salva(ContaCorrente *cc, FILE *out) {$/;"	f
+cc_tamanho	../aula-3/contacorrente.c	/^int cc_tamanho() {$/;"	f
+chaves	../aula-9/no_interno.h	/^	int *chaves;$/;"	m	struct:NoInterno
+classificacao_interna	../aula-4/geracao_particoes.c	/^void classificacao_interna(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M)$/;"	f
+cliente	../aula-4/cliente.c	/^Cliente *cliente(int cod, char *nome)$/;"	f
+cliente	../aula-5/arvore_vencedores.h	/^    Cliente *cliente;$/;"	m	struct:arvore_vencedores
+cliente	../aula-5/cliente.c	/^Cliente *cliente(int cod, char *nome, char *nascimento)$/;"	f
+cliente	../aula-6/cliente.c	/^Cliente *cliente(int cod, char *nome, int prox, int flag)$/;"	f
+cliente	../aula-7/cliente.c	/^Cliente *cliente(int cod, char *nome, int prox, int flag)$/;"	f
+cliente	../aula-8/cliente.c	/^Cliente *cliente(int cod, char *nome)$/;"	f
+cliente	../aula-9/cliente.c	/^Cliente *cliente(int cod, char *nome)$/;"	f
+clientes	../aula-8/no.h	/^	Cliente **clientes;$/;"	m	struct:No
+clientes	../aula-9/no_folha.h	/^	Cliente **clientes;$/;"	m	struct:NoFolha
+cmp_cliente	../aula-4/cliente.c	/^int cmp_cliente(Cliente *c1, Cliente *c2)$/;"	f
+cmp_cliente	../aula-5/cliente.c	/^int cmp_cliente(Cliente *c1, Cliente *c2)$/;"	f
+cmp_cliente	../aula-6/cliente.c	/^int cmp_cliente(Cliente *c1, Cliente *c2)$/;"	f
+cmp_cliente	../aula-7/cliente.c	/^int cmp_cliente(Cliente *c1, Cliente *c2)$/;"	f
+cmp_cliente	../aula-8/cliente.c	/^int cmp_cliente(Cliente *c1, Cliente *c2)$/;"	f
+cmp_cliente	../aula-9/cliente.c	/^int cmp_cliente(Cliente *c1, Cliente *c2)$/;"	f
+cmp_clientes	../aula-4/lista_clientes.c	/^int cmp_clientes(ListaClientes *c1, ListaClientes *c2)$/;"	f
+cmp_clientes	../aula-5/lista_clientes.c	/^int cmp_clientes(ListaClientes *c1, ListaClientes *c2)$/;"	f
+cmp_clientes	../aula-6/lista_clientes.c	/^int cmp_clientes(ListaClientes *c1, ListaClientes *c2)$/;"	f
+cmp_clientes	../aula-7/lista_clientes.c	/^int cmp_clientes(ListaClientes *c1, ListaClientes *c2)$/;"	f
+cmp_clientes	../aula-8/lista_clientes.c	/^int cmp_clientes(ListaClientes *c1, ListaClientes *c2)$/;"	f
+cmp_clientes	../aula-9/lista_clientes.c	/^int cmp_clientes(ListaClientes *c1, ListaClientes *c2)$/;"	f
+cmp_compartimento	../aula-6/compartimento_hash.c	/^int cmp_compartimento(CompartimentoHash *c1, CompartimentoHash *c2)$/;"	f
+cmp_compartimentos	../aula-6/lista_compartimentos.c	/^int cmp_compartimentos(ListaCompartimentos *c1, ListaCompartimentos *c2)$/;"	f
+cmp_metadados	../aula-8/metadados.c	/^int cmp_metadados(Metadados *c1, Metadados *c2)$/;"	f
+cmp_metadados	../aula-9/metadados.c	/^int cmp_metadados(Metadados *c1, Metadados *c2)$/;"	f
+cmp_no	../aula-8/no.c	/^int cmp_no(No *n1, No *n2)$/;"	f
+cmp_no_folha	../aula-9/no_folha.c	/^int cmp_no_folha(NoFolha *n1, NoFolha *n2)$/;"	f
+cmp_no_interno	../aula-9/no_interno.c	/^int cmp_no_interno(NoInterno *n1, NoInterno *n2)$/;"	f
+cmp_nos	../aula-8/lista_nos.c	/^int cmp_nos(ListaNos *c1, ListaNos *c2)$/;"	f
+cmp_nos_folhas	../aula-9/lista_nos_folhas.c	/^int cmp_nos_folhas(ListaNosFolhas *c1, ListaNosFolhas *c2)$/;"	f
+cmp_nos_internos	../aula-9/lista_nos_internos.c	/^int cmp_nos_internos(ListaNosInternos *c1, ListaNosInternos *c2)$/;"	f
+cod	../aula-3/agencia.h	/^    int cod;$/;"	m	struct:Agencia
+cod	../aula-3/contacorrente.h	/^    int cod;$/;"	m	struct:ContaCorrente
+codAgencia	../aula-3/contacorrente.h	/^    int codAgencia;$/;"	m	struct:ContaCorrente
+cod_cliente	../aula-4/cliente.h	/^	int cod_cliente;$/;"	m	struct:Cliente
+cod_cliente	../aula-5/cliente.h	/^	int cod_cliente;$/;"	m	struct:Cliente
+cod_cliente	../aula-6/cliente.h	/^	int cod_cliente;$/;"	m	struct:Cliente
+cod_cliente	../aula-7/cliente.h	/^	int cod_cliente;$/;"	m	struct:Cliente
+cod_cliente	../aula-8/cliente.h	/^	int cod_cliente;$/;"	m	struct:Cliente
+cod_cliente	../aula-9/cliente.h	/^	int cod_cliente;$/;"	m	struct:Cliente
+compare_double	../aula-4/ufftest.h	/^int compare_double(double a, double b) {$/;"	f
+compare_double	../aula-5/ufftest.h	/^int compare_double(double a, double b) {$/;"	f
+compare_double	../aula-6/ufftest.h	/^int compare_double(double a, double b) {$/;"	f
+compare_double	../aula-7/ufftest.h	/^int compare_double(double a, double b) {$/;"	f
+compare_double	../aula-8/ufftest.h	/^int compare_double(double a, double b) {$/;"	f
+compare_double	../aula-9/ufftest.h	/^int compare_double(double a, double b) {$/;"	f
+compartimento_hash	../aula-6/compartimento_hash.c	/^CompartimentoHash *compartimento_hash(int prox)$/;"	f
+conta_nomes	../aula-4/nomes.c	/^int conta_nomes(Nomes *nomes)$/;"	f
+contacorrente	../aula-3/contacorrente.c	/^ContaCorrente *contacorrente(int cod, int codAg, double saldo){$/;"	f
+cria_arvore	../aula-5/arvore_vencedores.c	/^ArvoreVencedores *cria_arvore(ArvoreVencedores *r, ArvoreVencedores *l){$/;"	f
+cria_clientes	../aula-4/lista_clientes.c	/^ListaClientes *cria_clientes(int qtd, ...)$/;"	f
+cria_clientes	../aula-5/lista_clientes.c	/^ListaClientes *cria_clientes(int qtd, ...)$/;"	f
+cria_clientes	../aula-6/lista_clientes.c	/^ListaClientes *cria_clientes(int qtd, ...)$/;"	f
+cria_clientes	../aula-7/lista_clientes.c	/^ListaClientes *cria_clientes(int qtd, ...)$/;"	f
+cria_clientes	../aula-8/lista_clientes.c	/^ListaClientes *cria_clientes(int qtd, ...)$/;"	f
+cria_clientes	../aula-9/lista_clientes.c	/^ListaClientes *cria_clientes(int qtd, ...)$/;"	f
+cria_compartimentos	../aula-6/lista_compartimentos.c	/^ListaCompartimentos *cria_compartimentos(int qtd, ...)$/;"	f
+cria_hash	../aula-6/encadeamento_exterior.c	/^void cria_hash(char *nome_arquivo_hash, int tam)$/;"	f
+cria_hash	../aula-7/encadeamento_interior.c	/^void cria_hash(char *nome_arquivo_hash, int tam)$/;"	f
+cria_no	../aula-5/arvore_vencedores.c	/^ArvoreVencedores *cria_no(Cliente *c, int num_arq){$/;"	f
+cria_no	../aula-8/no.c	/^No *cria_no(int m, int pont_pai, int size, ...)$/;"	f
+cria_no_folha	../aula-9/no_folha.c	/^NoFolha *cria_no_folha(int pont_pai, int pont_prox, int m, ...)$/;"	f
+cria_no_interno	../aula-9/no_interno.c	/^NoInterno *cria_no_interno(int m, int pont_pai, int aponta_folha, int size, ...)$/;"	f
+cria_nomes	../aula-4/nomes.c	/^Nomes *cria_nomes(char *nome, Nomes *prox)$/;"	f
+cria_nos	../aula-8/lista_nos.c	/^ListaNos *cria_nos(int qtd, ...)$/;"	f
+cria_nos_folhas	../aula-9/lista_nos_folhas.c	/^ListaNosFolhas *cria_nos_folhas(int qtd, ...)$/;"	f
+cria_nos_internos	../aula-9/lista_nos_internos.c	/^ListaNosInternos *cria_nos_internos(int qtd, ...)$/;"	f
+cria_str	../aula-4/nomes.c	/^char *cria_str(char *str)$/;"	f
+data_nascimento	../aula-5/cliente.h	/^	char data_nascimento[TAM_DATA_NASCIMENTO];$/;"	m	struct:Cliente
+exclui	../aula-6/encadeamento_exterior.c	/^int exclui(int cod_cli, char *nome_arquivo_hash, char *nome_arquivo_dados)$/;"	f
+exclui	../aula-7/encadeamento_interior.c	/^int exclui(int cod_cli, char *nome_arquivo_hash, int tam)$/;"	f
+exclui	../aula-8/arvore_b.c	/^int exclui(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_dados)$/;"	f
+exclui	../aula-9/arvore_b_mais.c	/^int exclui(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_indice, char *nome_arquivo_dados)$/;"	f
+existe_nao_congelado	../aula-4/geracao_particoes.c	/^int existe_nao_congelado(int congelados[], int M){$/;"	f
+file_exist	../aula-4/test_geracao_particoes.c	/^int file_exist(char *filename)$/;"	f
+flag	../aula-6/cliente.h	/^	int flag;$/;"	m	struct:Cliente
+flag	../aula-7/cliente.h	/^	int flag;$/;"	m	struct:Cliente
+gerente	../aula-3/agencia.h	/^    char gerente[50];$/;"	m	struct:Agencia
+imprime_cliente	../aula-4/cliente.c	/^void imprime_cliente(Cliente *cliente)$/;"	f
+imprime_cliente	../aula-5/cliente.c	/^void imprime_cliente(Cliente *cliente)$/;"	f
+imprime_cliente	../aula-6/cliente.c	/^void imprime_cliente(Cliente *cliente)$/;"	f
+imprime_cliente	../aula-7/cliente.c	/^void imprime_cliente(Cliente *cliente)$/;"	f
+imprime_cliente	../aula-8/cliente.c	/^void imprime_cliente(Cliente *cliente)$/;"	f
+imprime_cliente	../aula-9/cliente.c	/^void imprime_cliente(Cliente *cliente)$/;"	f
+imprime_clientes	../aula-4/lista_clientes.c	/^void imprime_clientes(ListaClientes *lc)$/;"	f
+imprime_clientes	../aula-5/lista_clientes.c	/^void imprime_clientes(ListaClientes *lc)$/;"	f
+imprime_clientes	../aula-6/lista_clientes.c	/^void imprime_clientes(ListaClientes *lc)$/;"	f
+imprime_clientes	../aula-7/lista_clientes.c	/^void imprime_clientes(ListaClientes *lc)$/;"	f
+imprime_clientes	../aula-8/lista_clientes.c	/^void imprime_clientes(ListaClientes *lc)$/;"	f
+imprime_clientes	../aula-9/lista_clientes.c	/^void imprime_clientes(ListaClientes *lc)$/;"	f
+imprime_compartimento	../aula-6/compartimento_hash.c	/^void imprime_compartimento(CompartimentoHash *compartimento)$/;"	f
+imprime_compartimentos	../aula-6/lista_compartimentos.c	/^void imprime_compartimentos(ListaCompartimentos *lc)$/;"	f
+imprime_metadados	../aula-8/metadados.c	/^void imprime_metadados(Metadados *metadados)$/;"	f
+imprime_metadados	../aula-9/metadados.c	/^void imprime_metadados(Metadados *metadados)$/;"	f
+imprime_no	../aula-8/no.c	/^void imprime_no(No *no)$/;"	f
+imprime_no_folha	../aula-9/no_folha.c	/^void imprime_no_folha(NoFolha *no)$/;"	f
+imprime_no_interno	../aula-9/no_interno.c	/^void imprime_no_interno(NoInterno *no)$/;"	f
+imprime_nomes	../aula-4/nomes.c	/^void imprime_nomes(Nomes *nomes)$/;"	f
+imprime_nos	../aula-8/lista_nos.c	/^void imprime_nos(ListaNos *lc)$/;"	f
+imprime_nos_folhas	../aula-9/lista_nos_folhas.c	/^void imprime_nos_folhas(ListaNosFolhas *lc)$/;"	f
+imprime_nos_internos	../aula-9/lista_nos_internos.c	/^void imprime_nos_internos(ListaNosInternos *lc)$/;"	f
+insere	../aula-6/encadeamento_exterior.c	/^int insere(int cod_cli, char *nome_cli, char *nome_arquivo_hash, char *nome_arquivo_dados, int num_registros) {$/;"	f
+insere	../aula-7/encadeamento_interior.c	/^int insere(int cod_cli, char *nome_cli, char *nome_arquivo_hash, int tam)$/;"	f
+insere	../aula-8/arvore_b.c	/^int insere(int cod_cli, char *nome_cli, char *nome_arquivo_metadados, char *nome_arquivo_dados)$/;"	f
+insere	../aula-9/arvore_b_mais.c	/^int insere(int cod_cli, char *nome_cli, char *nome_arquivo_metadados, char *nome_arquivo_indice, char *nome_arquivo_dados)$/;"	f
+intercalacao	../aula-5/intercalacao.c	/^void intercalacao(char **nome_particoes, int qtd, char *nome_arquivo_saida)$/;"	f
+inverte_nomes	../aula-4/nomes.c	/^void inverte_nomes(Nomes *nomes)$/;"	f
+le_arq_metadados	../aula-8/metadados.c	/^Metadados *le_arq_metadados(char *nome_arquivo)$/;"	f
+le_arq_metadados	../aula-9/metadados.c	/^Metadados *le_arq_metadados(char *nome_arquivo)$/;"	f
+le_cliente	../aula-4/cliente.c	/^Cliente *le_cliente(FILE *in)$/;"	f
+le_cliente	../aula-5/cliente.c	/^Cliente *le_cliente(FILE *in)$/;"	f
+le_cliente	../aula-6/cliente.c	/^Cliente *le_cliente(FILE *in)$/;"	f
+le_cliente	../aula-7/cliente.c	/^Cliente *le_cliente(FILE *in)$/;"	f
+le_cliente	../aula-8/cliente.c	/^Cliente *le_cliente(FILE *in)$/;"	f
+le_cliente	../aula-9/cliente.c	/^Cliente *le_cliente(FILE *in)$/;"	f
+le_clientes	../aula-4/lista_clientes.c	/^ListaClientes * le_clientes(char *nome_arquivo)$/;"	f
+le_clientes	../aula-5/lista_clientes.c	/^ListaClientes * le_clientes(char *nome_arquivo)$/;"	f
+le_clientes	../aula-6/lista_clientes.c	/^ListaClientes * le_clientes(char *nome_arquivo)$/;"	f
+le_clientes	../aula-7/lista_clientes.c	/^ListaClientes * le_clientes(char *nome_arquivo)$/;"	f
+le_clientes	../aula-8/lista_clientes.c	/^ListaClientes * le_clientes(char *nome_arquivo)$/;"	f
+le_clientes	../aula-9/lista_clientes.c	/^ListaClientes * le_clientes(char *nome_arquivo)$/;"	f
+le_compartimento	../aula-6/compartimento_hash.c	/^CompartimentoHash *le_compartimento(FILE *in)$/;"	f
+le_compartimentos	../aula-6/lista_compartimentos.c	/^ListaCompartimentos * le_compartimentos(char *nome_arquivo)$/;"	f
+le_metadados	../aula-8/metadados.c	/^Metadados *le_metadados(FILE *in)$/;"	f
+le_metadados	../aula-9/metadados.c	/^Metadados *le_metadados(FILE *in)$/;"	f
+le_no	../aula-8/no.c	/^No *le_no(FILE *in)$/;"	f
+le_no_folha	../aula-9/no_folha.c	/^NoFolha *le_no_folha(FILE *in)$/;"	f
+le_no_interno	../aula-9/no_interno.c	/^NoInterno *le_no_interno(FILE *in)$/;"	f
+le_nos	../aula-8/lista_nos.c	/^ListaNos * le_nos(char *nome_arquivo)$/;"	f
+le_nos_folhas	../aula-9/lista_nos_folhas.c	/^ListaNosFolhas *le_nos_folhas(char *nome_arquivo)$/;"	f
+le_nos_internos	../aula-9/lista_nos_internos.c	/^ListaNosInternos * le_nos_internos(char *nome_arquivo)$/;"	f
+left	../aula-5/arvore_vencedores.h	/^    struct arvore_vencedores *left;$/;"	m	struct:arvore_vencedores	typeref:struct:arvore_vencedores::arvore_vencedores
+ler_clientes	../aula-4/lista_clientes.c	/^void ler_clientes(FILE *in, ListaClientes **list, int qtd, int *congelados){$/;"	f
+libera_clientes	../aula-4/lista_clientes.c	/^void libera_clientes(ListaClientes *lc)$/;"	f
+libera_clientes	../aula-5/lista_clientes.c	/^void libera_clientes(ListaClientes *lc)$/;"	f
+libera_clientes	../aula-6/lista_clientes.c	/^void libera_clientes(ListaClientes *lc)$/;"	f
+libera_clientes	../aula-7/lista_clientes.c	/^void libera_clientes(ListaClientes *lc)$/;"	f
+libera_clientes	../aula-8/lista_clientes.c	/^void libera_clientes(ListaClientes *lc)$/;"	f
+libera_clientes	../aula-9/lista_clientes.c	/^void libera_clientes(ListaClientes *lc)$/;"	f
+libera_compartimentos	../aula-6/lista_compartimentos.c	/^void libera_compartimentos(ListaCompartimentos *lc)$/;"	f
+libera_no	../aula-8/no.c	/^void libera_no(No *no)$/;"	f
+libera_no_folha	../aula-9/no_folha.c	/^void libera_no_folha(NoFolha *no)$/;"	f
+libera_no_interno	../aula-9/no_interno.c	/^void libera_no_interno(NoInterno *no)$/;"	f
+libera_nomes	../aula-4/nomes.c	/^void libera_nomes(Nomes *nomes)$/;"	f
+libera_nos	../aula-8/lista_nos.c	/^void libera_nos(ListaNos *lc)$/;"	f
+libera_nos_folhas	../aula-9/lista_nos_folhas.c	/^void libera_nos_folhas(ListaNosFolhas *lc)$/;"	f
+libera_nos_internos	../aula-9/lista_nos_internos.c	/^void libera_nos_internos(ListaNosInternos *lc)$/;"	f
+lista	../aula-4/lista_clientes.h	/^	Cliente **lista;$/;"	m	struct:ListaClientes
+lista	../aula-5/lista_clientes.h	/^	Cliente **lista;$/;"	m	struct:ListaClientes
+lista	../aula-6/lista_clientes.h	/^	Cliente **lista;$/;"	m	struct:ListaClientes
+lista	../aula-6/lista_compartimentos.h	/^	CompartimentoHash **lista;$/;"	m	struct:ListaCompartimentos
+lista	../aula-7/lista_clientes.h	/^	Cliente **lista;$/;"	m	struct:ListaClientes
+lista	../aula-8/lista_clientes.h	/^	Cliente **lista;$/;"	m	struct:ListaClientes
+lista	../aula-8/lista_nos.h	/^	No **lista;$/;"	m	struct:ListaNos
+lista	../aula-9/lista_clientes.h	/^	Cliente **lista;$/;"	m	struct:ListaClientes
+lista	../aula-9/lista_nos_folhas.h	/^	NoFolha **lista;$/;"	m	struct:ListaNosFolhas
+lista	../aula-9/lista_nos_internos.h	/^	NoInterno **lista;$/;"	m	struct:ListaNosInternos
+m	../aula-8/no.h	/^	int m;$/;"	m	struct:No
+m	../aula-9/no_folha.h	/^	int m;$/;"	m	struct:NoFolha
+m	../aula-9/no_interno.h	/^	int m;$/;"	m	struct:NoInterno
+main	../aula-3/exercicio/main.c	/^void main(int argc, char** argv) {$/;"	f
+main	../aula-3/main.c	/^int main(int argc, char** argv) {$/;"	f
+metadados	../aula-8/metadados.c	/^Metadados *metadados(int pont_raiz, int pont_prox_no_livre)$/;"	f
+metadados	../aula-9/metadados.c	/^Metadados *metadados(int pont_raiz, int raiz_folha, int pont_prox_no_interno_livre, int pont_prox_no_folha_livre)$/;"	f
+metadados_vazio	../aula-9/metadados.c	/^Metadados *metadados_vazio()$/;"	f
+monta_arvore_h1	../aula-8/test_arvore_b.c	/^void monta_arvore_h1()$/;"	f
+monta_arvore_h1	../aula-9/test_arvore_b_mais.c	/^void monta_arvore_h1()$/;"	f
+monta_arvore_h1_cheia	../aula-8/test_arvore_b.c	/^void monta_arvore_h1_cheia()$/;"	f
+monta_arvore_h1_cheia	../aula-9/test_arvore_b_mais.c	/^void monta_arvore_h1_cheia()$/;"	f
+monta_arvore_h2	../aula-8/test_arvore_b.c	/^void monta_arvore_h2()$/;"	f
+monta_arvore_h2	../aula-9/test_arvore_b_mais.c	/^void monta_arvore_h2()$/;"	f
+monta_arvore_h2_cheia	../aula-8/test_arvore_b.c	/^void monta_arvore_h2_cheia()$/;"	f
+monta_arvore_h2_cheia	../aula-9/test_arvore_b_mais.c	/^void monta_arvore_h2_cheia()$/;"	f
+monta_arvore_h2_completa	../aula-9/test_arvore_b_mais.c	/^void monta_arvore_h2_completa()$/;"	f
+monta_arvore_h3	../aula-8/test_arvore_b.c	/^void monta_arvore_h3()$/;"	f
+monta_arvore_h3	../aula-9/test_arvore_b_mais.c	/^void monta_arvore_h3()$/;"	f
+mostrar_congelados	../aula-4/geracao_particoes.c	/^void mostrar_congelados(int congs[]){$/;"	f
+no	../aula-8/no.c	/^No *no(int m, int pont_pai)$/;"	f
+no_folha	../aula-9/no_folha.c	/^NoFolha *no_folha(int m, int pont_pai, int pont_prox)$/;"	f
+no_folha_vazio	../aula-9/no_folha.c	/^NoFolha *no_folha_vazio()$/;"	f
+no_interno	../aula-9/no_interno.c	/^NoInterno *no_interno(int m, int pont_pai, int aponta_folha)$/;"	f
+no_interno_vazio	../aula-9/no_interno.c	/^NoInterno *no_interno_vazio()$/;"	f
+no_vazio	../aula-8/no.c	/^No *no_vazio()$/;"	f
+nome	../aula-3/agencia.h	/^    char nome[50];$/;"	m	struct:Agencia
+nome	../aula-4/cliente.h	/^	char nome[TAM_NOME];$/;"	m	struct:Cliente
+nome	../aula-4/nomes.h	/^	char *nome;$/;"	m	struct:Nomes
+nome	../aula-5/cliente.h	/^	char nome[TAM_NOME];$/;"	m	struct:Cliente
+nome	../aula-6/cliente.h	/^	char nome[TAM_NOME];$/;"	m	struct:Cliente
+nome	../aula-7/cliente.h	/^	char nome[TAM_NOME];$/;"	m	struct:Cliente
+nome	../aula-8/cliente.h	/^	char nome[TAM_NOME];$/;"	m	struct:Cliente
+nome	../aula-9/cliente.h	/^	char nome[TAM_NOME];$/;"	m	struct:Cliente
+nomes	../aula-4/test_geracao_particoes.c	/^Nomes *nomes = NULL;$/;"	v
+num_arq	../aula-5/arvore_vencedores.h	/^    int num_arq;$/;"	m	struct:arvore_vencedores
+ordenar_clientes	../aula-8/lista_clientes.c	/^void ordenar_clientes(Cliente **lc){$/;"	f
+p	../aula-8/no.h	/^	int *p;$/;"	m	struct:No
+p	../aula-9/no_interno.h	/^	int *p;$/;"	m	struct:NoInterno
+particionar	../aula-8/arvore_b.c	/^void particionar(FILE *arq, Cliente *insert_cli,int pt, FILE *meta){$/;"	f
+pont_pai	../aula-8/no.h	/^	int pont_pai;$/;"	m	struct:No
+pont_pai	../aula-9/no_folha.h	/^	int pont_pai;$/;"	m	struct:NoFolha
+pont_pai	../aula-9/no_interno.h	/^	int pont_pai;$/;"	m	struct:NoInterno
+pont_prox	../aula-9/no_folha.h	/^	int pont_prox;$/;"	m	struct:NoFolha
+pont_prox_no_folha_livre	../aula-9/metadados.h	/^	int pont_prox_no_folha_livre;$/;"	m	struct:Metadados
+pont_prox_no_interno_livre	../aula-9/metadados.h	/^	int pont_prox_no_interno_livre;$/;"	m	struct:Metadados
+pont_prox_no_livre	../aula-8/metadados.h	/^	int pont_prox_no_livre;$/;"	m	struct:Metadados
+pont_raiz	../aula-8/metadados.h	/^	int pont_raiz;$/;"	m	struct:Metadados
+pont_raiz	../aula-9/metadados.h	/^	int pont_raiz;$/;"	m	struct:Metadados
+prim	../aula-5/fila.h	/^	NoArquivo *prim;$/;"	m	struct:Fila
+prox	../aula-4/nomes.h	/^	struct Nomes *prox;$/;"	m	struct:Nomes	typeref:struct:Nomes::Nomes
+prox	../aula-5/fila.h	/^	struct NoArquivo *prox;$/;"	m	struct:NoArquivo	typeref:struct:NoArquivo::NoArquivo
+prox	../aula-6/cliente.h	/^	int prox;$/;"	m	struct:Cliente
+prox	../aula-6/compartimento_hash.h	/^	int prox;$/;"	m	struct:CompartimentoHash
+prox	../aula-7/cliente.h	/^	int prox;$/;"	m	struct:Cliente
+qtd	../aula-4/lista_clientes.h	/^	int qtd;$/;"	m	struct:ListaClientes
+qtd	../aula-5/fila.h	/^	int qtd;$/;"	m	struct:Fila
+qtd	../aula-5/lista_clientes.h	/^	int qtd;$/;"	m	struct:ListaClientes
+qtd	../aula-6/lista_clientes.h	/^	int qtd;$/;"	m	struct:ListaClientes
+qtd	../aula-6/lista_compartimentos.h	/^	int qtd;$/;"	m	struct:ListaCompartimentos
+qtd	../aula-7/lista_clientes.h	/^	int qtd;$/;"	m	struct:ListaClientes
+qtd	../aula-8/lista_clientes.h	/^	int qtd;$/;"	m	struct:ListaClientes
+qtd	../aula-8/lista_nos.h	/^	int qtd;$/;"	m	struct:ListaNos
+qtd	../aula-9/lista_clientes.h	/^	int qtd;$/;"	m	struct:ListaClientes
+qtd	../aula-9/lista_nos_folhas.h	/^	int qtd;$/;"	m	struct:ListaNosFolhas
+qtd	../aula-9/lista_nos_internos.h	/^	int qtd;$/;"	m	struct:ListaNosInternos
+raiz_folha	../aula-9/metadados.h	/^	int raiz_folha;$/;"	m	struct:Metadados
+remover_cliente	../aula-8/lista_clientes.c	/^void remover_cliente(Cliente **lc, int i){$/;"	f
+right	../aula-5/arvore_vencedores.h	/^    struct arvore_vencedores *right;$/;"	m	struct:arvore_vencedores	typeref:struct:arvore_vencedores::arvore_vencedores
+saldo	../aula-3/contacorrente.h	/^    double saldo;$/;"	m	struct:ContaCorrente
+salva_arq_metadados	../aula-8/metadados.c	/^void salva_arq_metadados(char *nome_arquivo, Metadados *metadados)$/;"	f
+salva_arq_metadados	../aula-9/metadados.c	/^void salva_arq_metadados(char *nome_arquivo, Metadados *metadados)$/;"	f
+salva_cliente	../aula-4/cliente.c	/^void salva_cliente(Cliente *cliente, FILE *out)$/;"	f
+salva_cliente	../aula-5/cliente.c	/^void salva_cliente(Cliente *cliente, FILE *out)$/;"	f
+salva_cliente	../aula-6/cliente.c	/^void salva_cliente(Cliente *cliente, FILE *out)$/;"	f
+salva_cliente	../aula-7/cliente.c	/^void salva_cliente(Cliente *cliente, FILE *out)$/;"	f
+salva_cliente	../aula-8/cliente.c	/^void salva_cliente(Cliente *cliente, FILE *out)$/;"	f
+salva_cliente	../aula-9/cliente.c	/^void salva_cliente(Cliente *cliente, FILE *out)$/;"	f
+salva_clientes	../aula-4/lista_clientes.c	/^void salva_clientes(char *nome_arquivo, ListaClientes *lc)$/;"	f
+salva_clientes	../aula-5/lista_clientes.c	/^void salva_clientes(char *nome_arquivo, ListaClientes *lc)$/;"	f
+salva_clientes	../aula-6/lista_clientes.c	/^void salva_clientes(char *nome_arquivo, ListaClientes *lc)$/;"	f
+salva_clientes	../aula-7/lista_clientes.c	/^void salva_clientes(char *nome_arquivo, ListaClientes *lc)$/;"	f
+salva_clientes	../aula-8/lista_clientes.c	/^void salva_clientes(char *nome_arquivo, ListaClientes *lc)$/;"	f
+salva_clientes	../aula-9/lista_clientes.c	/^void salva_clientes(char *nome_arquivo, ListaClientes *lc)$/;"	f
+salva_compartimento	../aula-6/compartimento_hash.c	/^void salva_compartimento(CompartimentoHash *compartimento, FILE *out)$/;"	f
+salva_compartimentos	../aula-6/lista_compartimentos.c	/^void salva_compartimentos(char *nome_arquivo, ListaCompartimentos *lc)$/;"	f
+salva_metadados	../aula-8/metadados.c	/^void salva_metadados(Metadados *metadados, FILE *out)$/;"	f
+salva_metadados	../aula-9/metadados.c	/^void salva_metadados(Metadados *metadados, FILE *out)$/;"	f
+salva_no	../aula-8/no.c	/^void salva_no(No *no, FILE *out)$/;"	f
+salva_no_folha	../aula-9/no_folha.c	/^void salva_no_folha(NoFolha *no, FILE *out)$/;"	f
+salva_no_interno	../aula-9/no_interno.c	/^void salva_no_interno(NoInterno *no, FILE *out)$/;"	f
+salva_nos	../aula-8/lista_nos.c	/^void salva_nos(char *nome_arquivo, ListaNos *lc)$/;"	f
+salva_nos_folhas	../aula-9/lista_nos_folhas.c	/^void salva_nos_folhas(char *nome_arquivo, ListaNosFolhas *lc)$/;"	f
+salva_nos_internos	../aula-9/lista_nos_internos.c	/^void salva_nos_internos(char *nome_arquivo, ListaNosInternos *lc)$/;"	f
+selecao_com_substituicao	../aula-4/geracao_particoes.c	/^void selecao_com_substituicao(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M)$/;"	f
+selecao_natural	../aula-4/geracao_particoes.c	/^void selecao_natural(char *nome_arquivo_entrada, Nomes *nome_arquivos_saida, int M, int n)$/;"	f
+substituir	../aula-5/arvore_vencedores.c	/^void substituir(Cliente *c, Cliente *c_subst, ArvoreVencedores *av){$/;"	f
+substituirRegistro	../aula-4/geracao_particoes.c	/^void substituirRegistro(Cliente *dest, Cliente *fnt){$/;"	f
+tamanho_cliente	../aula-4/cliente.c	/^int tamanho_cliente()$/;"	f
+tamanho_cliente	../aula-5/cliente.c	/^int tamanho_cliente() {$/;"	f
+tamanho_cliente	../aula-6/cliente.c	/^int tamanho_cliente()$/;"	f
+tamanho_cliente	../aula-7/cliente.c	/^int tamanho_cliente()$/;"	f
+tamanho_cliente	../aula-8/cliente.c	/^int tamanho_cliente()$/;"	f
+tamanho_cliente	../aula-9/cliente.c	/^int tamanho_cliente()$/;"	f
+tamanho_compartimento	../aula-6/compartimento_hash.c	/^int tamanho_compartimento()$/;"	f
+tamanho_metadados	../aula-8/metadados.c	/^int tamanho_metadados()$/;"	f
+tamanho_metadados	../aula-9/metadados.c	/^int tamanho_metadados()$/;"	f
+tamanho_no	../aula-8/no.c	/^int tamanho_no()$/;"	f
+tamanho_no_folha	../aula-9/no_folha.c	/^int tamanho_no_folha()$/;"	f
+tamanho_no_interno	../aula-9/no_interno.c	/^int tamanho_no_interno()$/;"	f
+teste_resposta	../aula-3/exercicio/main.c	/^int teste_resposta(int resposta){$/;"	f
+teste_resposta	../aula-3/main.c	/^int teste_resposta(int resposta){$/;"	f
+transladar_clientes	../aula-8/lista_clientes.c	/^void transladar_clientes(Cliente **lc, int tam, int i){$/;"	f
+ult	../aula-5/fila.h	/^	NoArquivo *ult;$/;"	m	struct:Fila

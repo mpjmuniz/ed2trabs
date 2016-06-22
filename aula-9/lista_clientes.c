@@ -4,6 +4,7 @@
 
 #include <stdlib.h>
 #include <stdarg.h>
+#include <assert.h>
 
 #include "lista_clientes.h"
 
@@ -89,4 +90,26 @@ void libera_clientes(ListaClientes *lc)
 	}
 	free(lc->lista);
 	free(lc);
+}
+
+int buscar_cliente(Cliente **lc, int tam, int chave, int *posicao){
+	assert(lc != NULL && "Lista inválida.\n");
+	assert(posicao != NULL && "local para posicao inválido\n");
+	
+	int inicio = 0,
+		fim = tam - 1,
+		meio;
+
+	while(meio > inicio && meio < fim){
+		meio = (inicio + fim) / 2;
+		
+		if(chave == lc[meio]->cod_cliente){
+			*posicao = meio;
+			return 1;
+		}
+		else if(chave > lc[meio]->cod_cliente) inicio = meio;
+		else fim = meio;
+	}
+
+	return 0;
 }
