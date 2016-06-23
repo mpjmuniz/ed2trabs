@@ -100,16 +100,17 @@ int buscar_cliente(Cliente **lc, int tam, int chave, int *posicao){
 		fim = tam - 1,
 		meio;
 
-	while(meio > inicio && meio < fim){
+	do{
 		meio = (inicio + fim) / 2;
 		
 		if(chave == lc[meio]->cod_cliente){
 			*posicao = meio;
 			return 1;
 		}
-		else if(chave > lc[meio]->cod_cliente) inicio = meio;
-		else fim = meio;
-	}
-
+		else if(chave > lc[meio]->cod_cliente) inicio = meio + 1;
+		else fim = meio - 1;
+	} while (inicio <= fim);
+	
+	*posicao = inicio;
 	return 0;
 }
