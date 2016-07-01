@@ -135,7 +135,7 @@ int tamanho_no_folha()
 void libera_no_folha(NoFolha *no)
 {
 	int i;
-	for (i = 0; i < 2 * D; i++) {
+	for (i = 0; i < no->m; i++) {
 		free(no->clientes[i]);
 	}
 	free(no->clientes);

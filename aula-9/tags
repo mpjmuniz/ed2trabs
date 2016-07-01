@@ -96,7 +96,7 @@ CC	../aula-5/Makefile	/^CC = gcc$/;"	m
 CC	../aula-6/Makefile	/^CC = gcc -g -Wall$/;"	m
 CC	../aula-7/Makefile	/^CC = gcc$/;"	m
 CC	../aula-8/Makefile	/^CC = gcc$/;"	m
-CC	../aula-9/Makefile	/^CC = gcc$/;"	m
+CC	../aula-9/Makefile	/^CC = gcc -g -Wall -Wextra$/;"	m
 CFLAGS	../aula-4/Makefile	/^CFLAGS=-g -Wall -I$(IDIR)$/;"	m
 CFLAGS	../aula-5/Makefile	/^CFLAGS=-I$(IDIR)$/;"	m
 CFLAGS	../aula-6/Makefile	/^CFLAGS=-I$(IDIR)$/;"	m
@@ -425,8 +425,11 @@ _TEST	../aula-7/ufftest.h	80;"	d
 _TEST	../aula-8/ufftest.h	80;"	d
 _TEST	../aula-9/ufftest.h	80;"	d
 __fila_h__	../aula-5/fila.h	2;"	d
+_adicionar_cliente	../aula-9/arvore_b_mais.c	/^static void _adicionar_cliente(NoInterno *pai, NoFolha *folha, Cliente *novo){$/;"	f	file:
 _insert	../aula-8/arvore_b.c	/^int _insert(FILE *arq, Cliente *insert_cli,int pt, int cli_pointer, FILE *meta){$/;"	f
 _obterNosAdjacentes	../aula-8/arvore_b.c	/^static int *_obterNosAdjacentes(FILE *fnos, No *ref, int i){$/;"	f	file:
+_redistribuir	../aula-9/arvore_b_mais.c	/^static void _redistribuir(NoInterno *pai, NoFolha *folha, NoFolha *irmao){$/;"	f	file:
+_remover_cliente	../aula-9/arvore_b_mais.c	/^static Cliente *_remover_cliente(NoFolha* folha, int posicao_inicial){$/;"	f	file:
 adcn_cliente	../aula-7/lista_clientes.c	/^void adcn_cliente(ListaClientes *lc, int cod, char *nome, int prox, int flag){$/;"	f
 adcn_compartimento	../aula-6/lista_compartimentos.c	/^void adcn_compartimento(ListaCompartimentos *lc, int prox){$/;"	f
 after	../aula-4/test_geracao_particoes.c	/^void after()$/;"	f
@@ -447,7 +450,7 @@ before	../aula-9/test_arvore_b_mais.c	/^void before()$/;"	f
 busca	../aula-6/encadeamento_exterior.c	/^int busca(int cod_cli, char *nome_arquivo_hash, char *nome_arquivo_dados) {$/;"	f
 busca	../aula-7/encadeamento_interior.c	/^int busca(int cod_cli, char *nome_arquivo_hash, int tam, int *encontrou)$/;"	f
 busca	../aula-8/arvore_b.c	/^int busca(int x, char *nome_arquivo_metadados, char *nome_arquivo_dados, int *pt, int *encontrou)$/;"	f
-busca	../aula-9/arvore_b_mais.c	/^int busca(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_indice, char *nome_arquivo_dados, int *pont_folha, int *encontrou)$/;"	f
+busca	../aula-9/arvore_b_mais.c	/^int busca(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_indice,$/;"	f
 buscar_agencia	../aula-3/exercicio/main.c	/^Agencia *buscar_agencia(FILE *in, int codAgencia){$/;"	f
 buscar_agencia	../aula-3/main.c	/^Agencia *buscar_agencia(FILE *in, int codAgencia){$/;"	f
 buscar_cliente	../aula-9/lista_clientes.c	/^int buscar_cliente(Cliente **lc, int tam, int chave, int *posicao){$/;"	f
@@ -535,7 +538,7 @@ data_nascimento	../aula-5/cliente.h	/^	char data_nascimento[TAM_DATA_NASCIMENTO]
 exclui	../aula-6/encadeamento_exterior.c	/^int exclui(int cod_cli, char *nome_arquivo_hash, char *nome_arquivo_dados)$/;"	f
 exclui	../aula-7/encadeamento_interior.c	/^int exclui(int cod_cli, char *nome_arquivo_hash, int tam)$/;"	f
 exclui	../aula-8/arvore_b.c	/^int exclui(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_dados)$/;"	f
-exclui	../aula-9/arvore_b_mais.c	/^int exclui(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_indice, char *nome_arquivo_dados)$/;"	f
+exclui	../aula-9/arvore_b_mais.c	/^int exclui(int cod_cli, char *nome_arquivo_metadados, char *nome_arquivo_indice,$/;"	f
 existe_nao_congelado	../aula-4/geracao_particoes.c	/^int existe_nao_congelado(int congelados[], int M){$/;"	f
 file_exist	../aula-4/test_geracao_particoes.c	/^int file_exist(char *filename)$/;"	f
 flag	../aula-6/cliente.h	/^	int flag;$/;"	m	struct:Cliente
