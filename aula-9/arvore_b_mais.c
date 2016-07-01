@@ -144,6 +144,7 @@ int insere_indice(int chave, int p, int pAnt, Metadados *metadado, FILE *indices
 }
 
 int particiona(Cliente *novo_c, char *nome_arquivo_metadados, char *nome_arquivo_indice, char *nome_arquivo_dados ,int endFolha){
+	/*
     FILE *dados = fopen(nome_arquivo_dados, "r+b"), *indices = fopen(nome_arquivo_indice, "r+b"), *meta = fopen(nome_arquivo_metadados, "r+b");
     fseek(dados, endFolha, SEEK_SET);
     Metadados *metadado = le_metadados(meta);
@@ -194,23 +195,31 @@ int particiona(Cliente *novo_c, char *nome_arquivo_metadados, char *nome_arquivo
     libera_no_folha(folha);
     
     return pos;
+    */
 }
 
 
 int insere(int cod_cli, char *nome_cli, char *nome_arquivo_metadados, char *nome_arquivo_indice, char *nome_arquivo_dados)
 {
     
-    int endFolha, encontrou, i, pos;
+    int endFolha, 
+    	encontrou, 
+    	i, 
+    	pos;
+	FILE *dados;
+	NoFolha *folha;
+	Cliente *novo_c;
+
     busca(cod_cli, nome_arquivo_metadados, nome_arquivo_indice, nome_arquivo_dados, &endFolha, &encontrou);
     if(encontrou) return -1;
-    FILE *dados = fopen(nome_arquivo_dados, "r+b");
+    dados = fopen(nome_arquivo_dados, "r+b");
     fseek(dados, endFolha, SEEK_SET);
-    NoFolha *folha = le_no_folha(dados);
-    fclose(dados);
-    Cliente *novo_c = cliente(cod_cli, nome_cli);
+    folha = le_no_folha(dados);
+    novo_c = cliente(cod_cli, nome_cli);
     
-    if(folha->m == 2*D) pos = particiona(novo_c, nome_arquivo_metadados, nome_arquivo_indice, nome_arquivo_dados,endFolha);
-    else {
+    if(folha->m == 2*D){
+    	pos = particiona(novo_c, nome_arquivo_metadados, nome_arquivo_indice, nome_arquivo_dados,endFolha);
+	} else {
         dados = fopen(nome_arquivo_dados, "r+b");
         
         for(i=folha->m-1; i>=0 && folha->clientes[i]->cod_cliente > novo_c->cod_cliente; i--){
@@ -223,13 +232,14 @@ int insere(int cod_cli, char *nome_cli, char *nome_arquivo_metadados, char *nome
         
         fseek(dados, endFolha, SEEK_SET);
         salva_no_folha(folha, dados);
-        fclose(dados);
     }
     
-    
+    fclose(dados);
     free(novo_c);
     libera_no_folha(folha);
     return pos;
+    
+    return 0;
 }
 
 inline Cliente *_remover_cliente(NoFolha* folha, int posicao_inicial){
