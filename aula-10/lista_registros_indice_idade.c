@@ -91,6 +91,22 @@ void libera_registros(ListaRegistrosIndiceIdade *l)
 	free(l);
 }
 
+void adiciona_registro(ListaRegistrosIndiceIdade *l, RegistroIndiceIdade *r){
+	RegistroIndiceIdade **novo_r = (RegistroIndiceIdade **) calloc((l->qtd + 1), sizeof(ListaRegistrosIndiceIdade *));
+	int i = 0;
+	
+	for(i = 0; i < l->qtd; i++){
+		novo_r[i] = l->lista[i];
+		l->lista[i] = NULL;
+	}
+	
+	novo_r[l->qtd] = r;
+
+	free(l->lista);
+	l->lista = novo_r;
+	l->qtd++;
+}
+
 ListaRegistrosAuxiliaresA4 *le_registrosA4(char *nome_arquivo){
 
 	int qtd = 0;
@@ -142,4 +158,13 @@ void salva_registros_a4(char *nome_arquivo, ListaRegistrosAuxiliaresA4 *l){
 		salva_registro_a4(l->lista[i], out);
 	}
 	fclose(out);
+}
+
+void libera_registros_a4(ListaRegistrosAuxiliaresA4 *l){
+	int i;
+	for (i = 0; i < l->qtd; i++) {
+		free(l->lista[i]);
+	}
+	free(l->lista);
+	free(l);
 }

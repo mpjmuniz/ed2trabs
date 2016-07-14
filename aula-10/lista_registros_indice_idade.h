@@ -28,6 +28,9 @@ int cmp_registros(ListaRegistrosIndiceIdade *l1, ListaRegistrosIndiceIdade *l2);
 // Desaloca lista de registros
 void libera_registros(ListaRegistrosIndiceIdade *l);
 
+//Adiciona registro @r à lista @l
+void adiciona_registro(ListaRegistrosIndiceIdade *l, RegistroIndiceIdade *r);
+
 //Registros auxiliares
 typedef struct listaregistrosauxiliaresa4 {
 	RegistroAuxiliarA4 **lista;
@@ -43,4 +46,6 @@ inline void ordenar_a4(ListaRegistrosAuxiliaresA4 **lista);
 // Salva lista de registros no arquivo nome_arquivo
 void salva_registros_a4(char *nome_arquivo, ListaRegistrosAuxiliaresA4 *l);
 
+// Desaloca lista de registros
+void libera_registros_a4(ListaRegistrosAuxiliaresA4 *l);
 #endif
