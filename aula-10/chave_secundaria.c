@@ -11,11 +11,20 @@ void indexa(char *nome_arquivo, int tam) {
 	 * */
 
 	//Registros do Arquivo A1
-	ListaRegistrosIndiceIdade *lista;
 	ListaClientes *listaClientes = le_clientes(nome_arquivo);
-
+	
 	//Geração do Arquivo A2 (e A3)
 	Cliente *cAtual = NULL;
+
+	//Geração do arquivo A4
+	ListaRegistrosAuxiliaresA4 *listaA4;
+	RegistroAuxiliarA4 *rAtual = NULL;
+	
+	//Geração do arquivo A5
+	ListaRegistrosIndiceIdade *lista;
+	RegistroIndiceIdade *riAtual = NULL,
+						*riAnterior = NULL;
+
 	FILE *a2 = fopen("a2.dat", "r+b");
 	int i = 0,
 		rc = -1,
@@ -40,27 +49,30 @@ void indexa(char *nome_arquivo, int tam) {
 
 	//Geração do Arquivo A4
 	
-	ListaRegistrosAuxiliaresA4 *listaA4 = le_registrosA4("a2.dat");
+	listaA4 = le_registrosA4("a2.dat");
 	ordenar_a4(&listaA4);
 	salva_registros_a4("a4.dat", listaA4);
 	
 	//Geração do Arquivo A5
-	RegistroAuxiliarA4 *rAtual = NULL;
-	RegistroIndiceIdade *riAtual = NULL,
-						*riAnterior = NULL;
+	rAtual = NULL;
 	lista = cria_registros(0);
 
 	for(i = 0; i < tam; i++){
 		rAtual = listaA4->lista[i];
 		
-		if(rAtual->cs == idadeAnterior){
-			//incrementar quantidade do registro anterior
-			//adicionar ponteiro no registro anterior para este registro
+		if(rAtual->cs == riAnterior->idade){
+			riAnterior->q++;
+			riAnterior->pt = rAtual->ed;
 		} else {
+			//Idade correta, ponteiro ainda não se sabe e a quantidade final também não
+			riAtual = registro_indice_idade(rAtual->cs, -1,	1);
 			//adicionar um novo registro com os dados de rAtual
+			//TODO: ajustar controle da lista
 		}
-
-		qtdAtual += 1;
+		
+		riAnterior = riAtual;
+		idadeAnterior = rAtual->cs;
+		if(rAtual != NULL) free(rAtual);
 	}
 
 	//Geração do Arquivo A6
